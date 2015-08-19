@@ -12,6 +12,8 @@
 \usepackage{tikz} % not
 \usetikzlibrary{shapes.geometric, arrows}
 \usepackage{microtype}
+\usepackage{makeidx}
+\makeindex
 
 
 \usepackage{standalone}
@@ -158,12 +160,15 @@ Mohamed Gad-Elrab
 
 \input{chapters/intro}
 
-\input{chapters/background}
+% \input{chapters/background}
+\input{chapters/relevant_background}
 
-\input{chapters/approach}
+\input{chapters/related_work}
 
 
-\input{chapters/evaluation}
+\input{chapters/contribution}
+
+\input{chapters/applications}
 
 \input{chapters/conclusion}
 
@@ -178,6 +183,9 @@ Mohamed Gad-Elrab
 \appendix
 %\appendixpage*
 
+
+% ****************** Index *******************
+\printindex
 
 % *************** Back matter ***************
 %\backmatter
