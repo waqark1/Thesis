@@ -1,10 +1,52 @@
+%!TEX root = ../Thesis.tex
 \chapter{Relevant Background}
 \label{chap:reletiveBackground}
 
-\section{Stereopsis in HVS \index{HVS}}
-Limits of stereopsis and that other paper of bank.
-cormack paper.
-when fusion and happens and when not and why?
+\section{Depth Perception}
+Depth perception is the ability of the Human Visual System \index{HVS} to visualize the three dimensional world as well as measuring the distance of an object based on two dimensional images obtained from the eyes. Depth perception is imperative for performing basic everyday tasks such as avoiding obstacles without bumping into them or interacting with the world with relative ease. In animals (specially predators), it is critical to estimate the distance of a prey for an efficient attack. Depth sensation is the term used for animals as it is not known whether they sense the depth in the same way as humans do or not\cite{ wiki:depth_perception}.
+
+% Figure for cues
+\begin{figure}
+\begin{tikzpicture}[grow'=right,level distance=1.75in,sibling distance=.15in]
+\tikzset{edge from parent/.style = {thick, draw, edge from parent fork right},
+         every tree node/.style  = {draw,minimum width=1in,text width=1.3in,align=center}}
+\Tree
+    [. {Depth Information}
+	        [.{Monocular Cues}
+	                [.{Motion Parallax } ]
+	            	[.{Depth from Motion } ]
+	            	[.{Kinetic Depth Effect } ]
+	            	[.{Perspective } ]
+	            	[.{Relative Size} ]
+	            	[.{Familiar Size} ]
+	            	[.{Absolute Size} ]
+	            	[.{Ariel Perspective} ]
+	            	[.{Accommodation} ]
+	            	[.{Occlusion} ]
+	            	[.{Curvilinear Perspective} ]
+	            	[.{Texture Gradient} ]
+	            	[.{Shading} ]
+	            	[.{Defocus Blur} ]
+	            	[.{Elevation} ]
+	        ]
+	        [.{Binocular Cues}
+	                [.{Stereopsis } ]
+		            [.{Convergence } ]
+		            [.{Shadow Stereopsis} ]
+	        ]
+    ]
+\end{tikzpicture}
+\caption{HVS Depth Cues\label{fig:CueTree}}
+\end{figure}
+
+Human visual system \index{HVS} uses several monocular and binocular cues to determine the depth of objects in the view. These cues can be categorized into two categories i.e. cues extracted from a single image (Monocular Cues) and cues extracted from two images (Binocular cues)\cite{depthcues1}\cite{ wiki:depth_perception}. Figure \ref{fig:CueTree} gives an outlook of the depth cues used by the HVS. These cues are then dynamically weighted according to their robustness by the HVS in order to estimate a depth value for each object in the view \cite{CueFusion}.
+
+
+\section{Stereopsis in HVS}
+% Limits of stereopsis and that other paper of bank.\cite{banks1}
+% cormack paper.
+% when fusion and happens and when not and why?
+
 
 \section{Crosstalk}
 Definitions and Factors contributing to Crosstalk

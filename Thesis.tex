@@ -19,6 +19,10 @@
 \usepackage{standalone}
 \usepackage{tabularx} % not
 
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usetikzlibrary{trees} % this is to allow the fork right path
+
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
@@ -174,8 +178,8 @@ Mohamed Gad-Elrab
 
 
 % *************** Bibliography ***************
-\bibliographystyle{plain}
-{\small\bibliography{bibliography/aidaMultilingual_plus,bibliography/edrak}}
+\bibliographystyle{acm}
+{\small\bibliography{bibliography/references}}
 \clearpage
 
 % *************** Appendixes ***************

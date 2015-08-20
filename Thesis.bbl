@@ -1,3 +1,21 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{CueFusion}
+{\sc Landy, M.~S., Maloney, L.~T., Johnston, E.~B., and Young, M.}
+\newblock Measurement and modeling of depth cue combination: In defense of weak
+  fusion.
+\newblock {\em Vision research 35}, 3 (1995), 389--412.
+
+\bibitem{depthcues1}
+{\sc Reichelt, S., H{\"a}ussler, R., F{\"u}tterer, G., and Leister, N.}
+\newblock Depth cues in human visual perception and their realization in 3d
+  displays.
+\newblock In {\em SPIE Defense, Security, and Sensing\/} (2010), International
+  Society for Optics and Photonics, pp.~76900B--76900B.
+
+\bibitem{wiki:depth_perception}
+{\sc Wikipedia}.
+\newblock Depth perception --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 20-August-2015].
 
 \end{thebibliography}
