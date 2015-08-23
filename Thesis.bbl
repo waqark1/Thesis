@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{howard1995binocular}
+{\sc Howard, I.}
+\newblock {\em Binocular vision and stereopsis}.
+\newblock Oxford University Press, New York, 1995.
+
 \bibitem{CueFusion}
 {\sc Landy, M.~S., Maloney, L.~T., Johnston, E.~B., and Young, M.}
 \newblock Measurement and modeling of depth cue combination: In defense of weak
@@ -27,5 +32,15 @@
 {\sc Wikipedia}.
 \newblock Stereopsis --- wikipedia{,} the free encyclopedia.
 \newblock [Online; accessed 21-August-2015].
+
+\bibitem{wiki:wheatstone}
+{\sc Wikipedia}.
+\newblock Stereoscope --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 23-August-2015].
+
+\bibitem{woods2012crosstalk}
+{\sc Woods, A.~J.}
+\newblock Crosstalk in stereoscopic displays: a review.
+\newblock {\em Journal of Electronic Imaging 21}, 4 (2012), 040902--040902.
 
 \end{thebibliography}

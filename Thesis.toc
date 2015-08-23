@@ -12,63 +12,64 @@
 \contentsline {section}{\numberline {1.4}List of Commonly used abbreviations}{1}{section.15}
 \contentsline {chapter}{\numberline {2}Relevant Background}{3}{chapter.16}
 \contentsline {section}{\numberline {2.1}Depth Perception}{3}{section.17}
-\contentsline {section}{\numberline {2.2}Stereopsis in HVS}{3}{section.19}
-\contentsline {section}{\numberline {2.3}Crosstalk}{5}{section.21}
-\contentsline {section}{\numberline {2.4}Stereoscopic/Automultiscopic Screens and its cross-talk}{6}{section.22}
-\contentsline {subsection}{\numberline {2.4.1}CRT Screens}{6}{subsection.23}
-\contentsline {subsection}{\numberline {2.4.2}LCD Screens}{6}{subsection.24}
-\contentsline {subsection}{\numberline {2.4.3}Anaglyph Stereo}{6}{subsection.25}
-\contentsline {subsection}{\numberline {2.4.4}Active/Time Sequential Stereo}{6}{subsection.26}
-\contentsline {subsection}{\numberline {2.4.5}Passive/ Space Multiplexed Stereo}{6}{subsection.27}
-\contentsline {subsection}{\numberline {2.4.6}Automultiscopic Screens}{6}{subsection.28}
-\contentsline {section}{\numberline {2.5}Crosstalk Quality Metrics}{6}{section.29}
-\contentsline {section}{\numberline {2.6}Lightfields}{6}{section.30}
-\contentsline {chapter}{\numberline {3}Related Work}{7}{chapter.31}
-\contentsline {section}{\numberline {3.1}Effects of Crosstalk on Perceived Depth}{8}{section.32}
-\contentsline {subsection}{\numberline {3.1.1}Thirsins's work}{8}{subsection.33}
-\contentsline {subsection}{\numberline {3.1.2}Systematic Distortion}{8}{subsection.34}
-\contentsline {subsection}{\numberline {3.1.3}Visibility Threshold and Fusion Limit}{8}{subsection.35}
-\contentsline {section}{\numberline {3.2}Migigation/Compensation of Cross-talk}{8}{section.36}
-\contentsline {subsection}{\numberline {3.2.1}Stereoscopic Screens}{8}{subsection.37}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Subtractive Approaches}{8}{subsubsection.38}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Perceptual Optimization}{8}{subsubsection.39}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Temporal Approach}{8}{subsubsection.40}
-\contentsline {subsection}{\numberline {3.2.2}Automultiscopic Screens}{8}{subsection.41}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Inverse Filtering}{8}{subsubsection.42}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Subtractive Reduction}{8}{subsubsection.43}
-\contentsline {subsubsection}{\numberline {3.2.2.3}Sub-pixel Optimization}{8}{subsubsection.44}
-\contentsline {subsubsection}{\numberline {3.2.2.4}Low Pass Filtering}{8}{subsubsection.45}
-\contentsline {chapter}{\numberline {4}Contribution}{9}{chapter.46}
-\contentsline {section}{\numberline {4.1}Crosstalk Experiments}{10}{section.47}
-\contentsline {subsection}{\numberline {4.1.1}Apparatus setup}{10}{subsection.48}
-\contentsline {subsection}{\numberline {4.1.2}Experimentation Procedure}{10}{subsection.49}
-\contentsline {subsection}{\numberline {4.1.3}Stereoscopic Experimentations}{10}{subsection.50}
-\contentsline {subsubsection}{\numberline {4.1.3.1}Initial Hypothesis}{10}{subsubsection.51}
-\contentsline {subsubsection}{\numberline {4.1.3.2}stimuli}{10}{subsubsection.52}
-\contentsline {subsubsection}{\numberline {4.1.3.3}Simulation of Cross-talk}{10}{subsubsection.53}
-\contentsline {subsubsection}{\numberline {4.1.3.4}Experimentation procedure}{10}{subsubsection.54}
-\contentsline {subsubsection}{\numberline {4.1.3.5}Results}{10}{subsubsection.55}
-\contentsline {subsection}{\numberline {4.1.4}Automultiscopic Experimentations}{10}{subsection.56}
-\contentsline {subsubsection}{\numberline {4.1.4.1}Initial Hypothesis}{10}{subsubsection.57}
-\contentsline {subsubsection}{\numberline {4.1.4.2}stimuli}{10}{subsubsection.58}
-\contentsline {subsubsection}{\numberline {4.1.4.3}Simulation of Cross-talk}{10}{subsubsection.59}
-\contentsline {subsubsection}{\numberline {4.1.4.4}Experimentation procedure}{10}{subsubsection.60}
-\contentsline {subsubsection}{\numberline {4.1.4.5}Results}{10}{subsubsection.61}
-\contentsline {subsection}{\numberline {4.1.5}Conclusion and Discussion}{10}{subsection.62}
-\contentsline {section}{\numberline {4.2}HVS depth from disparity Model}{10}{section.63}
-\contentsline {subsection}{\numberline {4.2.1}Different Hypothesis and their Outcome}{10}{subsection.64}
-\contentsline {subsection}{\numberline {4.2.2}Future Work}{10}{subsection.65}
-\contentsline {section}{\numberline {4.3}Cross-talk Mitigation}{10}{section.66}
-\contentsline {subsection}{\numberline {4.3.1}Proposed Optimizations}{10}{subsection.67}
-\contentsline {subsection}{\numberline {4.3.2}Unsharp Masking in View Domain}{10}{subsection.68}
-\contentsline {subsection}{\numberline {4.3.3}Iterative Subtraction}{10}{subsection.69}
-\contentsline {chapter}{\numberline {5}Applications}{11}{chapter.70}
-\contentsline {section}{\numberline {5.1}Depth Adjustment for Depth Critical viewing Applications}{11}{section.71}
-\contentsline {section}{\numberline {5.2}Efficient Preprocessing for Crosstalkfree Images}{11}{section.72}
-\contentsline {chapter}{\numberline {6}Conclusion}{13}{chapter.73}
-\contentsline {section}{\numberline {6.1}Summary}{13}{section.74}
-\contentsline {section}{\numberline {6.2}Future Work}{13}{section.75}
-\contentsline {section}{\numberline {6.3}Open Questions}{13}{section.76}
-\contentsline {chapter}{Bibliography}{15}{chapter*.77}
+\contentsline {section}{\numberline {2.2}Binocular Vision and Stereopsis}{3}{section.19}
+\contentsline {section}{\numberline {2.3}Limits of Stereopsis}{6}{section.21}
+\contentsline {section}{\numberline {2.4}Crosstalk}{6}{section.22}
+\contentsline {section}{\numberline {2.5}Stereoscopic/Automultiscopic Screens and its cross-talk}{8}{section.26}
+\contentsline {subsection}{\numberline {2.5.1}CRT Screens}{8}{subsection.27}
+\contentsline {subsection}{\numberline {2.5.2}LCD Screens}{8}{subsection.28}
+\contentsline {subsection}{\numberline {2.5.3}Anaglyph Stereo}{8}{subsection.29}
+\contentsline {subsection}{\numberline {2.5.4}Active/Time Sequential Stereo}{8}{subsection.30}
+\contentsline {subsection}{\numberline {2.5.5}Passive/ Space Multiplexed Stereo}{8}{subsection.31}
+\contentsline {subsection}{\numberline {2.5.6}Automultiscopic Screens}{8}{subsection.32}
+\contentsline {section}{\numberline {2.6}Crosstalk Quality Metrics}{8}{section.33}
+\contentsline {section}{\numberline {2.7}Lightfields}{8}{section.34}
+\contentsline {chapter}{\numberline {3}Related Work}{9}{chapter.35}
+\contentsline {section}{\numberline {3.1}Effects of Crosstalk on Perceived Depth}{10}{section.36}
+\contentsline {subsection}{\numberline {3.1.1}Thirsins's work}{10}{subsection.37}
+\contentsline {subsection}{\numberline {3.1.2}Systematic Distortion}{10}{subsection.38}
+\contentsline {subsection}{\numberline {3.1.3}Visibility Threshold and Fusion Limit}{10}{subsection.39}
+\contentsline {section}{\numberline {3.2}Migigation/Compensation of Cross-talk}{10}{section.40}
+\contentsline {subsection}{\numberline {3.2.1}Stereoscopic Screens}{10}{subsection.41}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Subtractive Approaches}{10}{subsubsection.42}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Perceptual Optimization}{10}{subsubsection.43}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Temporal Approach}{10}{subsubsection.44}
+\contentsline {subsection}{\numberline {3.2.2}Automultiscopic Screens}{10}{subsection.45}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Inverse Filtering}{10}{subsubsection.46}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Subtractive Reduction}{10}{subsubsection.47}
+\contentsline {subsubsection}{\numberline {3.2.2.3}Sub-pixel Optimization}{10}{subsubsection.48}
+\contentsline {subsubsection}{\numberline {3.2.2.4}Low Pass Filtering}{10}{subsubsection.49}
+\contentsline {chapter}{\numberline {4}Contribution}{11}{chapter.50}
+\contentsline {section}{\numberline {4.1}Crosstalk Experiments}{12}{section.51}
+\contentsline {subsection}{\numberline {4.1.1}Apparatus setup}{12}{subsection.52}
+\contentsline {subsection}{\numberline {4.1.2}Experimentation Procedure}{12}{subsection.53}
+\contentsline {subsection}{\numberline {4.1.3}Stereoscopic Experimentations}{12}{subsection.54}
+\contentsline {subsubsection}{\numberline {4.1.3.1}Initial Hypothesis}{12}{subsubsection.55}
+\contentsline {subsubsection}{\numberline {4.1.3.2}stimuli}{12}{subsubsection.56}
+\contentsline {subsubsection}{\numberline {4.1.3.3}Simulation of Cross-talk}{12}{subsubsection.57}
+\contentsline {subsubsection}{\numberline {4.1.3.4}Experimentation procedure}{12}{subsubsection.58}
+\contentsline {subsubsection}{\numberline {4.1.3.5}Results}{12}{subsubsection.59}
+\contentsline {subsection}{\numberline {4.1.4}Automultiscopic Experimentations}{12}{subsection.60}
+\contentsline {subsubsection}{\numberline {4.1.4.1}Initial Hypothesis}{12}{subsubsection.61}
+\contentsline {subsubsection}{\numberline {4.1.4.2}stimuli}{12}{subsubsection.62}
+\contentsline {subsubsection}{\numberline {4.1.4.3}Simulation of Cross-talk}{12}{subsubsection.63}
+\contentsline {subsubsection}{\numberline {4.1.4.4}Experimentation procedure}{12}{subsubsection.64}
+\contentsline {subsubsection}{\numberline {4.1.4.5}Results}{12}{subsubsection.65}
+\contentsline {subsection}{\numberline {4.1.5}Conclusion and Discussion}{12}{subsection.66}
+\contentsline {section}{\numberline {4.2}HVS depth from disparity Model}{12}{section.67}
+\contentsline {subsection}{\numberline {4.2.1}Different Hypothesis and their Outcome}{12}{subsection.68}
+\contentsline {subsection}{\numberline {4.2.2}Future Work}{12}{subsection.69}
+\contentsline {section}{\numberline {4.3}Cross-talk Mitigation}{12}{section.70}
+\contentsline {subsection}{\numberline {4.3.1}Proposed Optimizations}{12}{subsection.71}
+\contentsline {subsection}{\numberline {4.3.2}Unsharp Masking in View Domain}{12}{subsection.72}
+\contentsline {subsection}{\numberline {4.3.3}Iterative Subtraction}{12}{subsection.73}
+\contentsline {chapter}{\numberline {5}Applications}{13}{chapter.74}
+\contentsline {section}{\numberline {5.1}Depth Adjustment for Depth Critical viewing Applications}{13}{section.75}
+\contentsline {section}{\numberline {5.2}Efficient Preprocessing for Crosstalkfree Images}{13}{section.76}
+\contentsline {chapter}{\numberline {6}Conclusion}{15}{chapter.77}
+\contentsline {section}{\numberline {6.1}Summary}{15}{section.78}
+\contentsline {section}{\numberline {6.2}Future Work}{15}{section.79}
+\contentsline {section}{\numberline {6.3}Open Questions}{15}{section.80}
+\contentsline {chapter}{Bibliography}{17}{chapter*.81}
 \vspace {2em}
-\contentsline {chapter}{Index}{16}{chapter*.77}
+\contentsline {chapter}{Index}{18}{chapter*.81}
