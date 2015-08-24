@@ -78,23 +78,30 @@ Stereopsis is believed to be processed in the binocular neurons of the visual co
 As discussed in the previous section, stereoscopy includes the process of displaying different perspective images to each eye in order to mimic the effect of depth in a scene. However, it is critical that the perspective of these two images should be segregated completely from each other. Currently, all the commercially available 3D displays (with exception of head mounted displays or Wheatstone setups) fail to isolate the two images completely. That means that a percentage of the image of one eye leaks to the other eye as well. This unintended leakage is called the crosstalk in stereoscopic screens\cite{woods2012crosstalk}. Figure \ref{fig:ct1} Shows one such example where the screen has a simulated crosstalk of 14\%. This means that 14\% image intensity of the right eye image is leaked into the left eye image and vice versa.
 
 \begin{figure}[htbp]
-    \centering
+    % \centering
+
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[width=\textwidth]{./Template_Figures/orig}
-        \caption{Original Image}\label{originalPicture}
+        \caption{Original Image}\label{fig:originalPicture}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[width=\textwidth]{./Template_Figures/leakage}
-        \caption{Original Image}\label{ill_leackage}
+        \caption{Original Image}\label{fig:ill_leackage}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[width=\textwidth]{./Template_Figures/crosstalk}
-        \caption{Original Image}\label{imWCT}
+        \caption{Original Image}\label{fig:imWCT}
     \end{subfigure}
-    \caption{A simulation of 14\% crosstalk. An Image intended for the left eye containing 14\% of image intended for right eye. containing \label{fig:ct1}}
+
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/viewerCT}
+        \caption{Viewers Crosstalk}\label{fig:viewerCT}
+    \end{subfigure}
+
+    \caption{(a-c) A simulation of 14\% crosstalk. An Image intended for the left eye containing 14\% of image intended for right eye. (d) Illustration of Viewers crosstalk with the transfer functions as defined by Andrew J. Woods \cite{woods2012crosstalk} \label{fig:ct1}}
 \end{figure}
 
-System crosstalk is the term used to define the amount of light leakage that occurs between two views. In simplest form, it can be mathematically defined as:
+\say{System crosstalk} is the term used to define the amount of light leakage that occurs between two views and is independent of the image contents. In simplest form, it can be mathematically defined as:
 
 \begin{equation}
 Crosstalk(\%) = \frac{leakage}{signal} *100
@@ -108,9 +115,39 @@ Crosstalk(\%) = \frac{leakage - black level}{signal - black level} *100
 \label{eq:crosstalk_gray}
 \end{equation}
 
-Throughout the rest of the paper, we will be using crosstalk as mentioned in eq \ref{eq:crosstalk_gray}.
+Throughout the rest of the thesis, we will be using crosstalk as mentioned in eq \ref{eq:crosstalk_gray}.
+
+Viewers crosstalk on the other hand is the amount of crosstalk that can be perceived by the viewer as ghosts. It is dependent on the image contents i.e the contrast at the ghosting point and the parallax of objects in the scene. If the system crosstalk is defined as
+\begin{equation}
+System\ Crosstalk\ (left\ eye) = \frac{\beta_2}{\alpha_1}
+\label{eq:system_ct}
+\end{equation}
+
+Where \(\alpha_1\) denotes the percentage part of the left-eye image at position (x,y) as observed by the left eye and \(\beta_2\) denotes the percentage amount of right eye image at the same location (x,y) leaked into the left eye. Then the viewers crosstalk is defined as
+
+\begin{equation}
+Viewers\ Crosstalk\ (left\ eye) = \frac{B\beta_2}{A\alpha_1}.
+\end{equation}
+
+where \say{A} is the luminance of that particular point in left-eye image and \say{B} is the luminance of that particular point in right-eye image (as described in Fig \ref{fig:viewerCT}). The Variables \(\alpha\) and \(\beta\) are characterizing the transfer functions from the displayed image to the observed image i.e. the amount of light reaching the eyes after being displayed on the screen and going through the glasses or any other medium that resides between the screen and the eyes. In most displays, crosstalk is an additive process and is roughly linear. This means that to simulate crosstalk, adding a desired amount of unintended image to an intended image should be sufficient. The simulation of crosstalk in our experiments was carried out in the same manner.
+
+The perception of crosstalk obeys the Webber's law which means that leaked light will be greatly perceivable by the viewer on the dark image areas rather than bright areas. Also, the perceived crosstalk is Dependant upon the contrast of the image and the binocular parallax of the stimuli i.e. crosstalk perception will increase with increase in contrast or increase in binocular parallax\textcolor{red}{Maybe I need to show why?}. It is commonly believed that ghosting plays the most critical role in determining the image quality. Wilcox and Stewart \cite{wilcox2003determinants} observed that over 75\% of the observers in their experiments reported the ghosting to be the key feature that deteriorated the image quality. Apart from reduction of image quality, perceivable ghosting is also responsible for loss of depth, viewer's discomfort, reduction of sharpness and contrast, decreased fusion limits, and difficulty in fusion. As mentioned earlier, two objects can not be fused together if the angular separation between them is smaller than the disparity\cite{burt1980disparity}. In fact since the ghost and the stimulus lie in the same (x, y) position but at different depth, the angular separation becomes zero and the disparity gradient of the ghost and the stimulus becomes infinity. Hence both of them can not be fused together. In this case the more luminant object i.e. the stimulus will be fused while the ghosts will remain in diplopic state\textcolor{red}{add the image showing infinity DG and cite the source}. Crosstalk in still images is perceived to a larger extant than crosstalk in dynamic scenes (e.g. a movie). This means that motion of objects in a scene can mask the perception of crosstalk.
+
+The stereoscopic literature provides a lot of advices for the acceptable and unacceptable crosstalk for the viewers. Woods\cite{woods2012crosstalk} points some of these advices as:
+\begin{itemize}
+	\item Crosstalk between 2\% to 6\% significantly affects the visual quality and increase the viewers discomfort.
+	\item In order to produce accurate depth range between 40 arcmin, the crosstalk should be as low as 0.3\%.
+	\item Crosstalk is visible even at 1\% to 2\%.
+	\item 5\% of crosstalk is enough to induce discomfort.
+	\item JND for crosstalk is 1\%.
+	\item 2-4\% of crosstalk can significantly decrease the amount of perceived depth.
+\end{itemize}
+
+As one can observe, there is a variability in these guidelines. The reason for this variability might be because of the different setups and types of stimuli that were used by the researcher in their experiments. We observed that currently the literature is not quite thorough on how the depth perception is affected when it comes to different kinds of stimuli and relatively more complex scenes. Which is why we performed some experiments of our own to verify and expand the current knowledge in this area. This is also one of the main contributions of this thesis.
 
 \section{Stereoscopic/Automultiscopic Screens and its cross-talk}
+
+
 \subsection{CRT Screens}
 \subsection{LCD Screens}
 \subsection{Anaglyph Stereo}

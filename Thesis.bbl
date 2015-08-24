@@ -1,4 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{burt1980disparity}
+{\sc Burt, P., and Julesz, B.}
+\newblock A disparity gradient limit for binocular fusion.
+\newblock {\em Science 208}, 4444 (1980), 615--617.
 
 \bibitem{howard1995binocular}
 {\sc Howard, I.}
@@ -37,6 +42,12 @@
 {\sc Wikipedia}.
 \newblock Stereoscope --- wikipedia{,} the free encyclopedia, 2015.
 \newblock [Online; accessed 23-August-2015].
+
+\bibitem{wilcox2003determinants}
+{\sc Wilcox, L.~M., and Stewart, J.~A.}
+\newblock Determinants of perceived image quality: ghosting vs. brightness.
+\newblock In {\em Electronic Imaging 2003\/} (2003), International Society for
+  Optics and Photonics, pp.~263--268.
 
 \bibitem{woods2012crosstalk}
 {\sc Woods, A.~J.}
