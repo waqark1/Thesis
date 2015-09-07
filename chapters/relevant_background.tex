@@ -2,7 +2,6 @@
 \chapter{Relevant Background}
 \label{chap:reletiveBackground}
 
-\section{Depth Perception}
 Depth perception is the ability of the Human Visual System \index{HVS} to visualize the three dimensional world as well as measuring the distance of an object based on two dimensional images obtained from the eyes. Depth perception is imperative for performing basic everyday tasks such as avoiding obstacles without bumping into them or interacting with the world with relative ease. In animals (specially predators), it is critical to estimate the distance of a prey for an efficient attack. Depth sensation is the term used for animals as it is not known whether they sense the depth in the same way as humans do or not\cite{ wiki:depth_perception}.
 
 % Figure for cues
@@ -42,7 +41,7 @@ Depth perception is the ability of the Human Visual System \index{HVS} to visual
 Human visual system \index{HVS} uses several monocular and binocular cues to determine the depth of objects in the view. These cues can be categorized into two categories i.e. cues extracted from a single image (Monocular Cues) and cues extracted from two images (Binocular cues)\cite{depthcues1}\cite{ wiki:depth_perception}. Figure \ref{fig:CueTree} gives an outlook of the depth cues used by the HVS. These cues are then dynamically weighted according to their robustness by the HVS in order to estimate a depth value for each object in the view \cite{CueFusion}(Write details of those cues in Appendix).
 
 
-\section{Binocular Vision and Stereopsis}
+\section{Binocular vision, stereopsis and its limits}
 % Limits of stereopsis and that other paper of bank.\cite{banks1}
 % cormack paper.
 % when fusion and happens and when not and why?
@@ -62,7 +61,7 @@ Stereopsis is believed to be processed in the binocular neurons of the visual co
 % Limits of stereopsis and that other paper of bank.\cite{banks1}
 % cormack paper.
 % when fusion and happens and when not and why?
-
+Put it in the section above.
 
 
 
@@ -147,14 +146,62 @@ As one can observe, there is a variability in these guidelines. The reason for t
 
 \section{Stereoscopic/Automultiscopic Screens and its cross-talk}
 
+In this section we will review some of the stereo technologies and their associated crosstalk. The basic setup for a stereoscopic displays involves a display screen that has typically higher (above 120 Hz) refresh rate and a view separation mechanism. A high refresh rate is required so that images from two different view perspective can be displayed alternatively without the user realizing any glitches (after the views has been separately delivered to the eyes). Various Stereo display technologies are available in the market such as CRT, DLP, Plasma, PDP and LCD screen. Active/Passive 3D glasses or anaglyph glasses are generally used as view separation mechanisms. Figure \ref{fig:ctflow} illustrates that the crosstalk is induced by the display as well as the view separator.
 
-\subsection{CRT Screens}
-\subsection{LCD Screens}
+\begin{figure}
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/ct_flow}
+    \caption{A flow diagram showing the process of stereo image perception starting from stereo scene capture. The crosstalk can be induced by the display (light generation) and by the image/view separation mechanism(3D glasses or autostereoscopic parallax barrier).\label{fig:ctflow}}
+\end{figure}
+
+\subsection{Time sequential stereo using active shutter glasses with an LCD display}
+LCD screen coupled with active shutter glasses is the most common 3D technology that is commercially available. It produces an image by back lighting a two dimensional individually addressable liquid crystal (LC) \index{LC}matrix. The back light is typically a cold cathode florescent lamp (CCFL) or light emitting diodes (LEDs). The LC matrix consists of crystals that rotate according to the voltage applied to them. This rotation limits the flow of the light that passes through each cell hence producing different gray levels. Each pixel of the screen consists of three LC cells coupled with red, green and a blue filter. Hence the color and luminance of each pixel is created by controlling the light that flows through these individual filters which is regulated by the LCs. It should be noted that even at its best i.e crystals are perpendicular to the light source, they fail to block the light completely and hence an LCD screen can not display true black color.
+
+The time required for the LCs to rotate from one position to another desired position is known as the pixel response rate/time. This response time is higher if the delta between the rotate is smaller and vice versa\cite{woods2012crosstalk}. This means that the refresh rate of an LCD display is dependent upon this response time. LCD displays usually utilize top to bottom image update method i.e. in order to update the image being displayed, the rows of pixels is addressed individually from top to bottom.
+
+\begin{figure}[htbp]
+\centering
+     \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/LCD_refresh_low}
+        \caption{ Time(ms)}\label{fig:response_low}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/LCD_refresh_high}
+        \caption{ Time(ms)}\label{fig:response_high}
+    \end{subfigure}
+
+    \caption{\textcolor{red}{(a) Response of a conventional LCD display (in time domain). (b) Response of a high refresh rate LCD display }.  \label{fig:LCD_refresh}}
+\end{figure}
+
+figure \ref{fig:LCD_refresh} shows the time domain responses of LCD displays. The green line represents the row of the pixels that are being updated while the images is being changed from complete black to complete white. It case be seen from \ref{fig:response_low} that there is no time (a vertical line) where a complete black or white image is observed. However if the refresh rate is increased (Figure \ref{fig:response_high}), one can see that there is an interval in time where a stable image can be displayed.
+
+Active shutter glasses consists of lenses that can turn opaque or transparent in order to gate the left or right image being displayed on the screen to the respective left or right eye (at any given time, one lens is in opaque state while the other in transparent state). Each lens of these glasses has a liquid crystal called LC shutters(just like an LCD display) that blocks the light when a voltage is applied to it. The time required for these LCs to go from completely opaque to completely transparent and vice versa is called the rise and fall time \cite{woods2012crosstalk}. Figure \textcolor{red}{SHould I use the picture fig 4 from woods?} shows the optical transmission properties of a typical pair of active shutter glasses. It can be seen from this figure that
+\begin{figure}
+\end{figure}
+
+\begin{itemize}
+\item{LC shutters do not perform identically for each wavelength.}
+\item{The LC shutters have a non zero transmission even when it is in opaque state.}
+\item{The rise and fall time are not instantaneous.}
+\end{itemize}
+
+In addition to that, the light transmission in active shutter glasses also varies with the viewing angle. The highest blocking of the light occurs at an angle perpendicular to the shutters. This means that while viewing a scene through these shutter glasses, one would observe grater leakage of light in the border areas of the shutters as compared to the center (provided the position of the eye is in the center of the shutters). It is important that the shutters are opened and closed with the right timings with respect to the image being displayed on the screen. Incorrect image will be observed if the shutters are opened too early or too late that will result in crosstalk.
+
+Hence, the methods according to which crosstalk can occur when using active shutter glasses combined with an LCD display are:
+\begin{itemize}
+	\item{Optical performance of the liquid crystal cells i.e. crosstalk is proportional to the amount of light leaked while in opaque state.}
+	\item{Incorrect synchronization of shutter glasses with respect to the display.}
+	\item{Viewing angle through the shutter glasses.}
+	\item{Pixel response rate of the LCD display. Higher response time will result in higher crosstalk.}
+	\item{Image update method. The ideal time for opening of a shutter would be when an image has been completely displayed on the screen. However most LCDs update the image using vertical scanning and hence usually there is no time at which the image is completely displayed stably.}
+	\item{The x,y location of the image on the screen. This is related to both the image update method and the veiwing angle through the shutter glasses.}
+	\item{The gray level being displayed. If the change in gray level is small then the response time will be large hence causing larger crosstalk. }
+\end{itemize}
+
 \subsection{Anaglyph Stereo}
-\subsection{Active/Time Sequential Stereo}
+\subsection{Active/Time Sequential Stereo on LCDs}
 \subsection{Passive/ Space Multiplexed Stereo}
 \subsection{Automultiscopic Screens}
+discuss lightfeields here as well.
 
 \section{Crosstalk Quality Metrics}
-
-\section{Lightfields}
