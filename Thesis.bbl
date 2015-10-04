@@ -10,6 +10,16 @@
 \newblock A disparity gradient limit for binocular fusion.
 \newblock {\em Science 208}, 4444 (1980), 615--617.
 
+\bibitem{cormack1991interocular}
+{\sc Cormack, L.~K., Stevenson, S.~B., and Schor, C.~M.}
+\newblock Interocular correlation, luminance contrast and cyclopean processing.
+\newblock {\em Vision Research 31}, 12 (1991), 2195--2207.
+
+\bibitem{filippini2009limits}
+{\sc Filippini, H.~R., and Banks, M.~S.}
+\newblock Limits of stereopsis explained by local cross-correlation.
+\newblock {\em Journal of Vision 9}, 1 (2009), 8.
+
 \bibitem{hong2010analysis}
 {\sc Hong, H., Jang, J., Lee, D., Lim, M., and Shin, H.}
 \newblock Analysis of angular dependence of 3-d technology using polarized
