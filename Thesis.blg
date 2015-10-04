@@ -3,46 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Thesis.aux
 The style file: acm.bst
 Database file #1: bibliography/references.bib
+Repeated entry---line 149 of file bibliography/references.bib
+ : @inproceedings{wilcox2003determinants
+ :                                      ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in wiki:stereopsis
-You've used 10 entries,
+You've used 18 entries,
             2253 wiz_defined-function locations,
-            583 strings with 5301 characters,
-and the built_in function-call counts, 3201 in all, are:
-= -- 318
-> -- 110
+            623 strings with 6523 characters,
+and the built_in function-call counts, 6127 in all, are:
+= -- 606
+> -- 241
 < -- 0
-+ -- 47
-- -- 36
-* -- 212
-:= -- 497
-add.period$ -- 30
-call.type$ -- 10
-change.case$ -- 47
++ -- 103
+- -- 82
+* -- 432
+:= -- 946
+add.period$ -- 54
+call.type$ -- 18
+change.case$ -- 94
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 126
-empty$ -- 286
-format.name$ -- 36
-if$ -- 687
+cite$ -- 19
+duplicate$ -- 232
+empty$ -- 525
+format.name$ -- 82
+if$ -- 1309
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 8
-newline$ -- 53
-num.names$ -- 20
-pop$ -- 65
+int.to.str$ -- 18
+missing$ -- 14
+newline$ -- 93
+num.names$ -- 36
+pop$ -- 122
 preamble$ -- 1
-purify$ -- 38
+purify$ -- 77
 quote$ -- 0
-skip$ -- 93
+skip$ -- 173
 stack$ -- 0
-substring$ -- 232
-swap$ -- 41
+substring$ -- 434
+swap$ -- 79
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 38
+type$ -- 70
 warning$ -- 1
-while$ -- 32
-width$ -- 12
-write$ -- 104
-(There was 1 warning)
+while$ -- 61
+width$ -- 20
+write$ -- 185
+(There was 1 error message)

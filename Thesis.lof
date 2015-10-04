@@ -5,6 +5,7 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces (a-c) A simulation of 14\% crosstalk. An Image intended for the left eye containing 14\% of image intended for right eye. (d) Illustration of Viewers crosstalk with the transfer functions as defined by Andrew J. Woods \cite {woods2012crosstalk} \relax }}{7}{figure.caption.20}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces A flow diagram showing the process of stereo image perception starting from stereo scene capture. The crosstalk can be induced by the display (light generation) and by the image/view separation mechanism(3D glasses or autostereoscopic parallax barrier).\relax }}{10}{figure.caption.26}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces \leavevmode {\color {red}(a) Response of a conventional LCD display (in time domain). (b) Response of a high refresh rate LCD display }. \relax }}{10}{figure.caption.28}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces (a) A layout of a micro-polarized LCD screen where odd and even numbered rows are oppositely polarized. In this example, the viewer viewing the screen using the polarized glasses will see odd numbered pixel rows through the right eye and even numbered pixel rows in the left eye \cite {woods2012crosstalk} (b){Construction of a typical micro-polarized LCD screen}.\relax }}{14}{figure.caption.32}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

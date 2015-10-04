@@ -1,14 +1,31 @@
 \begin{thebibliography}{10}
 
+\bibitem{webber}
+{\sc Bouman, C.~A.}
+\newblock Visual perception, contrast, gamma, and mtf.
+\newblock Accessed: 2015-09-29.
+
 \bibitem{burt1980disparity}
 {\sc Burt, P., and Julesz, B.}
 \newblock A disparity gradient limit for binocular fusion.
 \newblock {\em Science 208}, 4444 (1980), 615--617.
 
+\bibitem{hong2010analysis}
+{\sc Hong, H., Jang, J., Lee, D., Lim, M., and Shin, H.}
+\newblock Analysis of angular dependence of 3-d technology using polarized
+  eyeglasses.
+\newblock {\em Journal of the Society for Information Display 18}, 1 (2010), 8.
+
 \bibitem{howard1995binocular}
 {\sc Howard, I.}
 \newblock {\em Binocular vision and stereopsis}.
 \newblock Oxford University Press, New York, 1995.
+
+\bibitem{huang2003crosstalk}
+{\sc Huang, K., Yuan, J.-C., Tsai, C.-H., Hsueh, W.-J., and Wang, N.-Y.}
+\newblock How crosstalk affects stereopsis in stereoscopic displays.
+\newblock In {\em Electronic Imaging 2003\/} (2003), International Society for
+  Optics and Photonics, pp.~247--253.
 
 \bibitem{CueFusion}
 {\sc Landy, M.~S., Maloney, L.~T., Johnston, E.~B., and Young, M.}
@@ -23,6 +40,29 @@
 \newblock In {\em SPIE Defense, Security, and Sensing\/} (2010), International
   Society for Optics and Photonics, pp.~76900B--76900B.
 
+\bibitem{rohaly1999effects}
+{\sc Rohaly, A.~M., and Wilson, H.~R.}
+\newblock The effects of contrast on perceived depth and depth discrimination.
+\newblock {\em Vision Research 39}, 1 (1999), 9--18.
+
+\bibitem{tsirlin2012crosstalk}
+{\sc Tsirlin, I., Allison, R.~S., and Wilcox, L.~M.}
+\newblock Crosstalk reduces the amount of depth seen in 3d images of natural
+  scenes.
+\newblock In {\em IS\&T/SPIE Electronic Imaging\/} (2012), International
+  Society for Optics and Photonics, pp.~82880W--82880W.
+
+\bibitem{tsirlin2011effect}
+{\sc Tsirlin, I., Wilcox, L.~M., and Allison, R.~S.}
+\newblock The effect of crosstalk on the perceived depth from disparity and
+  monocular occlusions.
+\newblock {\em Broadcasting, IEEE Transactions on 57}, 2 (2011), 445--453.
+
+\bibitem{tsirlin2012effect}
+{\sc Tsirlin, I., Wilcox, L.~M., and Allison, R.~S.}
+\newblock Effect of crosstalk on depth magnitude in thin structures.
+\newblock {\em Journal of Electronic Imaging 21}, 1 (2012), 011003--1.
+
 \bibitem{wiki:depth_perception}
 {\sc Wikipedia}.
 \newblock Depth perception --- wikipedia{,} the free encyclopedia, 2015.
@@ -32,6 +72,11 @@
 {\sc Wikipedia}.
 \newblock Horopter --- wikipedia{,} the free encyclopedia, 2015.
 \newblock [Online; accessed 21-August-2015].
+
+\bibitem{wiki:polarizationwiki}
+{\sc Wikipedia}.
+\newblock Polarized 3d system --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 8-September-2015].
 
 \bibitem{wiki:stereopsis}
 {\sc Wikipedia}.

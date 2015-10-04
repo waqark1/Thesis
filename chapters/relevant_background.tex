@@ -194,13 +194,46 @@ Hence, the methods according to which crosstalk can occur when using active shut
 	\item{Viewing angle through the shutter glasses.}
 	\item{Pixel response rate of the LCD display. Higher response time will result in higher crosstalk.}
 	\item{Image update method. The ideal time for opening of a shutter would be when an image has been completely displayed on the screen. However most LCDs update the image using vertical scanning and hence usually there is no time at which the image is completely displayed stably.}
-	\item{The x,y location of the image on the screen. This is related to both the image update method and the veiwing angle through the shutter glasses.}
+	\item{The x,y location of the image on the screen. This is related to both the image update method and the viewing angle through the shutter glasses.}
 	\item{The gray level being displayed. If the change in gray level is small then the response time will be large hence causing larger crosstalk. }
 \end{itemize}
 
 \subsection{Anaglyph Stereo}
-\subsection{Active/Time Sequential Stereo on LCDs}
-\subsection{Passive/ Space Multiplexed Stereo}
+\subsection{Polarized Stereo}
+Polarization is a property dealing with the controlled oscillation of light (and other waves). Typically light waves oscillate in a way that their phase shifts over time are unpredictable. Passing the light through special polarizing filters forces them to oscillate in a controlled manner\cite{ wiki:polarizationwiki}. Light can be polarized in a linear manner where the light waves are forced to oscillate in a plane or is a circular manner i.e. the orientation of the oscillations vary circularly with respect to time. In stereoscopy, light intended for the left and right eye can be encoded using linear polarization i.e the polarization of the left eye light is orthogonal to the polarization of the right eye light in case linear polarization is used or the polarization of one view is clockwise and anticlockwise for the other view in case circular polarization is used.
+
+In a typical 3D cinema setup, Images for the left and right eye are simultaneously projected on a silver screen by two projectors. Each of these projectors has a polarizing filter (opposite with respect to each other) attached to it. Viewers view the screen through cheap polarized glasses that has the exact same polarizing filters in its left and right lenses as the left and right projector. This way each of the polarized lens block the light from the other view hence giving an impression of 3D. However, as with every piece of technology, imperfections are also present in this setup. Firstly, the polarizing filters mounted on the projectors are not perfect and fail to properly polarize all light wavelengths and can not be made to be perfectly orthogonal (opposite to each other). \cite{woods2012crosstalk}. Also the silver screen is unable to reflect the polarized light from the projectors without distorting the polarization. Different materials have different polarization properties and up till now a material that perfectly preserves the polarization for all wavelengths has not been discovered. Lastly, it is hard to match the the polarization orientation of the projector filters to the filters present in the glasses. For example, in case of linear polarization, the orientation mismatch can easily occur if the viewers head is slightly tiled hence causing crosstalk \cite{hong2010analysis}. Circular polarization however is less prone to this mismatch as compared to linear polarization hence it is more commonly used in 3D cinemas. In any case, filing to deliver properly polarized left and right image light to the glasses and any mismatch in the orientation of the glasses with respect to the projector filters will hinder the ability of the polarized 3D glasses to block the light from unintended view completely hence causing crosstalk.
+
+In summary, the important factors to consider when dealing with the crosstalk in a typical 3D cinema setup are as follows:
+\begin{itemize}
+\item{The optical properties of the polarizing filters used in the projectors and the glasses.}
+\item{The polarization preserving properties of the screen. }
+\item{The mismatch between the orientation of the projection filters with the orientation of the filters present in 3D glasses.}
+\end{itemize}
+
+A stereo 3D setup can also be obtained by using a micro-polarized LCD screen used in conjunction with polarized 3D glasses that that similar to the cinema setup discussed above. A micro-polarized LCD screen consists of polarization filters (linear or circular) mounted on top of a conventional LCD screen. However, unlike the projective method where two images can be projected on the screen simultaneously, alternative rows (odd and even rows) of the LCD screen pixels are polarized oppositely to each other. Micro-polarized LCD screens have an advantage over the 3D screens used with active shutter glasses that crosstalk induced due to low refresh rate of the screen is not a problem. But this also comes at a cost of vertical spatial resolution of the the displays as the light from half of the row pixels will be blocked by each of the lens of the polarized glasses. Figure \ref{fig:polarized_lcd} illustrates a typical polarized LCD setup where the user will see different pixel rows in each eye. Figure \ref{fig:polarized_lcd_prob} shows the construction of a typical Polarized LCD screen. It can be seen that the LCD cells are separated from the micro-polarizer film by a glass sheet that is typically 0.5 mm thick \cite{woods2012crosstalk}. Hence a sensitivity to the viewing distance and position due to parallax is induced. This means that if the viewer is not located at the correct position or distance to the screen, he/she will be able to see the unintended rows of pixels along with the intended rows hence inducing crosstalk. In summary, the factors that contribute to the crosstalk in a micro-polarized LCD screen stereo setup are as follows:
+\begin{itemize}
+\item{Matching of the orientation of the polarization filters in the glasses to the orientation of the micro-polarizing film present on the screen.}
+\item{The quality and ability of the micro-polarizing film to properly polarize the light.}
+\item{The accuracy of the alignment of micro-polarizing film to the LCD cells.}
+\item{x, y screen position of the screen. Due to the fact that viewer will typically be in a position where parallax error mentioned above will vary with the screen position.}
+\item{Viewing angle of the viewer as this will affect the matching between the orientation of the glasses and the screen polarization filters.}
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+     \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/polarized_lcd}
+        \caption{ }\label{fig:polarized_lcd}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/polarized_lcd_problem}
+        \caption{ }\label{fig:polarized_lcd_prob}
+    \end{subfigure}
+
+    \caption{(a) A layout of a micro-polarized LCD screen where odd and even numbered rows are oppositely polarized. In this example, the viewer viewing the screen using the polarized glasses will see odd numbered pixel rows through the right eye and even numbered pixel rows in the left eye \cite{woods2012crosstalk} (b){Construction of a typical micro-polarized LCD screen}.\label{fig:LCD_refresh}}
+\end{figure}
+
 \subsection{Automultiscopic Screens}
 discuss lightfeields here as well.
 
