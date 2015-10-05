@@ -37,11 +37,24 @@
 \newblock In {\em Electronic Imaging 2003\/} (2003), International Society for
   Optics and Photonics, pp.~247--253.
 
+\bibitem{konrad2000cancellation}
+{\sc Konrad, J., Lacotte, B., and Dubois, E.}
+\newblock Cancellation of image crosstalk in time-sequential displays of
+  stereoscopic video.
+\newblock {\em Image Processing, IEEE Transactions on 9}, 5 (2000), 897--908.
+
 \bibitem{CueFusion}
 {\sc Landy, M.~S., Maloney, L.~T., Johnston, E.~B., and Young, M.}
 \newblock Measurement and modeling of depth cue combination: In defense of weak
   fusion.
 \newblock {\em Vision research 35}, 3 (1995), 389--412.
+
+\bibitem{lipscomb1994reducing}
+{\sc Lipscomb, J.~S., and Wooten, W.~L.}
+\newblock Reducing crosstalk between stereoscopic views.
+\newblock In {\em IS\&T/SPIE 1994 International Symposium on Electronic
+  Imaging: Science and Technology\/} (1994), International Society for Optics
+  and Photonics, pp.~92--96.
 
 \bibitem{depthcues1}
 {\sc Reichelt, S., H{\"a}ussler, R., F{\"u}tterer, G., and Leister, N.}
@@ -54,6 +67,18 @@
 {\sc Rohaly, A.~M., and Wilson, H.~R.}
 \newblock The effects of contrast on perceived depth and depth discrimination.
 \newblock {\em Vision Research 39}, 1 (1999), 9--18.
+
+\bibitem{smit2007non}
+{\sc Smit, F.~A., van Liere, R., and Froehlich, B.}
+\newblock Non-uniform crosstalk reduction for dynamic scenes.
+\newblock In {\em Virtual Reality Conference, 2007. VR'07. IEEE\/} (2007),
+  IEEE, pp.~139--146.
+
+\bibitem{sohn2014crosstalk}
+{\sc Sohn, H., Jung, Y.~J., and Man~Ro, Y.}
+\newblock Crosstalk reduction in stereoscopic 3d displays: Disparity adjustment
+  using crosstalk visibility index for crosstalk cancellation.
+\newblock {\em Optics express 22}, 3 (2014), 3375--3392.
 
 \bibitem{tsirlin2012crosstalk}
 {\sc Tsirlin, I., Allison, R.~S., and Wilcox, L.~M.}

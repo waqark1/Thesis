@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 OCT 2015 01:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 OCT 2015 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1512,14 +1512,14 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 Related work
 ------------------------------------------------------------------------------
-[17] [18] [19] [20]) (./chapters/experiments.tex [21] [22
-
-]
+[17] [18] [19] [20] [21]) (./chapters/experiments.tex [22]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Experiments
 ------------------------------------------------------------------------------
-) (./chapters/model.tex [23] [24
+) (./chapters/model.tex [23
+
+] [24
 
 ]
 Chapter 5.
@@ -1557,11 +1557,11 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 35312 strings out of 493089
- 677987 string characters out of 6134842
- 721081 words of memory out of 5000000
- 37906 multiletter control sequences out of 15000+600000
- 18571 words of font info for 128 fonts, out of 8000000 for 9000
+ 35328 strings out of 493089
+ 678223 string characters out of 6134842
+ 721244 words of memory out of 5000000
+ 37910 multiletter control sequences out of 15000+600000
+ 18847 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,78p,10383b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -1580,10 +1580,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (51 pages, 2146328 bytes).
+Output written on Thesis.pdf (51 pages, 2150955 bytes).
 PDF statistics:
- 812 PDF objects out of 1000 (max. 8388607)
- 709 compressed objects within 8 object streams
- 156 named destinations out of 1000 (max. 500000)
+ 821 PDF objects out of 1000 (max. 8388607)
+ 718 compressed objects within 8 object streams
+ 160 named destinations out of 1000 (max. 500000)
  23657 words of extra memory for PDF output out of 24883 (max. 10000000)
 

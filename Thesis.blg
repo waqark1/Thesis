@@ -8,45 +8,45 @@ Repeated entry---line 149 of file bibliography/references.bib
  :                                      ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in wiki:stereopsis
-You've used 20 entries,
+You've used 24 entries,
             2253 wiz_defined-function locations,
-            637 strings with 6884 characters,
-and the built_in function-call counts, 6757 in all, are:
-= -- 668
-> -- 270
+            664 strings with 7710 characters,
+and the built_in function-call counts, 8376 in all, are:
+= -- 833
+> -- 333
 < -- 0
-+ -- 115
-- -- 92
-* -- 489
-:= -- 1051
-add.period$ -- 60
-call.type$ -- 20
-change.case$ -- 105
++ -- 141
+- -- 114
+* -- 615
+:= -- 1292
+add.period$ -- 72
+call.type$ -- 24
+change.case$ -- 128
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 250
-empty$ -- 575
-format.name$ -- 92
-if$ -- 1436
+cite$ -- 25
+duplicate$ -- 314
+empty$ -- 712
+format.name$ -- 114
+if$ -- 1787
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 16
-newline$ -- 103
-num.names$ -- 40
-pop$ -- 129
+int.to.str$ -- 24
+missing$ -- 20
+newline$ -- 123
+num.names$ -- 48
+pop$ -- 154
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 105
 quote$ -- 0
-skip$ -- 183
+skip$ -- 228
 stack$ -- 0
-substring$ -- 478
-swap$ -- 83
+substring$ -- 610
+swap$ -- 105
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
+type$ -- 94
 warning$ -- 1
-while$ -- 68
-width$ -- 22
-write$ -- 205
+while$ -- 86
+width$ -- 26
+write$ -- 247
 (There was 1 error message)

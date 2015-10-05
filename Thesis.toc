@@ -23,14 +23,14 @@
 \contentsline {section}{\numberline {3.2}Depth resolution mechanisms in HVS}{19}{section.37}
 \contentsline {section}{\numberline {3.3}Reduction of crosstalk}{20}{section.39}
 \contentsline {subsection}{\numberline {3.3.1}Stereoscopic screens}{21}{subsection.40}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Subtractive approaches}{21}{subsubsection.41}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Perceptual optimization}{21}{subsubsection.42}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Temporal approach}{21}{subsubsection.43}
-\contentsline {subsection}{\numberline {3.3.2}Automultiscopic screens}{21}{subsection.44}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Inverse filtering}{21}{subsubsection.45}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Subtractive reduction}{21}{subsubsection.46}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Sub-pixel optimization}{21}{subsubsection.47}
-\contentsline {subsubsection}{\numberline {3.3.2.4}Low Pass filtering}{21}{subsubsection.48}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Subtractive approaches}{22}{subsubsection.41}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Perceptual optimization}{22}{subsubsection.42}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Temporal approach}{22}{subsubsection.43}
+\contentsline {subsection}{\numberline {3.3.2}Automultiscopic screens}{22}{subsection.44}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Inverse filtering}{22}{subsubsection.45}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Subtractive reduction}{22}{subsubsection.46}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Sub-pixel optimization}{22}{subsubsection.47}
+\contentsline {subsubsection}{\numberline {3.3.2.4}Low Pass filtering}{22}{subsubsection.48}
 \contentsline {chapter}{\numberline {4}Experiments}{23}{chapter.49}
 \contentsline {section}{\numberline {4.1}Crosstalk Experiments}{23}{section.50}
 \contentsline {section}{\numberline {4.2}Parameters}{23}{section.51}
