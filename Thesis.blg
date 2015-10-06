@@ -7,46 +7,47 @@ Repeated entry---line 149 of file bibliography/references.bib
  : @inproceedings{wilcox2003determinants
  :                                      ,
 I'm skipping whatever remains of this entry
+Warning--empty journal in citation-0
 Warning--empty journal in wiki:stereopsis
-You've used 24 entries,
+You've used 29 entries,
             2253 wiz_defined-function locations,
-            664 strings with 7710 characters,
-and the built_in function-call counts, 8376 in all, are:
-= -- 833
-> -- 333
+            687 strings with 8707 characters,
+and the built_in function-call counts, 10641 in all, are:
+= -- 1059
+> -- 438
 < -- 0
-+ -- 141
-- -- 114
-* -- 615
-:= -- 1292
-add.period$ -- 72
-call.type$ -- 24
-change.case$ -- 128
++ -- 184
+- -- 152
+* -- 775
+:= -- 1623
+add.period$ -- 86
+call.type$ -- 29
+change.case$ -- 162
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 314
-empty$ -- 712
-format.name$ -- 114
-if$ -- 1787
+cite$ -- 31
+duplicate$ -- 413
+empty$ -- 885
+format.name$ -- 152
+if$ -- 2285
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 20
-newline$ -- 123
-num.names$ -- 48
-pop$ -- 154
+int.to.str$ -- 29
+missing$ -- 25
+newline$ -- 147
+num.names$ -- 58
+pop$ -- 197
 preamble$ -- 1
-purify$ -- 105
+purify$ -- 134
 quote$ -- 0
-skip$ -- 228
+skip$ -- 309
 stack$ -- 0
-substring$ -- 610
-swap$ -- 105
+substring$ -- 771
+swap$ -- 148
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 94
-warning$ -- 1
-while$ -- 86
-width$ -- 26
-write$ -- 247
+type$ -- 114
+warning$ -- 2
+while$ -- 105
+width$ -- 31
+write$ -- 296
 (There was 1 error message)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 OCT 2015 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 OCT 2015 02:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1334,7 +1334,7 @@ Package microtype Info: Loading generic settings for font family
 ------------------------------------------------------------------------------
  Title Page
 ------------------------------------------------------------------------------
-<./Template_Figures/saarland_logo.png, id=279, 125.46875pt x 123.46124pt>
+<./Template_Figures/saarland_logo.png, id=251, 125.46875pt x 123.46124pt>
 File: ./Template_Figures/saarland_logo.png Graphic file (type png)
 
 <use ./Template_Figures/saarland_logo.png>
@@ -1346,7 +1346,7 @@ Overfull \hbox (12.38716pt too wide) in paragraph at lines 75--75
  [][] 
  []
 
-<./Template_Figures/mpi_logo.png, id=280, 426.59375pt x 397.485pt>
+<./Template_Figures/mpi_logo.png, id=252, 426.59375pt x 397.485pt>
 File: ./Template_Figures/mpi_logo.png Graphic file (type png)
 
 <use ./Template_Figures/mpi_logo.png>
@@ -1410,7 +1410,7 @@ Chapter 2.
 ------------------------------------------------------------------------------
  2 Relevant Background
 ------------------------------------------------------------------------------
-[3] [4] <./Template_Figures/horopter.png, id=496, 803.0pt x 936.49875pt>
+[3] [4] <./Template_Figures/horopter.png, id=474, 803.0pt x 936.49875pt>
 File: ./Template_Figures/horopter.png Graphic file (type png)
 
 <use ./Template_Figures/horopter.png>
@@ -1418,21 +1418,21 @@ Package pdftex.def Info: ./Template_Figures/horopter.png used on input line 54.
 
 (pdftex.def)             Requested size: 208.73653pt x 243.44106pt.
  [5 <./Template_Figures/horopter.png>]
-<./Template_Figures/orig.png, id=508, 573.14125pt x 432.61626pt>
+<./Template_Figures/orig.png, id=486, 573.14125pt x 432.61626pt>
 File: ./Template_Figures/orig.png Graphic file (type png)
 
 <use ./Template_Figures/orig.png>
 Package pdftex.def Info: ./Template_Figures/orig.png used on input line 83.
 (pdftex.def)             Requested size: 125.24318pt x 94.53555pt.
 
-<./Template_Figures/leakage.png, id=509, 593.21625pt x 503.8825pt>
+<./Template_Figures/leakage.png, id=487, 593.21625pt x 503.8825pt>
 File: ./Template_Figures/leakage.png Graphic file (type png)
 
 <use ./Template_Figures/leakage.png>
 Package pdftex.def Info: ./Template_Figures/leakage.png used on input line 87.
 (pdftex.def)             Requested size: 125.24318pt x 106.37971pt.
 
-<./Template_Figures/crosstalk.png, id=510, 573.14125pt x 432.61626pt>
+<./Template_Figures/crosstalk.png, id=488, 573.14125pt x 432.61626pt>
 File: ./Template_Figures/crosstalk.png Graphic file (type png)
 
 <use ./Template_Figures/crosstalk.png>
@@ -1440,7 +1440,7 @@ Package pdftex.def Info: ./Template_Figures/crosstalk.png used on input line 91
 .
 (pdftex.def)             Requested size: 125.24318pt x 94.53555pt.
 
-<./Template_Figures/viewerCT.png, id=511, 547.04375pt x 470.75874pt>
+<./Template_Figures/viewerCT.png, id=489, 547.04375pt x 470.75874pt>
 File: ./Template_Figures/viewerCT.png Graphic file (type png)
 
 <use ./Template_Figures/viewerCT.png>
@@ -1463,7 +1463,7 @@ Overfull \hbox (7.44534pt too wide) in paragraph at lines 147--147
 []\OT1/cmr/bx/n/14.4 Stereoscopic/Automultiscopic Screens and its cross-talk 
  []
 
-<./Template_Figures/ct_flow.pdf, id=543, 650.43pt x 289.08pt>
+<./Template_Figures/ct_flow.pdf, id=521, 650.43pt x 289.08pt>
 File: ./Template_Figures/ct_flow.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/ct_flow.pdf>
@@ -1471,7 +1471,7 @@ Package pdftex.def Info: ./Template_Figures/ct_flow.pdf used on input line 153.
 
 (pdftex.def)             Requested size: 375.7232pt x 166.99162pt.
  [9]
-<./Template_Figures/LCD_refresh_low.png, id=549, 442.65375pt x 194.7275pt>
+<./Template_Figures/LCD_refresh_low.png, id=527, 442.65375pt x 194.7275pt>
 File: ./Template_Figures/LCD_refresh_low.png Graphic file (type png)
 
 <use ./Template_Figures/LCD_refresh_low.png>
@@ -1479,7 +1479,7 @@ Package pdftex.def Info: ./Template_Figures/LCD_refresh_low.png used on input l
 ine 165.
 (pdftex.def)             Requested size: 166.98668pt x 73.4594pt.
 
-<./Template_Figures/LCD_refresh_high.png, id=550, 443.6575pt x 197.73875pt>
+<./Template_Figures/LCD_refresh_high.png, id=528, 443.6575pt x 197.73875pt>
 File: ./Template_Figures/LCD_refresh_high.png Graphic file (type png)
 
 <use ./Template_Figures/LCD_refresh_high.png>
@@ -1488,7 +1488,7 @@ line 169.
 (pdftex.def)             Requested size: 166.98668pt x 74.4234pt.
  [10 <./Template_Figures/ct_flow.pdf> <./Template_Figures/LCD_refresh_low.png> 
 <./Template_Figures/LCD_refresh_high.png>] [11] [12] [13]
-<./Template_Figures/polarized_lcd.png, id=605, 425.59pt x 279.0425pt>
+<./Template_Figures/polarized_lcd.png, id=583, 425.59pt x 279.0425pt>
 File: ./Template_Figures/polarized_lcd.png Graphic file (type png)
 
 <use ./Template_Figures/polarized_lcd.png>
@@ -1496,7 +1496,7 @@ Package pdftex.def Info: ./Template_Figures/polarized_lcd.png used on input lin
 e 226.
 (pdftex.def)             Requested size: 250.48637pt x 164.23766pt.
 
-<./Template_Figures/polarized_lcd_problem.png, id=606, 447.6725pt x 314.17375pt
+<./Template_Figures/polarized_lcd_problem.png, id=584, 447.6725pt x 314.17375pt
 >
 File: ./Template_Figures/polarized_lcd_problem.png Graphic file (type png)
  <use ./Template_Figures/polarized_lcd_problem.png>
@@ -1512,37 +1512,96 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 Related work
 ------------------------------------------------------------------------------
-[17] [18] [19] [20] [21]) (./chapters/experiments.tex [22]
+[17] <./Template_Figures/Tsirlin_exp.png, id=614, 310.15875pt x 312.16624pt>
+File: ./Template_Figures/Tsirlin_exp.png Graphic file (type png)
+
+<use ./Template_Figures/Tsirlin_exp.png>
+Package pdftex.def Info: ./Template_Figures/Tsirlin_exp.png used on input line 
+16.
+(pdftex.def)             Requested size: 208.73653pt x 210.08865pt.
+
+<./Template_Figures/tsirlin_res.png, id=615, 310.15875pt x 312.16624pt>
+File: ./Template_Figures/tsirlin_res.png Graphic file (type png)
+
+<use ./Template_Figures/tsirlin_res.png>
+Package pdftex.def Info: ./Template_Figures/tsirlin_res.png used on input line 
+20.
+(pdftex.def)             Requested size: 208.73653pt x 210.08865pt.
+
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 15--23
+[][] [] 
+ []
+
+[18] [19 <./Template_Figures/Tsirlin_exp.png (PNG copy)> <./Template_Figures/ts
+irlin_res.png (PNG copy)>]
+<./Template_Figures/cormack_cont.png, id=634, 310.15875pt x 312.16624pt>
+File: ./Template_Figures/cormack_cont.png Graphic file (type png)
+
+<use ./Template_Figures/cormack_cont.png>
+Package pdftex.def Info: ./Template_Figures/cormack_cont.png used on input line
+ 38.
+(pdftex.def)             Requested size: 208.73653pt x 210.08865pt.
+
+<./Template_Figures/cormack_noise.png, id=635, 310.15875pt x 312.16624pt>
+File: ./Template_Figures/cormack_noise.png Graphic file (type png)
+
+<use ./Template_Figures/cormack_noise.png>
+Package pdftex.def Info: ./Template_Figures/cormack_noise.png used on input lin
+e 42.
+(pdftex.def)             Requested size: 208.73653pt x 210.08865pt.
+
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 37--45
+[][] [] 
+ []
+
+[20 <./Template_Figures/cormack_cont.png (PNG copy)> <./Template_Figures/cormac
+k_noise.png (PNG copy)>] [21]
+<./Template_Figures/perceptual_ct.png, id=657, 708.6475pt x 469.755pt>
+File: ./Template_Figures/perceptual_ct.png Graphic file (type png)
+
+<use ./Template_Figures/perceptual_ct.png>
+Package pdftex.def Info: ./Template_Figures/perceptual_ct.png used on input lin
+e 65.
+(pdftex.def)             Requested size: 292.22987pt x 193.71898pt.
+ [22] [23 <./Template_Figures/perceptual_ct.png>] [24]) (./chapters/experiments
+.tex [25] [26
+
+]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Experiments
 ------------------------------------------------------------------------------
-) (./chapters/model.tex [23
-
-] [24
+) (./chapters/model.tex [27] [28
 
 ]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Model
 ------------------------------------------------------------------------------
-) (./chapters/applications.tex [25] [26
+) (./chapters/applications.tex [29] [30
 
 ]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 Applications
 ------------------------------------------------------------------------------
-) (./chapters/conclusion.tex [27] [28
+) (./chapters/conclusion.tex [31] [32
 
 ]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 Conclusion
 ------------------------------------------------------------------------------
-) (./Thesis.bbl [29] [30
+) (./Thesis.bbl [33] [34
 
-] [31]) [32] (./Thesis.ind [33
+]
+Overfull \hbox (1.45773pt too wide) in paragraph at lines 47--51
+\OT1/cmr/m/n/10 (-20) In \OT1/cmr/m/it/10 (-20) Electronic Imaging 2007 \OT1/cm
+r/m/n/10 (-20) (2007), International Society for Optics and Photonics, pp. 6490
+12--
+ []
+
+[35] [36]) [37] (./Thesis.ind [38
 
 
 
@@ -1553,15 +1612,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E5DC3194A0DA8894EE083260E564DB4A;11721.
+(rerunfilecheck)             Checksum: 56242029EB61BDD427E820887F6A19E6;10248.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 35328 strings out of 493089
- 678223 string characters out of 6134842
- 721244 words of memory out of 5000000
- 37910 multiletter control sequences out of 15000+600000
- 18847 words of font info for 132 fonts, out of 8000000 for 9000
+ 35396 strings out of 493089
+ 679653 string characters out of 6134842
+ 723069 words of memory out of 5000000
+ 37946 multiletter control sequences out of 15000+600000
+ 19264 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,78p,10383b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -1579,11 +1638,12 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (51 pages, 2150955 bytes).
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Thesis.pdf (56 pages, 2311414 bytes).
 PDF statistics:
- 821 PDF objects out of 1000 (max. 8388607)
- 718 compressed objects within 8 object streams
- 160 named destinations out of 1000 (max. 500000)
- 23657 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 858 PDF objects out of 1000 (max. 8388607)
+ 742 compressed objects within 8 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 23626 words of extra memory for PDF output out of 24883 (max. 10000000)
 

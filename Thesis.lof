@@ -7,6 +7,9 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces \leavevmode {\color {red}(a) Response of a conventional LCD display (in time domain). (b) Response of a high refresh rate LCD display }. \relax }}{10}{figure.caption.28}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces (a) A layout of a micro-polarized LCD screen where odd and even numbered rows are oppositely polarized. In this example, the viewer viewing the screen using the polarized glasses will see odd numbered pixel rows through the right eye and even numbered pixel rows in the left eye \cite {woods2012crosstalk} (b){Construction of a typical micro-polarized LCD screen}.\relax }}{14}{figure.caption.32}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces (a) The setup of Tsirlin's experiments. Left side represents the complete experiment where the viewers see the vertical lines as a single line in depth. The right side shows the same line with 0, 16 and 32\% simulated crosstalk. (b) Depth degradation averaged over the test subjects.\relax }}{19}{figure.caption.37}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces (a) 1D cross-correlation with varying contrast. (b) 1D cross-correlation with variable level of added noise.\relax }}{20}{figure.caption.39}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces (a) Input image. (b) Subtractive compensation. (c) CSF weighed compensation. (d-f) Observed images \cite {van2011perceptually}.\relax }}{23}{figure.caption.43}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

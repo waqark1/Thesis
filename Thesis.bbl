@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{barkowsky2010crosstalk}
+{\sc Barkowsky, M., Campisi, P., Le~Callet, P., and Rizzo, V.}
+\newblock Crosstalk measurement and mitigation for autostereoscopic displays.
+\newblock In {\em IS\&T/SPIE Electronic Imaging\/} (2010), International
+  Society for Optics and Photonics, pp.~75260R--75260R.
+
 \bibitem{webber}
 {\sc Bouman, C.~A.}
 \newblock Visual perception, contrast, gamma, and mtf.
@@ -37,6 +43,12 @@
 \newblock In {\em Electronic Imaging 2003\/} (2003), International Society for
   Optics and Photonics, pp.~247--253.
 
+\bibitem{jain2007crosstalk}
+{\sc Jain, A., and Konrad, J.}
+\newblock Crosstalk in automultiscopic 3-d displays: Blessing in disguise?
+\newblock In {\em Electronic Imaging 2007\/} (2007), International Society for
+  Optics and Photonics, pp.~649012--649012.
+
 \bibitem{konrad2000cancellation}
 {\sc Konrad, J., Lacotte, B., and Dubois, E.}
 \newblock Cancellation of image crosstalk in time-sequential displays of
@@ -48,6 +60,11 @@
 \newblock Measurement and modeling of depth cue combination: In defense of weak
   fusion.
 \newblock {\em Vision research 35}, 3 (1995), 389--412.
+
+\bibitem{citation-0}
+{\sc Li, D., Zang, D., Qiao, X., Wang, L., and Zhang, M.}
+\newblock 3d synthesis and crosstalk reduction for lenticular autostereoscopic
+  displays.
 
 \bibitem{lipscomb1994reducing}
 {\sc Lipscomb, J.~S., and Wooten, W.~L.}
@@ -97,6 +114,20 @@
 {\sc Tsirlin, I., Wilcox, L.~M., and Allison, R.~S.}
 \newblock Effect of crosstalk on depth magnitude in thin structures.
 \newblock {\em Journal of Electronic Imaging 21}, 1 (2012), 011003--1.
+
+\bibitem{van2011perceptually}
+{\sc van Baar, J., Poulakos, S., Jarosz, W., Nowrouzezahrai, D., Tamstorf, R.,
+  and Gross, M.}
+\newblock Perceptually-based compensation of light pollution in display
+  systems.
+\newblock In {\em Proceedings of the ACM SIGGRAPH Symposium on Applied
+  Perception in Graphics and Visualization\/} (2011), ACM, pp.~45--52.
+
+\bibitem{wang2014improved}
+{\sc Wang, X., and Hou, C.}
+\newblock Improved crosstalk reduction on multiview 3d display by using bils
+  algorithm.
+\newblock {\em Journal of Applied Mathematics 2014\/} (2014).
 
 \bibitem{wiki:depth_perception}
 {\sc Wikipedia}.
