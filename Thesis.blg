@@ -9,45 +9,45 @@ Repeated entry---line 149 of file bibliography/references.bib
 I'm skipping whatever remains of this entry
 Warning--empty journal in citation-0
 Warning--empty journal in wiki:stereopsis
-You've used 29 entries,
+You've used 32 entries,
             2253 wiz_defined-function locations,
-            687 strings with 8707 characters,
-and the built_in function-call counts, 10641 in all, are:
-= -- 1059
-> -- 438
+            702 strings with 9181 characters,
+and the built_in function-call counts, 11696 in all, are:
+= -- 1155
+> -- 489
 < -- 0
-+ -- 184
-- -- 152
-* -- 775
-:= -- 1623
-add.period$ -- 86
-call.type$ -- 29
-change.case$ -- 162
++ -- 205
+- -- 170
+* -- 842
+:= -- 1784
+add.period$ -- 95
+call.type$ -- 32
+change.case$ -- 180
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 413
-empty$ -- 885
-format.name$ -- 152
-if$ -- 2285
+cite$ -- 34
+duplicate$ -- 463
+empty$ -- 977
+format.name$ -- 170
+if$ -- 2517
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 25
-newline$ -- 147
-num.names$ -- 58
-pop$ -- 197
+int.to.str$ -- 32
+missing$ -- 27
+newline$ -- 162
+num.names$ -- 64
+pop$ -- 228
 preamble$ -- 1
-purify$ -- 134
+purify$ -- 149
 quote$ -- 0
-skip$ -- 309
+skip$ -- 344
 stack$ -- 0
-substring$ -- 771
-swap$ -- 148
+substring$ -- 808
+swap$ -- 164
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 114
+type$ -- 126
 warning$ -- 2
-while$ -- 105
-width$ -- 31
-write$ -- 296
+while$ -- 115
+width$ -- 34
+write$ -- 327
 (There was 1 error message)

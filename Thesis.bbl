@@ -6,6 +6,11 @@
 \newblock In {\em IS\&T/SPIE Electronic Imaging\/} (2010), International
   Society for Optics and Photonics, pp.~75260R--75260R.
 
+\bibitem{boev2007crosstalk}
+{\sc Boev, A., Gotchev, A., and Egiazarian, K.}
+\newblock Crosstalk measurement methodology for auto-stereoscopic screens.
+\newblock In {\em 3DTV Conference\/} (2007), pp.~1--4.
+
 \bibitem{webber}
 {\sc Bouman, C.~A.}
 \newblock Visual perception, contrast, gamma, and mtf.
@@ -139,6 +144,11 @@
 \newblock Horopter --- wikipedia{,} the free encyclopedia, 2015.
 \newblock [Online; accessed 21-August-2015].
 
+\bibitem{wiki:Light_field}
+{\sc Wikipedia}.
+\newblock Light field --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 7-October-2015].
+
 \bibitem{wiki:polarizationwiki}
 {\sc Wikipedia}.
 \newblock Polarized 3d system --- wikipedia{,} the free encyclopedia, 2015.
@@ -164,5 +174,10 @@
 {\sc Woods, A.~J.}
 \newblock Crosstalk in stereoscopic displays: a review.
 \newblock {\em Journal of Electronic Imaging 21}, 4 (2012), 040902--040902.
+
+\bibitem{zwicker2006antialiasing}
+{\sc Zwicker, M., Matusik, W., Durand, F., Pfister, H., and Forlines, C.}
+\newblock Antialiasing for automultiscopic 3d displays.
+\newblock In {\em ACM SIGGRAPH 2006 Sketches\/} (2006), ACM, p.~107.
 
 \end{thebibliography}

@@ -10,55 +10,50 @@
 \contentsline {section}{\numberline {1.2}Contributions}{1}{section.13}
 \contentsline {chapter}{\numberline {2}Relevant Background}{3}{chapter.14}
 \contentsline {section}{\numberline {2.1}Binocular vision, stereopsis and its limits}{3}{section.16}
-\contentsline {section}{\numberline {2.2}Limits of Stereopsis}{6}{section.18}
-\contentsline {section}{\numberline {2.3}Crosstalk}{6}{section.19}
-\contentsline {section}{\numberline {2.4}Stereoscopic/Automultiscopic Screens and its cross-talk}{9}{section.25}
-\contentsline {subsection}{\numberline {2.4.1}Time sequential stereo using active shutter glasses with an LCD display}{9}{subsection.27}
-\contentsline {subsection}{\numberline {2.4.2}Anaglyph Stereo}{12}{subsection.30}
-\contentsline {subsection}{\numberline {2.4.3}Polarized Stereo}{12}{subsection.31}
-\contentsline {subsection}{\numberline {2.4.4}Automultiscopic Screens}{15}{subsection.33}
-\contentsline {section}{\numberline {2.5}Crosstalk Quality Metrics}{15}{section.34}
-\contentsline {chapter}{\numberline {3}Related work}{17}{chapter.35}
-\contentsline {section}{\numberline {3.1}Effects of crosstalk on perceived depth}{17}{section.36}
-\contentsline {section}{\numberline {3.2}Depth resolution mechanisms in HVS}{19}{section.38}
-\contentsline {section}{\numberline {3.3}Reduction of crosstalk}{21}{section.41}
-\contentsline {subsection}{\numberline {3.3.1}Stereoscopic screens}{22}{subsection.42}
-\contentsline {subsection}{\numberline {3.3.2}Automultiscopic screens}{24}{subsection.47}
-\contentsline {chapter}{\numberline {4}Experiments}{27}{chapter.52}
-\contentsline {section}{\numberline {4.1}Crosstalk Experiments}{27}{section.53}
-\contentsline {section}{\numberline {4.2}Parameters}{27}{section.54}
-\contentsline {section}{\numberline {4.3}stimuli}{27}{section.55}
-\contentsline {subsection}{\numberline {4.3.1}Stereo}{27}{subsection.56}
-\contentsline {subsection}{\numberline {4.3.2}Automultiscopic}{27}{subsection.57}
-\contentsline {section}{\numberline {4.4}Apparatus and simulation procedure}{27}{section.58}
-\contentsline {section}{\numberline {4.5}subjects}{27}{section.59}
-\contentsline {section}{\numberline {4.6}Results}{27}{section.60}
-\contentsline {section}{\numberline {4.7}Discussion}{27}{section.61}
-\contentsline {subsection}{\numberline {4.7.1}Stereo}{27}{subsection.62}
-\contentsline {subsection}{\numberline {4.7.2}Automultiscopic}{27}{subsection.63}
-\contentsline {chapter}{\numberline {5}Model}{29}{chapter.64}
-\contentsline {section}{\numberline {5.1}Hypothesis and their results}{29}{section.65}
-\contentsline {subsection}{\numberline {5.1.1}Simple correlation model}{29}{subsection.66}
-\contentsline {subsection}{\numberline {5.1.2}Results}{29}{subsection.67}
-\contentsline {subsection}{\numberline {5.1.3}Windowed correlation model}{29}{subsection.68}
-\contentsline {subsection}{\numberline {5.1.4}Results}{29}{subsection.69}
-\contentsline {subsection}{\numberline {5.1.5}Simple correlation model}{29}{subsection.70}
-\contentsline {subsection}{\numberline {5.1.6}Results}{29}{subsection.71}
-\contentsline {subsection}{\numberline {5.1.7}PDF model}{29}{subsection.72}
-\contentsline {subsection}{\numberline {5.1.8}Results}{29}{subsection.73}
-\contentsline {subsection}{\numberline {5.1.9}Mathematical model}{29}{subsection.74}
-\contentsline {subsection}{\numberline {5.1.10}Results}{29}{subsection.75}
-\contentsline {section}{\numberline {5.2}Discussion}{29}{section.76}
-\contentsline {chapter}{\numberline {6}Applications}{31}{chapter.77}
-\contentsline {section}{\numberline {6.1}Depth prediction application}{31}{section.78}
-\contentsline {section}{\numberline {6.2}Crosstalk mitigation}{31}{section.79}
-\contentsline {subsection}{\numberline {6.2.1}Proposed optimizations}{31}{subsection.80}
-\contentsline {subsection}{\numberline {6.2.2}Unsharp masking in view domain}{31}{subsection.81}
-\contentsline {subsection}{\numberline {6.2.3}Iterative subtraction}{31}{subsection.82}
-\contentsline {chapter}{\numberline {7}Conclusion}{33}{chapter.83}
-\contentsline {section}{\numberline {7.1}Summary}{33}{section.84}
-\contentsline {section}{\numberline {7.2}Future Work}{33}{section.85}
-\contentsline {section}{\numberline {7.3}Open Questions}{33}{section.86}
-\contentsline {chapter}{Bibliography}{35}{chapter*.87}
+\contentsline {section}{\numberline {2.2}Crosstalk}{6}{section.18}
+\contentsline {section}{\numberline {2.3}Stereoscopic/Automultiscopic Screens and its cross-talk}{9}{section.24}
+\contentsline {subsection}{\numberline {2.3.1}Time sequential stereo using active shutter glasses with an LCD display}{10}{subsection.26}
+\contentsline {subsection}{\numberline {2.3.2}Polarized Stereo}{12}{subsection.28}
+\contentsline {subsection}{\numberline {2.3.3}Automultiscopic Screens}{14}{subsection.30}
+\contentsline {chapter}{\numberline {3}Related work}{19}{chapter.34}
+\contentsline {section}{\numberline {3.1}Effects of crosstalk on perceived depth}{19}{section.35}
+\contentsline {section}{\numberline {3.2}Depth resolution mechanisms in HVS}{22}{section.37}
+\contentsline {section}{\numberline {3.3}Reduction of crosstalk}{23}{section.40}
+\contentsline {subsection}{\numberline {3.3.1}Stereoscopic screens}{24}{subsection.41}
+\contentsline {subsection}{\numberline {3.3.2}Automultiscopic screens}{26}{subsection.46}
+\contentsline {chapter}{\numberline {4}Crosstalk Experiments}{29}{chapter.51}
+\contentsline {section}{\numberline {4.1}Motivation}{29}{section.52}
+\contentsline {section}{\numberline {4.2}stimuli}{31}{section.53}
+\contentsline {subsection}{\numberline {4.2.1}Stereo and Automultiscopic stimuli}{32}{subsection.56}
+\contentsline {section}{\numberline {4.3}Apparatus and simulation procedure}{33}{section.58}
+\contentsline {section}{\numberline {4.4}subjects}{33}{section.59}
+\contentsline {section}{\numberline {4.5}Results}{33}{section.60}
+\contentsline {section}{\numberline {4.6}Discussion}{33}{section.61}
+\contentsline {subsection}{\numberline {4.6.1}Stereo}{33}{subsection.62}
+\contentsline {subsection}{\numberline {4.6.2}Automultiscopic}{33}{subsection.63}
+\contentsline {chapter}{\numberline {5}Model}{35}{chapter.64}
+\contentsline {section}{\numberline {5.1}Hypothesis and their results}{35}{section.65}
+\contentsline {subsection}{\numberline {5.1.1}Simple correlation model}{35}{subsection.66}
+\contentsline {subsection}{\numberline {5.1.2}Results}{35}{subsection.67}
+\contentsline {subsection}{\numberline {5.1.3}Windowed correlation model}{35}{subsection.68}
+\contentsline {subsection}{\numberline {5.1.4}Results}{35}{subsection.69}
+\contentsline {subsection}{\numberline {5.1.5}Simple correlation model}{35}{subsection.70}
+\contentsline {subsection}{\numberline {5.1.6}Results}{35}{subsection.71}
+\contentsline {subsection}{\numberline {5.1.7}PDF model}{35}{subsection.72}
+\contentsline {subsection}{\numberline {5.1.8}Results}{35}{subsection.73}
+\contentsline {subsection}{\numberline {5.1.9}Mathematical model}{35}{subsection.74}
+\contentsline {subsection}{\numberline {5.1.10}Results}{35}{subsection.75}
+\contentsline {section}{\numberline {5.2}Discussion}{35}{section.76}
+\contentsline {chapter}{\numberline {6}Applications}{37}{chapter.77}
+\contentsline {section}{\numberline {6.1}Depth prediction application}{37}{section.78}
+\contentsline {section}{\numberline {6.2}Crosstalk mitigation}{37}{section.79}
+\contentsline {subsection}{\numberline {6.2.1}Proposed optimizations}{37}{subsection.80}
+\contentsline {subsection}{\numberline {6.2.2}Unsharp masking in view domain}{37}{subsection.81}
+\contentsline {subsection}{\numberline {6.2.3}Iterative subtraction}{37}{subsection.82}
+\contentsline {chapter}{\numberline {7}Conclusion}{39}{chapter.83}
+\contentsline {section}{\numberline {7.1}Summary}{39}{section.84}
+\contentsline {section}{\numberline {7.2}Future Work}{39}{section.85}
+\contentsline {section}{\numberline {7.3}Open Questions}{39}{section.86}
+\contentsline {chapter}{Bibliography}{41}{chapter*.87}
 \vspace {2em}
-\contentsline {chapter}{Index}{38}{chapter*.87}
+\contentsline {chapter}{Index}{44}{chapter*.87}
