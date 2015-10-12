@@ -26,34 +26,34 @@
 \contentsline {section}{\numberline {4.2}stimuli}{31}{section.53}
 \contentsline {subsection}{\numberline {4.2.1}Stereo and Automultiscopic stimuli}{32}{subsection.56}
 \contentsline {section}{\numberline {4.3}Apparatus and simulation procedure}{33}{section.58}
-\contentsline {section}{\numberline {4.4}subjects}{33}{section.59}
-\contentsline {section}{\numberline {4.5}Results}{33}{section.60}
-\contentsline {section}{\numberline {4.6}Discussion}{33}{section.61}
-\contentsline {subsection}{\numberline {4.6.1}Stereo}{33}{subsection.62}
-\contentsline {subsection}{\numberline {4.6.2}Automultiscopic}{33}{subsection.63}
-\contentsline {chapter}{\numberline {5}Model}{35}{chapter.64}
-\contentsline {section}{\numberline {5.1}Hypothesis and their results}{35}{section.65}
-\contentsline {subsection}{\numberline {5.1.1}Simple correlation model}{35}{subsection.66}
-\contentsline {subsection}{\numberline {5.1.2}Results}{35}{subsection.67}
-\contentsline {subsection}{\numberline {5.1.3}Windowed correlation model}{35}{subsection.68}
-\contentsline {subsection}{\numberline {5.1.4}Results}{35}{subsection.69}
-\contentsline {subsection}{\numberline {5.1.5}Simple correlation model}{35}{subsection.70}
-\contentsline {subsection}{\numberline {5.1.6}Results}{35}{subsection.71}
-\contentsline {subsection}{\numberline {5.1.7}PDF model}{35}{subsection.72}
-\contentsline {subsection}{\numberline {5.1.8}Results}{35}{subsection.73}
-\contentsline {subsection}{\numberline {5.1.9}Mathematical model}{35}{subsection.74}
-\contentsline {subsection}{\numberline {5.1.10}Results}{35}{subsection.75}
-\contentsline {section}{\numberline {5.2}Discussion}{35}{section.76}
-\contentsline {chapter}{\numberline {6}Applications}{37}{chapter.77}
-\contentsline {section}{\numberline {6.1}Depth prediction application}{37}{section.78}
-\contentsline {section}{\numberline {6.2}Crosstalk mitigation}{37}{section.79}
-\contentsline {subsection}{\numberline {6.2.1}Proposed optimizations}{37}{subsection.80}
-\contentsline {subsection}{\numberline {6.2.2}Unsharp masking in view domain}{37}{subsection.81}
-\contentsline {subsection}{\numberline {6.2.3}Iterative subtraction}{37}{subsection.82}
-\contentsline {chapter}{\numberline {7}Conclusion}{39}{chapter.83}
-\contentsline {section}{\numberline {7.1}Summary}{39}{section.84}
-\contentsline {section}{\numberline {7.2}Future Work}{39}{section.85}
-\contentsline {section}{\numberline {7.3}Open Questions}{39}{section.86}
-\contentsline {chapter}{Bibliography}{41}{chapter*.87}
+\contentsline {section}{\numberline {4.4}subjects}{35}{section.65}
+\contentsline {section}{\numberline {4.5}Results}{35}{section.66}
+\contentsline {section}{\numberline {4.6}Discussion}{35}{section.67}
+\contentsline {subsection}{\numberline {4.6.1}Stereo}{35}{subsection.68}
+\contentsline {subsection}{\numberline {4.6.2}Automultiscopic}{35}{subsection.69}
+\contentsline {chapter}{\numberline {5}Model}{37}{chapter.70}
+\contentsline {section}{\numberline {5.1}Hypothesis and their results}{37}{section.71}
+\contentsline {subsection}{\numberline {5.1.1}Simple correlation model}{37}{subsection.72}
+\contentsline {subsection}{\numberline {5.1.2}Results}{37}{subsection.73}
+\contentsline {subsection}{\numberline {5.1.3}Windowed correlation model}{37}{subsection.74}
+\contentsline {subsection}{\numberline {5.1.4}Results}{37}{subsection.75}
+\contentsline {subsection}{\numberline {5.1.5}Simple correlation model}{37}{subsection.76}
+\contentsline {subsection}{\numberline {5.1.6}Results}{37}{subsection.77}
+\contentsline {subsection}{\numberline {5.1.7}PDF model}{37}{subsection.78}
+\contentsline {subsection}{\numberline {5.1.8}Results}{37}{subsection.79}
+\contentsline {subsection}{\numberline {5.1.9}Mathematical model}{37}{subsection.80}
+\contentsline {subsection}{\numberline {5.1.10}Results}{37}{subsection.81}
+\contentsline {section}{\numberline {5.2}Discussion}{37}{section.82}
+\contentsline {chapter}{\numberline {6}Applications}{39}{chapter.83}
+\contentsline {section}{\numberline {6.1}Depth prediction application}{39}{section.84}
+\contentsline {section}{\numberline {6.2}Crosstalk mitigation}{39}{section.85}
+\contentsline {subsection}{\numberline {6.2.1}Proposed optimizations}{39}{subsection.86}
+\contentsline {subsection}{\numberline {6.2.2}Unsharp masking in view domain}{39}{subsection.87}
+\contentsline {subsection}{\numberline {6.2.3}Iterative subtraction}{39}{subsection.88}
+\contentsline {chapter}{\numberline {7}Conclusion}{41}{chapter.89}
+\contentsline {section}{\numberline {7.1}Summary}{41}{section.90}
+\contentsline {section}{\numberline {7.2}Future Work}{41}{section.91}
+\contentsline {section}{\numberline {7.3}Open Questions}{41}{section.92}
+\contentsline {chapter}{Bibliography}{43}{chapter*.93}
 \vspace {2em}
-\contentsline {chapter}{Index}{44}{chapter*.87}
+\contentsline {chapter}{Index}{46}{chapter*.93}

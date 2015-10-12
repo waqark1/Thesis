@@ -128,6 +128,13 @@
 \newblock In {\em Proceedings of the ACM SIGGRAPH Symposium on Applied
   Perception in Graphics and Visualization\/} (2011), ACM, pp.~45--52.
 
+\bibitem{vangorp2014depth}
+{\sc Vangorp, P., Mantiuk, R.~K., Bazyluk, B., Myszkowski, K., Mantiuk, R.,
+  Watt, S.~J., Seidel, H.-P., et~al.}
+\newblock Depth from hdr: depth induction or increased realism?
+\newblock In {\em ACM Symposium on Applied Perception\/} (2014), ACM,
+  pp.~71--78.
+
 \bibitem{wang2014improved}
 {\sc Wang, X., and Hou, C.}
 \newblock Improved crosstalk reduction on multiview 3d display by using bils

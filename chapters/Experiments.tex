@@ -39,7 +39,7 @@ Our experiments were based on test subjects judging the observed distance betwee
 \end{figure}
 
 \subsection{Stereo and Automultiscopic stimuli}
-For the stereo experiments, captured the scene with the camera baseline starting from 0.002 meters till 0.12 meters with the step of 0.002 meters. This gave us sixty sets of stereo images where the theoretical depth of the cylinder ranged from 0.13 cm to 3.45 cm in front of the plane of focus. Figure \ref{fig:stimuli_stereo} shows stereo images of one of the cylinder and the dragon. The step size was chosen small enough so that the transition from the minimum depth to the maximum for an object would seem continues to the observer.
+For the stereo experiments, captured the scene with the camera baseline starting from 0.002 meters till 0.12 meters with the step of 0.002 meters. This gave us sixty sets of stereo images where the theoretical depth of the cylinder ranged from 0.13 cm to 3.45 cm \textcolor{red}{mention the degrees as well}in front of the plane of focus. Figure \ref{fig:stimuli_stereo} shows stereo images of one of the cylinder and the dragon. The step size was chosen small enough so that the transition from the minimum depth to the maximum for an object would seem continues to the observer.
 \begin{figure}[htbp]
     % \centering
     \begin{subfigure}[b]{0.5\textwidth}
@@ -59,15 +59,74 @@ For the stereo experiments, captured the scene with the camera baseline starting
         \includegraphics[width=\textwidth]{./Template_Figures/57Rd.png}
         \caption{}\label{fig:right_stereo_dra}
     \end{subfigure}
-    \caption{Stereo images of the cylinder of 5 cm radius and the dragon. The theoretical depth difference between the objects and the backgroud is 3.44 cm. Viewer can cross-fuse to see in depth.\label{fig:stimuli_stereo}}
+    \caption{Stereo images of the cylinder of 5 cm radius and the dragon. The theoretical depth difference between the objects and the background is 3.44 cm. Viewer can cross-fuse to see in depth.\label{fig:stimuli_stereo}}
 \end{figure}
 
 The images for automultiscopic experiments were rendered similarly. The only difference being that the range of baseline started from 0 until 0.24 meters. The reason for this is explained in the next section.
 
-
 \section{Apparatus and simulation procedure}
+The experiments were conducted on a commercial 47'' SIMS2 HDR47E LCD display with a resolution of 1920x1080. The left and right half of the screen each with a resolution of 960x1080 were gated to the left and right eye using a custom built Wheatstone setup \cite{ wiki:wheatstone} that consisted of two mirrors M1 and M2 set at $45^\circ$ angle with respect to the screen. The optical length from the eyes to the screen via mirrors M1 and M2 was measured at 87.3 cm. The whole setup was enclosed in a black box with an aperture through which the viewer could view the screen via mirrors M1. The display even though build for HDR viewing had a DVI plus mode for which the luminance measured with luminance meter via the aperture ranged from \textcolor{red}{?? to ??} $cdm^{-2}$. The DVI plus mode should (according to the documentation) mimic the traditional LCD display hence we chose to use this mode.
+\begin{figure}[htbp]
+    % \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/setup}
+        \caption{}\label{fig:setup}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/setup_sch}
+        \caption{}\label{fig:setup_sch}
+    \end{subfigure}
+    \caption{Our Wheatstone setup. Physical view frusta are shaded in light blue where as the virtual view frusta are depicted in dotted gray lines. The cyan lines represent the mirrors \cite{vangorp2014depth}\label{fig:wheatstone_setup}}
+\end{figure}
 
-\section{subjects}
+Since on an LCD panel, all the rgb channels equally and additively contribute to the crosstalk, we simulated the ghosted images simple by adding a percentage image of unintended view to the intended view image. For stereo, simple addition of a percentage of the right image into the left and vice versa sufficed. However, the automultiscopic case was a little tricky. First of all we simulated the view intensity profiles in figure \ref{fig:gaussians} using Gaussians with $\sigma = 2$ and $\mu$s located at the sweet spots of the automultiscopic displays (figure \ref{fig:sim_gaussians}). To match the profiles in figure \ref{fig:gaussians}, the gaussians were upscaled such that the value 0.8 was attained at the mean. Using our simulated profiles, we found that at any sweet spot viewing position, the amount of light leaked from views other then the two adjacent views was negligible. Hence in our simulation we only considered light leakage from the adjacent views. Considering that an automultiscopic screen displays light fields sampled at frequency $1/\delta_x$ ($\delta_x$ being the step size at which the images were captured along the camera baseline), the leaked light from a position `y' to position `x' can be modeled as
+\begin{equation}
+l(y,x) \simeq a_y(x)\:.\:f(y)
+\label{eq:ct_leak_eq}
+\end{equation}
+Where $a_y(x)$ is the Gaussian(corresponding to location y) value at position `x' and $f(y)$ is the light field image at position `y'. And the observe image \say{g} at any viewing position `x' can be mathematically modeled as
+\begin{equation}
+g(x) \: \simeq \: ...\: +\: l(x-2\delta_x,\:x)\:+\: l(x-\delta_x,\:x)\:+\:l(x,\:x)\:+\: l(x+2\delta_x,\:x)\:+\: l(x+\delta_x,\:x)\:+ \:...
+\label{eq:ct_sim_eq}
+\end{equation}
+This would mean that the amount of ghost separation at any disparity of the object would be constant on either side. In order to keep the nature of the automultiscopic experiments similar to that of the stereo (where the ghost separation increase as the disparity increase), we changed the sampling rate $\delta_x$ with respect to the disparity of the object.
+ \begin{figure}
+\centering
+    \includegraphics[width=0.7\textwidth]{./Template_Figures/sim_gaussians}
+    \caption{Luminance intensity profiles for an 11 view automultiscopic display simulated with Gaussians of $\sigma =2$ centered at the sweet spots. X-axis denote the viewing position.\label{fig:sim_gaussians}}
+\end{figure}
+i.e. For a disparity `d', the the the observed left and right images can be written as
+\begin{equation}
+\begin{aligned}
+g(d)_{left} \: \simeq l(2.d,\:d)\:+\: l(d,\:d)\:+\:l(0,\:d) \\
+g(d)_{right} \: \simeq l(-2.d,\:-d)\:+\: l(-d,\:-d)\:+\:l(0,\:-d)
+\end{aligned}
+\label{eq:auto_obs_imgs}
+\end{equation}
+\begin{figure}[htbp]
+    % \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/stereo_ghost_left}
+        \caption{}\label{fig:obs_st_left}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/stereo_ghost_right}
+        \caption{}\label{fig:obs_st_right}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/auto_ghost_left}
+        \caption{}\label{fig:obs_aut_left}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/auto_ghost_left}
+        \caption{}\label{fig:obs_aut_right}
+    \end{subfigure}
+    \caption{(a,b) Observed left and right stereo images with 14\% crosstalk and crossed depth of 3.45 cm. (c,d) Same configuration for observed images on automultiscopic display)\label{fig:observed_ct_images}}
+\end{figure}
+
+\section{Experiment procedure}
+
 
 \section{Results}
 
@@ -75,36 +134,4 @@ The images for automultiscopic experiments were rendered similarly. The only dif
 \subsection{Stereo}
 \subsection{Automultiscopic}
 
-
-% \subsection{Apparatus setup}
-% \subsection{Experimentation Procedure}
-
-% \subsection{Stereoscopic Experimentations}
-% \subsubsection{Initial Hypothesis}
-% \subsubsection{stimuli}
-% \subsubsection{Simulation of Cross-talk}
-% \subsubsection{Experimentation procedure}
-% \subsubsection{Results}
-
-% \subsection{Automultiscopic Experimentations}
-% \subsubsection{Initial Hypothesis}
-% \subsubsection{stimuli}
-% \subsubsection{Simulation of Cross-talk}
-% \subsubsection{Experimentation procedure}
-% \subsubsection{Results}
-
-% \subsection{Conclusion and Discussion}
-% % read chapter "Matching corresponding images" from the oxford book "Binocular vision and stereopsis."
-
-% % Section 2
-% \section{HVS depth from disparity Model}
-% \subsection{Different Hypothesis and their Outcome}
-% \subsection{Future Work}
-
-
-% % Section 3
-% \section{Cross-talk Mitigation}
-% \subsection{Proposed Optimizations}
-% \subsection{Unsharp Masking in View Domain}
-% \subsection{Iterative Subtraction}
 
