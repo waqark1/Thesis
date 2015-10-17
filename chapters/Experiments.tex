@@ -21,13 +21,13 @@ Our experiments were based on test subjects judging the observed distance betwee
     \label{tab:stimili_desc}
     \begin{tabular}{ccc}
       \toprule
-      Object & Scene Dimensions (xyz) & Width on rendered image (pixels)\\
+      Object & Scene Dimensions (xyz) & Rendered Dimensions (arcmin)\\
       \midrule
-      Cylinder(thin) & 5cm x 2m x 5cm & 9\\
-      Cylinder(medium) & 10cm x 2m x 10cm & 18\\
-      Cylinder(think) & 45cm x 2m x 45cm & 27\\
-      Cylinder(thickest) & 80cm x 2m x 80cm & 36 \\
-      Dragon & 0.31m x 0.22m x 14.17cm & 181(max) \\
+      Cylinder(thin) & 5cm x 2m x 5cm & 18.9\\
+      Cylinder(medium) & 10cm x 2m x 10cm & 37.8\\
+      Cylinder(think) & 45cm x 2m x 45cm & 56.7\\
+      Cylinder(thickest) & 80cm x 2m x 80cm & 75.6 \\
+      Dragon & 0.31m x 0.22m x 14.17cm & 380 (max) \\
       \bottomrule
     \end{tabular}
   \end{center}
@@ -39,7 +39,7 @@ Our experiments were based on test subjects judging the observed distance betwee
 \end{figure}
 
 \subsection{Stereo and Automultiscopic stimuli}
-For the stereo experiments, captured the scene with the camera baseline starting from 0.002 meters till 0.12 meters with the step of 0.002 meters. This gave us sixty sets of stereo images where the theoretical depth of the cylinder ranged from 0.13 cm to 3.45 cm \textcolor{red}{mention the degrees as well}in front of the plane of focus. Figure \ref{fig:stimuli_stereo} shows stereo images of one of the cylinder and the dragon. The step size was chosen small enough so that the transition from the minimum depth to the maximum for an object would seem continues to the observer.
+For the stereo experiments, captured the scene with the camera baseline starting from 0.002 meters till 0.12 meters with the step of 0.002 meters. This gave us sixty sets of stereo images where the theoretical depth of the object of interest ranged from 0.04 cm to 3.45 cm (0-10.5 arcmins in terms of crossed disparity) in front of the plane of focus. Figure \ref{fig:stimuli_stereo} shows stereo images of one of the cylinder and the dragon. The step size was chosen small enough so that the transition from the minimum to the maximum depth for an object would seem continues to the observer.
 \begin{figure}[htbp]
     % \centering
     \begin{subfigure}[b]{0.5\textwidth}
@@ -79,7 +79,7 @@ The experiments were conducted on a commercial 47'' SIMS2 HDR47E LCD display wit
     \caption{Our Wheatstone setup. Physical view frusta are shaded in light blue where as the virtual view frusta are depicted in dotted gray lines. The cyan lines represent the mirrors \cite{vangorp2014depth}\label{fig:wheatstone_setup}}
 \end{figure}
 
-Since on an LCD panel, all the rgb channels equally and additively contribute to the crosstalk, we simulated the ghosted images simple by adding a percentage image of unintended view to the intended view image. For stereo, simple addition of a percentage of the right image into the left and vice versa sufficed. However, the automultiscopic case was a little tricky. First of all we simulated the view intensity profiles in figure \ref{fig:gaussians} using Gaussians with $\sigma = 2$ and $\mu$s located at the sweet spots of the automultiscopic displays (figure \ref{fig:sim_gaussians}). To match the profiles in figure \ref{fig:gaussians}, the gaussians were upscaled such that the value 0.8 was attained at the mean. Using our simulated profiles, we found that at any sweet spot viewing position, the amount of light leaked from views other then the two adjacent views was negligible. Hence in our simulation we only considered light leakage from the adjacent views. Considering that an automultiscopic screen displays light fields sampled at frequency $1/\delta_x$ ($\delta_x$ being the step size at which the images were captured along the camera baseline), the leaked light from a position `y' to position `x' can be modeled as
+Since on an LCD panel, all the rgb channels equally and additively contribute to the crosstalk, we simulated the ghosted images simple by adding a percentage image of unintended view to the intended view image. For stereo, simple addition of a percentage of the right image into the left and vice versa sufficed. However, the automultiscopic case was a little tricky. First of all we simulated the view intensity profiles in figure \ref{fig:gaussians} using Gaussians with $\sigma = 2$ and means located at the sweet spots of the automultiscopic displays (figure \ref{fig:sim_gaussians}). To match the profiles in figure \ref{fig:gaussians}, the gaussians were upscaled such that the value 0.8 was attained at the mean. Using our simulated profiles, we found that at any sweet spot viewing position, the amount of light leaked from views other then the two adjacent views was negligible. Hence in our simulation we only considered light leakage from the adjacent views. Considering that an automultiscopic screen displays light fields sampled at frequency $1/\delta_x$ ($\delta_x$ being the step size at which the images were captured along the camera baseline), the leaked light from a position `y' to position `x' can be modeled as
 \begin{equation}
 l(y,x) \simeq a_y(x)\:.\:f(y)
 \label{eq:ct_leak_eq}
@@ -126,12 +126,119 @@ g(d)_{right} \: \simeq l(-2.d,\:-d)\:+\: l(-d,\:-d)\:+\:l(0,\:-d)
 \end{figure}
 
 \section{Experiment procedure}
+\subsection{Environment Setup}
+For our experiments, we subdivided the screen horizontally, the upper half where the test subjects would see the crosstalk added scene(stimuli) with some fixed depth of the object, and the lower half where the subjects were shown the same scene without any crosstalk. We will refer to the upper half of the screen as reference stimulus and the lower half as test stimulus. Also we will call the depth difference between the background (wooden plane at zero disparity) and the foreground object (at some crossed disparity) the depth of the object. As mentioned in section 4.2, the depths of the object in the presented stimuli ranged from 0.04 to 3.45 centimeters. The subjects could vary the depth in the test stimulus in the above mentioned range via left and right mouse buttons. Due to the dense sampling of the light field (small baseline distance change), the change in the depth appeared continuous, i.e. the viewers could not observe any jumps while changing it. Pressing the left mouse button for 6 seconds would change the depth of the object from 0.04 cm to 3.45 cm, and vice versa for the right click. During the experiment, the subjects were tasked with matching the depth in the test stimulus to the observed depth of the reference. Upon matching the depth, the subjects would register the answer using the center mouse click. Figure \ref{fig:exp_env} shows the overall layout of the screen from a viewer's perspective. To avoid the possibility of the subject matching the absolute depths of the objects rather than the depth difference between the background plane and the object, as required, we shifted the depth of the reference stimulus by 3.45 cm towards the viewer whereas the depth of the test stimulus was shift equally away from the viewer. Thus ensuring that the depths of the objects would never coincide, and hence the subjects would not be able to match the absolute object's depth. In addition, a nonious cross-hair representing the plane of focus was added at the bottom center of the screen. Figure \ref{fig:exp_env_depth} shows the top view of the visualized environment. The experiment environment was created using Psychtoolbox-3 package for Matlab.
+\begin{figure}[htbp]
+    % \centering
+    \begin{subfigure}[b]{0.65\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/exp_env}
+        \caption{}\label{fig:exp_env}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.34\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/exp_env_depth}
+        \caption{}\label{fig:exp_env_depth}
+    \end{subfigure}
 
+    \caption{(A) Schematics of the complete display. Upper half of the screen shows the reference stimulus with 14\% crosstalk. The bottom half shows the user controlled test stimulus free of crosstalk. (B) Layout of the experiment environment in terms of depth w.r.t. observer.\label{fig:exp_env_overall}}
+\end{figure}
 
+\subsection{Subjects}
+Several paid test subjects and the author participated in the experiments. In order to ensure the subject's correctness of the stereo vision, they were first asked to identify the proximity of the test and reference stimuli with respect to the cross-hair. Also they were asked to identify the polarity of the change in depth of the test stimulus while the author changed it slightly in each direction. Table \ref{tab:agg_subj} shows the number of participants in each kind of experiments.
+\begin{table}[ht!]
+  \begin{center}
+    \caption{Description of the number of subjects that participated in each experiment.}
+    \label{tab:agg_subj}
+    \begin{tabular}{ccc}
+      \toprule
+      Object & Stereo  & Automultiscopic\\
+      \midrule
+      Cylinder(thin) & 11 & 13  \\
+      Cylinder(medium) & 11 & 11\\
+      Cylinder(think) & 7 & 13\\
+      Cylinder(thickest) & 8 & 13 \\
+      Dragon & 13 & 13\\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\subsection{Experiment parameters}
+Four levels of crosstalk i.e. 0\%, 3\%, 7\% and 14\% and seven levels of depths (crossed disparity) i.e. 0.04, 0.73, 1.18, 1.53, 1.75, 2.76 and 3.44 centimeters were chosen to be tested. We neglected any level of crosstalk greater than 14\% because in our pilot experiments we noticed that any greater crosstalk level almost always resulted in matching of the stimulus with the ghost resulting in total loss of depth. We couldn't find any commercial stereo display where the crosstalk levels were that high. Usually they are below 10\%. During the experiment, each subject was asked to match the observed depths for all possible combinations i.e 28 trials (4 crosstalk levels $\times$ 7 depth levels) in total for each kind of stimulus. Trials for stereoscopic and automultiscopic cases were conducted separately.
+\\
 \section{Results}
+
+In the following section, median data for all the observers along with the standard error for each crosstalk level (figure \ref{fig:s_crosstalk_0} to ??) are shown. Individual lines in the graphs denote the different objects i.e. cylinders of all widths and the dragon as mentioned in table \ref{tab:stimili_desc}. The axis defines the actual and the observed theoretical disparity-defined depths. Ideally, all the graphs should be diagonally coinciding lines indicating no effect of crosstalk on perceived depth. Even though generally it is not the case, it can be observed that in the base case (no crosstalk), all the graphs (for all objects) almost approximates a diagonal line for both stereo and automultiscopic experiments. This is an improvement over \cite{tsirlin2012effect} meaning that the reported amounts of depth degradation for different cases would be more reliable.
+
+\subsection{Stereo}
+It can be seen in figure \ref{fig:s_crosstalk_0} that in absence of crosstalk, the observers mostly perceived the depths correctly. A slight overestimation of depth in case of the smallest depth (0.04 cm) can be seen for the thickest cylinder (width = 36 arcmin). Given the fact that the user controlled depth variation of test stimulus was continuous, it is reasonable to assume that it would be quite unlikely for the observers to exactly match the depths. Hence the slight overestimation of depth can be considered as an observer approximation error. The same however could not be straightforwardly said about the underestimation for the dragon at 2.76 cm depth which is mapped to approximately 2 cm observed depth. But since the next greater depth shows no underestimation, we can safely assume it to be a \textcolor{red}{human error}.
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/s_crosstalk_0}
+    \caption{Abscissa shows the observed depth when no crosstalk is present. The error bars indicate $\pm$ 1 standard error.\label{fig:s_crosstalk_0}}
+\end{figure}
+
+When the crosstalk is increased to 3\% (figure \ref{fig:s_crosstalk_3}), it is clear that the observed depth of thin(18.9 arcmin) cylinder starts degrading at depths greater than 1.75 cm. The angular disparity at this depth is 5.35 arcmin which would give the ghost separation of 28\%. A slight overestimation of the 2.76 cm depth for cylinder (75.6 arcmin) can be considered as approximation error. The reason for this again is that the next greater depth is observed without any degradation. We think it would be reasonable to consider this as a human approximation error because the HVS probably does not gets confused for some disparity and then behaves without any error for the following larger disparities. I.e. once the observed depth starts degrading at some disparity, provided all the other conditions are kept constant, it should keep on degrading for all larger disparities as well.
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/s_crosstalk_3}
+    \caption{Abscissa shows the observed depth when 3\% crosstalk is present. The error bars indicate $\pm$ 1 standard error.\label{fig:s_crosstalk_3}}
+\end{figure}
+
+Substantial effects on the observed depth starts appearing once the crosstalk level is increased to 7\% \ref{fig:s_crosstalk_7}. The cylinders of all widths show reduced observed depth. The reduction is most severe for the thin (18.9 arcmin) cylinder. The loss of observed depth appears to be lower as the width of the cylinder increases while the observed depth of the dragon seems to be unaffected. One interesting point to observe is that for all the cylinders, the perceived depth starts degrading at the actual depths of 1.75 cm or higher. For the thin cylinder, the ghost is completely separated only at the maximum i.e. 10.5 disparity arcmin. However the observed depth appears to be the same for the maximum and the second maximum i.e. 8.4 arcmin disparity. \textcolor{red}{why}. Also it should be noted that the graph for the thin cylinder shows signs of degradation even at actual depth of 1.13 cm.  The ghost separation at this point is ??\textcolor{red}{why also make a table of ghost separation}
+
+Observed depth is severely affected for all the object once the crosstalk reaches 14\% \ref{fig:s_crosstalk_14}. The thin cylinder again shows signs of degradation starting at the actual depth of 1.13 cm where as the observed depths of all the other objects starts deteriorating at the theoretical depth of 1.76 cm. The pattern of wider objects showing less depth deterioration compared to thin objects is still observed. However, with such extreme crosstalk level, even the observed depth of the dragon is reported to be substantially affected.
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/s_crosstalk_7}
+    \caption{Abscissa shows the observed depth when 7\% crosstalk is present. The error bars indicate $\pm$ 1 standard error.\label{fig:s_crosstalk_7}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/s_crosstalk_14}
+    \caption{Abscissa shows the observed depth when 14\% crosstalk is present. The error bars indicate $\pm$ 1 standard error.\label{fig:s_crosstalk_14}}
+\end{figure}
+
+
+
+\subsection{Automultiscopic}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_0}
+    \caption{Abscissa shows the observed depth when no crosstalk is present. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_0}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_3}
+    \caption{Abscissa shows the observed depth when 3\% crosstalk is present. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_3}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_7}
+    \caption{Abscissa shows the observed depth when 7\% crosstalk is present. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_7}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_14}
+    \caption{Abscissa shows the observed depth when 14\% crosstalk is present. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_14}}
+\end{figure}
 
 \section {Discussion}
 \subsection{Stereo}
+is edge playing a role?
+the degraded depth increased as the crosstalk and the disparity increase. thin objects are affected the most even if the ghost is not completely separated.
+why does the degradation start at 1.76 cm for all objects other than thin cylinder where it starts at 1.13 cm?
+make a table of ghost separation and discuss at what percentage the depth degradation occurs.
+discuss why the ghost are always diplopic and why it can cause hindrance. (finind peaks can be problamatic).
+discuss the correlation theory and why it fails here.
+what could be going on in HVS windowed correlation etc? or averaging of peaks.
+what crosstalk level is ok according to these results?
+
 \subsection{Automultiscopic}
 
 

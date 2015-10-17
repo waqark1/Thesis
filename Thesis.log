@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 OCT 2015 01:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 OCT 2015 00:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -924,6 +924,14 @@ File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.0 (rcs-revision 1.2)
 Package: dirtytalk 2010/11/21 A package making "quoting" easier
 \c@dirtytalk@qdepth=\count165
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count166
+\float@exts=\toks50
+\float@box=\box50
+\@float@everytoks=\toks51
+\@floatcapt=\box51
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2015/03/01 v5547 L3 programming layer (loader) 
@@ -938,24 +946,24 @@ L3 Module: l3tl 2015/01/27 v5500 L3 Token lists
 L3 Module: l3str 2015/03/01 v5545 L3 Strings
 L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
 L3 Module: l3int 2015/02/21 v5529 L3 Integers
-\c_max_int=\count166
-\l_tmpa_int=\count167
-\l_tmpb_int=\count168
-\g_tmpa_int=\count169
-\g_tmpb_int=\count170
+\c_max_int=\count167
+\l_tmpa_int=\count168
+\l_tmpb_int=\count169
+\g_tmpa_int=\count170
+\g_tmpb_int=\count171
 L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
 L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
-\g__prg_map_int=\count171
+\g__prg_map_int=\count172
 L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
 L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
 L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
 L3 Module: l3msg 2015/02/26 v5537 L3 Messages
 L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
-\l_iow_line_count_int=\count172
-\l__iow_target_count_int=\count173
-\l__iow_current_line_int=\count174
-\l__iow_current_word_int=\count175
-\l__iow_current_indentation_int=\count176
+\l_iow_line_count_int=\count173
+\l__iow_target_count_int=\count174
+\l__iow_current_line_int=\count175
+\l__iow_current_word_int=\count176
+\l__iow_current_indentation_int=\count177
 L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
 \c_zero_dim=\dimen257
 \c_max_dim=\dimen258
@@ -976,26 +984,26 @@ L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/01/27 v5500 L3 Key-value interfaces
-\g__keyval_level_int=\count177
-\l_keys_choice_int=\count178
+\g__keyval_level_int=\count178
+\l_keys_choice_int=\count179
 L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
-\c__fp_leading_shift_int=\count179
-\c__fp_middle_shift_int=\count180
-\c__fp_trailing_shift_int=\count181
-\c__fp_big_leading_shift_int=\count182
-\c__fp_big_middle_shift_int=\count183
-\c__fp_big_trailing_shift_int=\count184
-\c__fp_Bigg_leading_shift_int=\count185
-\c__fp_Bigg_middle_shift_int=\count186
-\c__fp_Bigg_trailing_shift_int=\count187
+\c__fp_leading_shift_int=\count180
+\c__fp_middle_shift_int=\count181
+\c__fp_trailing_shift_int=\count182
+\c__fp_big_leading_shift_int=\count183
+\c__fp_big_middle_shift_int=\count184
+\c__fp_big_trailing_shift_int=\count185
+\c__fp_Bigg_leading_shift_int=\count186
+\c__fp_Bigg_middle_shift_int=\count187
+\c__fp_Bigg_trailing_shift_int=\count188
 L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
-\c_empty_box=\box50
-\l_tmpa_box=\box51
-\l_tmpb_box=\box52
-\g_tmpa_box=\box53
-\g_tmpb_box=\box54
+\c_empty_box=\box52
+\l_tmpa_box=\box53
+\l_tmpb_box=\box54
+\g_tmpa_box=\box55
+\g_tmpb_box=\box56
 L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
-\l__coffin_internal_box=\box55
+\l__coffin_internal_box=\box57
 \l__coffin_internal_dim=\dimen263
 \l__coffin_offset_x_dim=\dimen264
 \l__coffin_offset_y_dim=\dimen265
@@ -1003,14 +1011,14 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_y_dim=\dimen267
 \l__coffin_x_prime_dim=\dimen268
 \l__coffin_y_prime_dim=\dimen269
-\c_empty_coffin=\box56
-\l__coffin_aligned_coffin=\box57
-\l__coffin_aligned_internal_coffin=\box58
-\l_tmpa_coffin=\box59
-\l_tmpb_coffin=\box60
-\l__coffin_display_coffin=\box61
-\l__coffin_display_coord_coffin=\box62
-\l__coffin_display_pole_coffin=\box63
+\c_empty_coffin=\box58
+\l__coffin_aligned_coffin=\box59
+\l__coffin_aligned_internal_coffin=\box60
+\l_tmpa_coffin=\box61
+\l_tmpb_coffin=\box62
+\l__coffin_display_coffin=\box63
+\l__coffin_display_coord_coffin=\box64
+\l__coffin_display_pole_coffin=\box65
 \l__coffin_display_offset_dim=\dimen270
 \l__coffin_display_x_dim=\dimen271
 \l__coffin_display_y_dim=\dimen272
@@ -1024,7 +1032,7 @@ L3 Module: l3candidates 2015/03/01 v5544 L3 Experimental additions to l3kernel
 \l__box_bottom_new_dim=\dimen278
 \l__box_left_new_dim=\dimen279
 \l__box_right_new_dim=\dimen280
-\l__box_internal_box=\box64
+\l__box_internal_box=\box66
 \l__coffin_bounding_shift_dim=\dimen281
 \l__coffin_left_corner_dim=\dimen282
 \l__coffin_right_corner_dim=\dimen283
@@ -1038,15 +1046,15 @@ File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2015/03/01 v5544 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count188
+\l__driver_color_stack_int=\count189
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count189
-\l__xparse_m_args_int=\count190
-\l__xparse_mandatory_args_int=\count191
-\l__xparse_processor_int=\count192
-\l__xparse_v_nesting_int=\count193
+\l__xparse_current_arg_int=\count190
+\l__xparse_m_args_int=\count191
+\l__xparse_mandatory_args_int=\count192
+\l__xparse_processor_int=\count193
+\l__xparse_v_nesting_int=\count194
 )
 Package: siunitx 2015/01/21 v2.6e A comprehensive (SI) units package
 
@@ -1054,32 +1062,32 @@ Package: siunitx 2015/01/21 v2.6e A comprehensive (SI) units package
 Package: l3keys2e 2014/11/25 v5471 LaTeX2e option processing using LaTeX3 keys
 )
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
-\l__siunitx_tmp_box=\box65
+\l__siunitx_tmp_box=\box67
 \l__siunitx_tmp_dim=\dimen288
-\l__siunitx_tmp_int=\count194
+\l__siunitx_tmp_int=\count195
 Variant \prop_get:NVNT already defined; not changing it on line 380
 Variant \prop_get:NVNF already defined; not changing it on line 381
 Variant \prop_get:NVNTF already defined; not changing it on line 382
-\l__siunitx_number_mantissa_length_int=\count195
-\l__siunitx_number_uncert_length_int=\count196
-\l__siunitx_round_int=\count197
-\l__siunitx_process_decimal_int=\count198
-\l__siunitx_process_uncertainty_int=\count199
-\l__siunitx_process_fixed_int=\count200
-\l__siunitx_process_integer_min_int=\count201
-\l__siunitx_process_precision_int=\count202
-\l__siunitx_group_min_int=\count203
-\l__siunitx_angle_marker_box=\box66
-\l__siunitx_angle_unit_box=\box67
+\l__siunitx_number_mantissa_length_int=\count196
+\l__siunitx_number_uncert_length_int=\count197
+\l__siunitx_round_int=\count198
+\l__siunitx_process_decimal_int=\count199
+\l__siunitx_process_uncertainty_int=\count200
+\l__siunitx_process_fixed_int=\count201
+\l__siunitx_process_integer_min_int=\count202
+\l__siunitx_process_precision_int=\count203
+\l__siunitx_group_min_int=\count204
+\l__siunitx_angle_marker_box=\box68
+\l__siunitx_angle_unit_box=\box69
 \l__siunitx_angle_marker_dim=\dimen289
 \l__siunitx_angle_unit_dim=\dimen290
-\l__siunitx_unit_int=\count204
-\l__siunitx_unit_denominator_int=\count205
-\l__siunitx_unit_numerator_int=\count206
-\l__siunitx_unit_prefix_int=\count207
-\l__siunitx_unit_prefix_base_int=\count208
-\l__siunitx_unit_prefix_gram_int=\count209
-\l__siunitx_number_product_int=\count210
+\l__siunitx_unit_int=\count205
+\l__siunitx_unit_denominator_int=\count206
+\l__siunitx_unit_numerator_int=\count207
+\l__siunitx_unit_prefix_int=\count208
+\l__siunitx_unit_prefix_base_int=\count209
+\l__siunitx_unit_prefix_gram_int=\count210
+\l__siunitx_number_product_int=\count211
 \c__siunitx_one_fill_skip=\skip74
 \l__siunitx_table_unit_align_skip=\skip75
 \l__siunitx_table_exponent_dim=\dimen291
@@ -1091,10 +1099,10 @@ Variant \prop_get:NVNTF already defined; not changing it on line 382
 \l__siunitx_table_fill_pre_dim=\dimen297
 \l__siunitx_table_fill_post_dim=\dimen298
 \l__siunitx_table_fill_mid_dim=\dimen299
-\l__siunitx_table_pre_box=\box68
-\l__siunitx_table_post_box=\box69
-\l__siunitx_table_mantissa_box=\box70
-\l__siunitx_table_result_box=\box71
+\l__siunitx_table_pre_box=\box70
+\l__siunitx_table_post_box=\box71
+\l__siunitx_table_mantissa_box=\box72
+\l__siunitx_table_result_box=\box73
 \l__siunitx_table_number_align_skip=\skip76
 \l__siunitx_table_text_align_skip=\skip77
 .................................................
@@ -1222,23 +1230,24 @@ Package: translator 2010/06/12 ver 1.10
 uage-mappings.tex))) (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1251,39 +1260,39 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count211
+\scratchcounter=\count212
 \scratchdimen=\dimen300
-\scratchbox=\box72
-\nofMPsegments=\count212
-\nofMParguments=\count213
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count214
+\scratchbox=\box74
+\nofMPsegments=\count213
+\nofMParguments=\count214
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count215
 \MPscratchDim=\dimen301
-\MPnumerator=\count215
-\makeMPintoPDFobject=\count216
-\everyMPtoPDFconversion=\toks51
+\MPnumerator=\count216
+\makeMPintoPDFobject=\count217
+\everyMPtoPDFconversion=\toks53
 )
-\c@lstlisting=\count217
-\AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring ON on input line 57.
+\c@lstlisting=\count218
+\AtBeginShipoutBox=\box75
+Package hyperref Info: Link coloring ON on input line 58.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count218
+\c@section@level=\count219
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
+LaTeX Info: Redefining \nameref on input line 58.
 
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write5
 \openout5 = `Thesis.out'.
 
  ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 57.
+LaTeX Info: Redefining \microtypecontext on input line 58.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1305,15 +1314,15 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 )
-\c__siunitx_mathsf_int=\count219
-LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+\c__siunitx_mathsf_int=\count220
+LaTeX Font Info:    Try loading font information for U+msa on input line 58.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+LaTeX Font Info:    Try loading font information for U+msb on input line 58.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1325,7 +1334,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count220
+\c__siunitx_mathtt_int=\count221
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1334,23 +1343,23 @@ Package microtype Info: Loading generic settings for font family
 ------------------------------------------------------------------------------
  Title Page
 ------------------------------------------------------------------------------
-<./Template_Figures/saarland_logo.png, id=231, 125.46875pt x 123.46124pt>
+<./Template_Figures/saarland_logo.png, id=251, 125.46875pt x 123.46124pt>
 File: ./Template_Figures/saarland_logo.png Graphic file (type png)
 
 <use ./Template_Figures/saarland_logo.png>
 Package pdftex.def Info: ./Template_Figures/saarland_logo.png used on input lin
-e 75.
+e 76.
 (pdftex.def)             Requested size: 62.7342pt x 61.73045pt.
 
-Overfull \hbox (12.38716pt too wide) in paragraph at lines 75--75
+Overfull \hbox (12.38716pt too wide) in paragraph at lines 76--76
  [][] 
  []
 
-<./Template_Figures/mpi_logo.png, id=232, 426.59375pt x 397.485pt>
+<./Template_Figures/mpi_logo.png, id=252, 426.59375pt x 397.485pt>
 File: ./Template_Figures/mpi_logo.png Graphic file (type png)
 
 <use ./Template_Figures/mpi_logo.png>
-Package pdftex.def Info: ./Template_Figures/mpi_logo.png used on input line 75.
+Package pdftex.def Info: ./Template_Figures/mpi_logo.png used on input line 76.
 
 (pdftex.def)             Requested size: 63.9863pt x 59.62016pt.
  [1
@@ -1410,7 +1419,7 @@ Chapter 2.
 ------------------------------------------------------------------------------
  2 Relevant Background
 ------------------------------------------------------------------------------
-[3] [4] <./Template_Figures/horopter.png, id=495, 803.0pt x 936.49875pt>
+[3] [4] <./Template_Figures/horopter.png, id=552, 803.0pt x 936.49875pt>
 File: ./Template_Figures/horopter.png Graphic file (type png)
 
 <use ./Template_Figures/horopter.png>
@@ -1418,21 +1427,21 @@ Package pdftex.def Info: ./Template_Figures/horopter.png used on input line 51.
 
 (pdftex.def)             Requested size: 208.73653pt x 243.44106pt.
  [5 <./Template_Figures/horopter.png>]
-<./Template_Figures/orig.png, id=507, 573.14125pt x 432.61626pt>
+<./Template_Figures/orig.png, id=564, 573.14125pt x 432.61626pt>
 File: ./Template_Figures/orig.png Graphic file (type png)
 
 <use ./Template_Figures/orig.png>
 Package pdftex.def Info: ./Template_Figures/orig.png used on input line 67.
 (pdftex.def)             Requested size: 125.24318pt x 94.53555pt.
 
-<./Template_Figures/leakage.png, id=508, 593.21625pt x 503.8825pt>
+<./Template_Figures/leakage.png, id=565, 593.21625pt x 503.8825pt>
 File: ./Template_Figures/leakage.png Graphic file (type png)
 
 <use ./Template_Figures/leakage.png>
 Package pdftex.def Info: ./Template_Figures/leakage.png used on input line 71.
 (pdftex.def)             Requested size: 125.24318pt x 106.37971pt.
 
-<./Template_Figures/crosstalk.png, id=509, 573.14125pt x 432.61626pt>
+<./Template_Figures/crosstalk.png, id=566, 573.14125pt x 432.61626pt>
 File: ./Template_Figures/crosstalk.png Graphic file (type png)
 
 <use ./Template_Figures/crosstalk.png>
@@ -1440,7 +1449,7 @@ Package pdftex.def Info: ./Template_Figures/crosstalk.png used on input line 75
 .
 (pdftex.def)             Requested size: 125.24318pt x 94.53555pt.
 
-<./Template_Figures/viewerCT.png, id=510, 547.04375pt x 470.75874pt>
+<./Template_Figures/viewerCT.png, id=567, 547.04375pt x 470.75874pt>
 File: ./Template_Figures/viewerCT.png Graphic file (type png)
 
 <use ./Template_Figures/viewerCT.png>
@@ -1463,7 +1472,7 @@ Overfull \hbox (7.44534pt too wide) in paragraph at lines 128--128
 []\OT1/cmr/bx/n/14.4 Stereoscopic/Automultiscopic Screens and its cross-talk 
  []
 
-<./Template_Figures/ct_flow.pdf, id=541, 650.43pt x 289.08pt>
+<./Template_Figures/ct_flow.pdf, id=597, 650.43pt x 289.08pt>
 File: ./Template_Figures/ct_flow.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/ct_flow.pdf>
@@ -1471,7 +1480,7 @@ Package pdftex.def Info: ./Template_Figures/ct_flow.pdf used on input line 134.
 
 (pdftex.def)             Requested size: 375.7232pt x 166.99162pt.
  [9 <./Template_Figures/ct_flow.pdf>]
-<./Template_Figures/LCD_refresh_low.png, id=569, 442.65375pt x 194.7275pt>
+<./Template_Figures/LCD_refresh_low.png, id=626, 442.65375pt x 194.7275pt>
 File: ./Template_Figures/LCD_refresh_low.png Graphic file (type png)
 
 <use ./Template_Figures/LCD_refresh_low.png>
@@ -1479,7 +1488,7 @@ Package pdftex.def Info: ./Template_Figures/LCD_refresh_low.png used on input l
 ine 146.
 (pdftex.def)             Requested size: 166.98668pt x 73.4594pt.
 
-<./Template_Figures/LCD_refresh_high.png, id=570, 443.6575pt x 197.73875pt>
+<./Template_Figures/LCD_refresh_high.png, id=627, 443.6575pt x 197.73875pt>
 File: ./Template_Figures/LCD_refresh_high.png Graphic file (type png)
 
 <use ./Template_Figures/LCD_refresh_high.png>
@@ -1488,7 +1497,7 @@ line 150.
 (pdftex.def)             Requested size: 166.98668pt x 74.4234pt.
  [10 <./Template_Figures/LCD_refresh_low.png> <./Template_Figures/LCD_refresh_h
 igh.png>] [11] [12]
-<./Template_Figures/polarized_lcd.png, id=596, 425.59pt x 279.0425pt>
+<./Template_Figures/polarized_lcd.png, id=653, 425.59pt x 279.0425pt>
 File: ./Template_Figures/polarized_lcd.png Graphic file (type png)
 
 <use ./Template_Figures/polarized_lcd.png>
@@ -1496,7 +1505,7 @@ Package pdftex.def Info: ./Template_Figures/polarized_lcd.png used on input lin
 e 195.
 (pdftex.def)             Requested size: 250.48637pt x 164.23766pt.
 
-<./Template_Figures/polarized_lcd_problem.png, id=597, 447.6725pt x 314.17375pt
+<./Template_Figures/polarized_lcd_problem.png, id=654, 447.6725pt x 314.17375pt
 >
 File: ./Template_Figures/polarized_lcd_problem.png Graphic file (type png)
  <use ./Template_Figures/polarized_lcd_problem.png>
@@ -1505,7 +1514,7 @@ nput line 199.
 (pdftex.def)             Requested size: 250.48637pt x 175.79227pt.
  [13 <./Template_Figures/polarized_lcd.png> <./Template_Figures/polarized_lcd_p
 roblem.png>]
-<./Template_Figures/parallax_barrier.png, id=612, 396.48125pt x 205.76875pt>
+<./Template_Figures/parallax_barrier.png, id=669, 396.48125pt x 205.76875pt>
 File: ./Template_Figures/parallax_barrier.png Graphic file (type png)
 
 <use ./Template_Figures/parallax_barrier.png>
@@ -1513,7 +1522,7 @@ Package pdftex.def Info: ./Template_Figures/parallax_barrier.png used on input
 line 220.
 (pdftex.def)             Requested size: 292.22987pt x 151.66678pt.
 
-<./Template_Figures/tilted_sheet.png, id=619, 254.9525pt x 292.09125pt>
+<./Template_Figures/tilted_sheet.png, id=676, 254.9525pt x 292.09125pt>
 File: ./Template_Figures/tilted_sheet.png Graphic file (type png)
 
 <use ./Template_Figures/tilted_sheet.png>
@@ -1521,7 +1530,7 @@ Package pdftex.def Info: ./Template_Figures/tilted_sheet.png used on input line
  228.
 (pdftex.def)             Requested size: 166.98668pt x 191.31892pt.
 
-<./Template_Figures/tilted_sheet_views.png, id=620, 254.9525pt x 292.09125pt>
+<./Template_Figures/tilted_sheet_views.png, id=677, 254.9525pt x 292.09125pt>
 File: ./Template_Figures/tilted_sheet_views.png Graphic file (type png)
 
 <use ./Template_Figures/tilted_sheet_views.png>
@@ -1529,7 +1538,7 @@ Package pdftex.def Info: ./Template_Figures/tilted_sheet_views.png used on inpu
 t line 232.
 (pdftex.def)             Requested size: 166.98668pt x 191.31892pt.
 
-<./Template_Figures/Gaussians.png, id=623, 494.84875pt x 376.40625pt>
+<./Template_Figures/Gaussians.png, id=680, 494.84875pt x 376.40625pt>
 File: ./Template_Figures/Gaussians.png Graphic file (type png)
 
 <use ./Template_Figures/Gaussians.png>
@@ -1546,7 +1555,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 Related work
 ------------------------------------------------------------------------------
-[19] <./Template_Figures/Tsirlin_exp.png, id=667, 310.15875pt x 312.16624pt>
+[19] <./Template_Figures/Tsirlin_exp.png, id=723, 310.15875pt x 312.16624pt>
 File: ./Template_Figures/Tsirlin_exp.png Graphic file (type png)
 
 <use ./Template_Figures/Tsirlin_exp.png>
@@ -1554,7 +1563,7 @@ Package pdftex.def Info: ./Template_Figures/Tsirlin_exp.png used on input line
 15.
 (pdftex.def)             Requested size: 208.73653pt x 210.08865pt.
 
-<./Template_Figures/tsirlin_res.png, id=668, 310.15875pt x 312.16624pt>
+<./Template_Figures/tsirlin_res.png, id=724, 310.15875pt x 312.16624pt>
 File: ./Template_Figures/tsirlin_res.png Graphic file (type png)
 
 <use ./Template_Figures/tsirlin_res.png>
@@ -1568,7 +1577,7 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 14--22
 
 [20] [21 <./Template_Figures/Tsirlin_exp.png (PNG copy)> <./Template_Figures/ts
 irlin_res.png (PNG copy)>]
-<./Template_Figures/cormack_cont.png, id=686, 310.15875pt x 312.16624pt>
+<./Template_Figures/cormack_cont.png, id=742, 310.15875pt x 312.16624pt>
 File: ./Template_Figures/cormack_cont.png Graphic file (type png)
 
 <use ./Template_Figures/cormack_cont.png>
@@ -1576,7 +1585,7 @@ Package pdftex.def Info: ./Template_Figures/cormack_cont.png used on input line
  37.
 (pdftex.def)             Requested size: 208.73653pt x 210.08865pt.
 
-<./Template_Figures/cormack_noise.png, id=687, 310.15875pt x 312.16624pt>
+<./Template_Figures/cormack_noise.png, id=743, 310.15875pt x 312.16624pt>
 File: ./Template_Figures/cormack_noise.png Graphic file (type png)
 
 <use ./Template_Figures/cormack_noise.png>
@@ -1590,7 +1599,7 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 36--44
 
 [22] [23 <./Template_Figures/cormack_cont.png (PNG copy)> <./Template_Figures/c
 ormack_noise.png (PNG copy)>] [24]
-<./Template_Figures/perceptual_ct.png, id=717, 708.6475pt x 469.755pt>
+<./Template_Figures/perceptual_ct.png, id=774, 708.6475pt x 469.755pt>
 File: ./Template_Figures/perceptual_ct.png Graphic file (type png)
 
 <use ./Template_Figures/perceptual_ct.png>
@@ -1606,7 +1615,7 @@ Chapter 4.
  4 Crosstalk Experiments
 ------------------------------------------------------------------------------
 [29] [30]
-<./Template_Figures/blender_scene.png, id=776, 1228.59pt x 919.435pt>
+<./Template_Figures/blender_scene.png, id=832, 1228.59pt x 919.435pt>
 File: ./Template_Figures/blender_scene.png Graphic file (type png)
 
 <use ./Template_Figures/blender_scene.png>
@@ -1614,14 +1623,14 @@ Package pdftex.def Info: ./Template_Figures/blender_scene.png used on input lin
 e 37.
 (pdftex.def)             Requested size: 208.73653pt x 156.20367pt.
 
-<./Template_Figures/57L.png, id=778, 770.88pt x 433.62pt>
+<./Template_Figures/57L.png, id=834, 770.88pt x 433.62pt>
 File: ./Template_Figures/57L.png Graphic file (type png)
 
 <use ./Template_Figures/57L.png>
 Package pdftex.def Info: ./Template_Figures/57L.png used on input line 46.
 (pdftex.def)             Requested size: 208.73653pt x 117.40979pt.
 
-<./Template_Figures/57R.png, id=779, 770.88pt x 433.62pt>
+<./Template_Figures/57R.png, id=835, 770.88pt x 433.62pt>
 File: ./Template_Figures/57R.png Graphic file (type png)
 
 <use ./Template_Figures/57R.png>
@@ -1632,14 +1641,14 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 45--53
 [][] [] 
  []
 
-<./Template_Figures/57Ld.png, id=780, 770.88pt x 433.62pt>
+<./Template_Figures/57Ld.png, id=836, 770.88pt x 433.62pt>
 File: ./Template_Figures/57Ld.png Graphic file (type png)
 
 <use ./Template_Figures/57Ld.png>
 Package pdftex.def Info: ./Template_Figures/57Ld.png used on input line 55.
 (pdftex.def)             Requested size: 208.73653pt x 117.40979pt.
 
-<./Template_Figures/57Rd.png, id=781, 770.88pt x 433.62pt>
+<./Template_Figures/57Rd.png, id=837, 770.88pt x 433.62pt>
 File: ./Template_Figures/57Rd.png Graphic file (type png)
 
 <use ./Template_Figures/57Rd.png>
@@ -1652,14 +1661,14 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 54--62
 
 [31] [32 <./Template_Figures/blender_scene.png> <./Template_Figures/57L.png> <.
 /Template_Figures/57R.png> <./Template_Figures/57Ld.png> <./Template_Figures/57
-Rd.png>] <./Template_Figures/setup.png, id=797, 3276.24pt x 2457.18pt>
+Rd.png>] <./Template_Figures/setup.png, id=853, 3276.24pt x 2457.18pt>
 File: ./Template_Figures/setup.png Graphic file (type png)
 
 <use ./Template_Figures/setup.png>
 Package pdftex.def Info: ./Template_Figures/setup.png used on input line 72.
 (pdftex.def)             Requested size: 208.73653pt x 156.53535pt.
 
-<./Template_Figures/setup_sch.png, id=798, 255.95625pt x 233.87375pt>
+<./Template_Figures/setup_sch.png, id=854, 255.95625pt x 233.87375pt>
 File: ./Template_Figures/setup_sch.png Graphic file (type png)
 
 <use ./Template_Figures/setup_sch.png>
@@ -1667,7 +1676,7 @@ Package pdftex.def Info: ./Template_Figures/setup_sch.png used on input line 76
 .
 (pdftex.def)             Requested size: 166.98668pt x 152.57996pt.
  [33 <./Template_Figures/setup.png> <./Template_Figures/setup_sch.png>]
-<./Template_Figures/sim_gaussians.png, id=809, 578.16pt x 433.62pt>
+<./Template_Figures/sim_gaussians.png, id=865, 578.16pt x 433.62pt>
 File: ./Template_Figures/sim_gaussians.png Graphic file (type png)
 
 <use ./Template_Figures/sim_gaussians.png>
@@ -1675,7 +1684,7 @@ Package pdftex.def Info: ./Template_Figures/sim_gaussians.png used on input lin
 e 95.
 (pdftex.def)             Requested size: 292.22987pt x 219.17155pt.
 
-<./Template_Figures/stereo_ghost_left.png, id=810, 770.88pt x 433.62pt>
+<./Template_Figures/stereo_ghost_left.png, id=866, 770.88pt x 433.62pt>
 File: ./Template_Figures/stereo_ghost_left.png Graphic file (type png)
 
 <use ./Template_Figures/stereo_ghost_left.png>
@@ -1683,7 +1692,7 @@ Package pdftex.def Info: ./Template_Figures/stereo_ghost_left.png used on input
  line 109.
 (pdftex.def)             Requested size: 208.73653pt x 117.40979pt.
 
-<./Template_Figures/stereo_ghost_right.png, id=811, 770.88pt x 433.62pt>
+<./Template_Figures/stereo_ghost_right.png, id=867, 770.88pt x 433.62pt>
 File: ./Template_Figures/stereo_ghost_right.png Graphic file (type png)
 
 <use ./Template_Figures/stereo_ghost_right.png>
@@ -1695,7 +1704,7 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 108--116
 [][] [] 
  []
 
-<./Template_Figures/auto_ghost_left.png, id=812, 770.88pt x 433.62pt>
+<./Template_Figures/auto_ghost_left.png, id=868, 770.88pt x 433.62pt>
 File: ./Template_Figures/auto_ghost_left.png Graphic file (type png)
 
 <use ./Template_Figures/auto_ghost_left.png>
@@ -1713,31 +1722,118 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 117--125
 [][] [] 
  []
 
-) (./chapters/model.tex [34 <./Template_Figures/sim_gaussians.png (PNG copy)>]
-[35 <./Template_Figures/stereo_ghost_left.png (PNG copy)> <./Template_Figures/s
-tereo_ghost_right.png (PNG copy)> <./Template_Figures/auto_ghost_left.png (PNG 
-copy)>] [36
+<./Template_Figures/exp_env.png, id=871, 1686.3pt x 1053.9375pt>
+File: ./Template_Figures/exp_env.png Graphic file (type png)
+
+<use ./Template_Figures/exp_env.png>
+Package pdftex.def Info: ./Template_Figures/exp_env.png used on input line 134.
+
+(pdftex.def)             Requested size: 271.35493pt x 169.58226pt.
+
+<./Template_Figures/exp_env_depth.png, id=872, 232.87pt x 245.91875pt>
+File: ./Template_Figures/exp_env_depth.png Graphic file (type png)
+
+<use ./Template_Figures/exp_env_depth.png>
+Package pdftex.def Info: ./Template_Figures/exp_env_depth.png used on input lin
+e 138.
+(pdftex.def)             Requested size: 141.9393pt x 149.89763pt.
+ [34 <./Template_Figures/sim_gaussians.png (PNG copy)>] [35 <./Template_Figures
+/stereo_ghost_left.png (PNG copy)> <./Template_Figures/stereo_ghost_right.png (
+PNG copy)> <./Template_Figures/auto_ghost_left.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
+
+ []
+
+[36 <./Template_Figures/exp_env.png> <./Template_Figures/exp_env_depth.png>]
+<./Template_Figures/s_crosstalk_0.pdf, id=896, 562.1pt x 421.575pt>
+File: ./Template_Figures/s_crosstalk_0.pdf Graphic file (type pdf)
+
+<use ./Template_Figures/s_crosstalk_0.pdf>
+Package pdftex.def Info: ./Template_Figures/s_crosstalk_0.pdf used on input lin
+e 176.
+(pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
+ [37]
+<./Template_Figures/s_crosstalk_3.pdf, id=903, 562.1pt x 421.575pt>
+File: ./Template_Figures/s_crosstalk_3.pdf Graphic file (type pdf)
+
+<use ./Template_Figures/s_crosstalk_3.pdf>
+Package pdftex.def Info: ./Template_Figures/s_crosstalk_3.pdf used on input lin
+e 183.
+(pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
+ [38 <./Template_Figures/s_crosstalk_0.pdf>] <./Template_Figures/s_crosstalk_7.
+pdf, id=913, 562.1pt x 421.575pt>
+File: ./Template_Figures/s_crosstalk_7.pdf Graphic file (type pdf)
+
+<use ./Template_Figures/s_crosstalk_7.pdf>
+Package pdftex.def Info: ./Template_Figures/s_crosstalk_7.pdf used on input lin
+e 193.
+(pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
+ [39 <./Template_Figures/s_crosstalk_3.pdf>] <./Template_Figures/s_crosstalk_14
+.pdf, id=921, 562.1pt x 421.575pt>
+File: ./Template_Figures/s_crosstalk_14.pdf Graphic file (type pdf)
+
+<use ./Template_Figures/s_crosstalk_14.pdf>
+Package pdftex.def Info: ./Template_Figures/s_crosstalk_14.pdf used on input li
+ne 199.
+(pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
+
+<./Template_Figures/a_crosstalk_0.pdf, id=922, 562.1pt x 421.575pt>
+File: ./Template_Figures/a_crosstalk_0.pdf Graphic file (type pdf)
+
+<use ./Template_Figures/a_crosstalk_0.pdf>
+Package pdftex.def Info: ./Template_Figures/a_crosstalk_0.pdf used on input lin
+e 209.
+(pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
+ [40 <./Template_Figures/s_crosstalk_7.pdf> <./Template_Figures/s_crosstalk_14.
+pdf>]
+<./Template_Figures/a_crosstalk_3.pdf, id=933, 562.1pt x 421.575pt>
+File: ./Template_Figures/a_crosstalk_3.pdf Graphic file (type pdf)
+
+<use ./Template_Figures/a_crosstalk_3.pdf>
+Package pdftex.def Info: ./Template_Figures/a_crosstalk_3.pdf used on input lin
+e 215.
+(pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
+
+<./Template_Figures/a_crosstalk_7.pdf, id=934, 562.1pt x 421.575pt>
+File: ./Template_Figures/a_crosstalk_7.pdf Graphic file (type pdf)
+
+<use ./Template_Figures/a_crosstalk_7.pdf>
+Package pdftex.def Info: ./Template_Figures/a_crosstalk_7.pdf used on input lin
+e 221.
+(pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
+ [41 <./Template_Figures/a_crosstalk_0.pdf> <./Template_Figures/a_crosstalk_3.p
+df>]
+<./Template_Figures/a_crosstalk_14.pdf, id=945, 562.1pt x 421.575pt>
+File: ./Template_Figures/a_crosstalk_14.pdf Graphic file (type pdf)
+
+<use ./Template_Figures/a_crosstalk_14.pdf>
+Package pdftex.def Info: ./Template_Figures/a_crosstalk_14.pdf used on input li
+ne 227.
+(pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
+ [42 <./Template_Figures/a_crosstalk_7.pdf> <./Template_Figures/a_crosstalk_14.
+pdf>]) (./chapters/model.tex
+[43] [44
 
 ]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Model
 ------------------------------------------------------------------------------
-) (./chapters/applications.tex [37] [38
+) (./chapters/applications.tex [45] [46
 
 ]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 Applications
 ------------------------------------------------------------------------------
-) (./chapters/conclusion.tex [39] [40
+) (./chapters/conclusion.tex [47] [48
 
 ]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 Conclusion
 ------------------------------------------------------------------------------
-) (./Thesis.bbl [41] [42
+) (./Thesis.bbl [49] [50
 
 ]
 Overfull \hbox (1.45773pt too wide) in paragraph at lines 52--56
@@ -1746,28 +1842,28 @@ r/m/n/10 (-20) (2007), International Society for Optics and Photonics, pp. 6490
 12--
  []
 
-[43] [44]) [45] (./Thesis.ind [46
+[51] [52]) [53] (./Thesis.ind [54
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
  (./Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0E7DA8BD0C1CD2953F73967358028A83;9536.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
+(rerunfilecheck)             Checksum: C6759C0AB45ECE43BF8B73FE62F16647;10411.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
- 35582 strings out of 493089
- 684049 string characters out of 6134842
- 729753 words of memory out of 5000000
- 38078 multiletter control sequences out of 15000+600000
- 22955 words of font info for 163 fonts, out of 8000000 for 9000
+ 35732 strings out of 493089
+ 687208 string characters out of 6134842
+ 734829 words of memory out of 5000000
+ 38181 multiletter control sequences out of 15000+600000
+ 23240 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,78p,10383b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,78p,10383b,945s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -1785,10 +1881,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (64 pages, 13554277 bytes).
+Output written on Thesis.pdf (72 pages, 14169371 bytes).
 PDF statistics:
- 975 PDF objects out of 1000 (max. 8388607)
- 821 compressed objects within 9 object streams
- 191 named destinations out of 1000 (max. 500000)
- 29293 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1115 PDF objects out of 1200 (max. 8388607)
+ 940 compressed objects within 10 object streams
+ 214 named destinations out of 1000 (max. 500000)
+ 29383 words of extra memory for PDF output out of 29859 (max. 10000000)
 

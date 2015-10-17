@@ -19,6 +19,15 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Our Wheatstone setup. Physical view frusta are shaded in light blue where as the virtual view frusta are depicted in dotted gray lines. The cyan lines represent the mirrors \cite {vangorp2014depth}\relax }}{33}{figure.caption.59}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Luminance intensity profiles for an 11 view automultiscopic display simulated with Gaussians of $\sigma =2$ centered at the sweet spots. X-axis denote the viewing position.\relax }}{34}{figure.caption.62}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces (a,b) Observed left and right stereo images with 14\% crosstalk and crossed depth of 3.45 cm. (c,d) Same configuration for observed images on automultiscopic display)\relax }}{35}{figure.caption.64}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces (A) Schematics of the complete display. Upper half of the screen shows the reference stimulus with 14\% crosstalk. The bottom half shows the user controlled test stimulus free of crosstalk. (B) Layout of the experiment environment in terms of depth w.r.t. observer.\relax }}{36}{figure.caption.67}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Abscissa shows the observed depth when no crosstalk is present. The error bars indicate $\pm $ 1 standard error.\relax }}{38}{figure.caption.73}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Abscissa shows the observed depth when 3\% crosstalk is present. The error bars indicate $\pm $ 1 standard error.\relax }}{39}{figure.caption.74}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Abscissa shows the observed depth when 7\% crosstalk is present. The error bars indicate $\pm $ 1 standard error.\relax }}{40}{figure.caption.75}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Abscissa shows the observed depth when 14\% crosstalk is present. The error bars indicate $\pm $ 1 standard error.\relax }}{40}{figure.caption.76}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Abscissa shows the observed depth when no crosstalk is present. The error bars indicate $\pm $ 1 standard error.\relax }}{41}{figure.caption.78}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Abscissa shows the observed depth when 3\% crosstalk is present. The error bars indicate $\pm $ 1 standard error.\relax }}{41}{figure.caption.79}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Abscissa shows the observed depth when 7\% crosstalk is present. The error bars indicate $\pm $ 1 standard error.\relax }}{42}{figure.caption.80}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Abscissa shows the observed depth when 14\% crosstalk is present. The error bars indicate $\pm $ 1 standard error.\relax }}{42}{figure.caption.81}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
