@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 OCT 2015 00:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 OCT 2015 03:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1604,7 +1604,7 @@ File: ./Template_Figures/perceptual_ct.png Graphic file (type png)
 
 <use ./Template_Figures/perceptual_ct.png>
 Package pdftex.def Info: ./Template_Figures/perceptual_ct.png used on input lin
-e 64.
+e 66.
 (pdftex.def)             Requested size: 292.22987pt x 193.71898pt.
  [25 <./Template_Figures/perceptual_ct.png>] [26]) (./chapters/experiments.tex 
 [27] [28
@@ -1776,64 +1776,70 @@ File: ./Template_Figures/s_crosstalk_14.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Template_Figures/s_crosstalk_14.pdf used on input li
 ne 199.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
-
-<./Template_Figures/a_crosstalk_0.pdf, id=922, 562.1pt x 421.575pt>
+ [40 <./Template_Figures/s_crosstalk_7.pdf> <./Template_Figures/s_crosstalk_14.
+pdf>]
+<./Template_Figures/a_crosstalk_0.pdf, id=936, 562.1pt x 421.575pt>
 File: ./Template_Figures/a_crosstalk_0.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/a_crosstalk_0.pdf>
 Package pdftex.def Info: ./Template_Figures/a_crosstalk_0.pdf used on input lin
-e 209.
+e 213.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
- [40 <./Template_Figures/s_crosstalk_7.pdf> <./Template_Figures/s_crosstalk_14.
-pdf>]
-<./Template_Figures/a_crosstalk_3.pdf, id=933, 562.1pt x 421.575pt>
+
+<./Template_Figures/a_crosstalk_3.pdf, id=937, 562.1pt x 421.575pt>
 File: ./Template_Figures/a_crosstalk_3.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/a_crosstalk_3.pdf>
 Package pdftex.def Info: ./Template_Figures/a_crosstalk_3.pdf used on input lin
-e 215.
+e 219.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
-
-<./Template_Figures/a_crosstalk_7.pdf, id=934, 562.1pt x 421.575pt>
+ [41 <./Template_Figures/a_crosstalk_0.pdf>] <./Template_Figures/a_crosstalk_7.
+pdf, id=945, 562.1pt x 421.575pt>
 File: ./Template_Figures/a_crosstalk_7.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/a_crosstalk_7.pdf>
 Package pdftex.def Info: ./Template_Figures/a_crosstalk_7.pdf used on input lin
-e 221.
+e 225.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
- [41 <./Template_Figures/a_crosstalk_0.pdf> <./Template_Figures/a_crosstalk_3.p
-df>]
-<./Template_Figures/a_crosstalk_14.pdf, id=945, 562.1pt x 421.575pt>
+
+<./Template_Figures/a_crosstalk_14.pdf, id=946, 562.1pt x 421.575pt>
 File: ./Template_Figures/a_crosstalk_14.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/a_crosstalk_14.pdf>
 Package pdftex.def Info: ./Template_Figures/a_crosstalk_14.pdf used on input li
-ne 227.
-(pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
- [42 <./Template_Figures/a_crosstalk_7.pdf> <./Template_Figures/a_crosstalk_14.
-pdf>]) (./chapters/model.tex
-[43] [44
+ne 231.
+(pdftex.def)             Requested size: 208.73653pt x 156.55281pt.
+ [42 <./Template_Figures/a_crosstalk_3.pdf> <./Template_Figures/a_crosstalk_7.p
+df>]
+
+LaTeX Warning: Citation `banksLimits' on page 43 undefined on input line 242.
+
+[43 <./Template_Figures/a_crosstalk_14.pdf>]
+
+LaTeX Warning: Citation `banksLimits' on page 44 undefined on input line 244.
+
+[44]) (./chapters/model.tex [45] [46
 
 ]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Model
 ------------------------------------------------------------------------------
-) (./chapters/applications.tex [45] [46
+) (./chapters/applications.tex [47] [48
 
 ]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 Applications
 ------------------------------------------------------------------------------
-) (./chapters/conclusion.tex [47] [48
+) (./chapters/conclusion.tex [49] [50
 
 ]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 Conclusion
 ------------------------------------------------------------------------------
-) (./Thesis.bbl [49] [50
+) (./Thesis.bbl [51] [52
 
 ]
 Overfull \hbox (1.45773pt too wide) in paragraph at lines 52--56
@@ -1842,7 +1848,7 @@ r/m/n/10 (-20) (2007), International Society for Optics and Photonics, pp. 6490
 12--
  []
 
-[51] [52]) [53] (./Thesis.ind [54
+[53] [54]) [55] (./Thesis.ind [56
 
 
 
@@ -1854,14 +1860,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: C6759C0AB45ECE43BF8B73FE62F16647;10411.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
- 35732 strings out of 493089
- 687208 string characters out of 6134842
- 734829 words of memory out of 5000000
- 38181 multiletter control sequences out of 15000+600000
- 23240 words of font info for 168 fonts, out of 8000000 for 9000
+ 35741 strings out of 493089
+ 687323 string characters out of 6134842
+ 734904 words of memory out of 5000000
+ 38184 multiletter control sequences out of 15000+600000
+ 23348 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,78p,10383b,945s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -1881,10 +1891,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (72 pages, 14169371 bytes).
+Output written on Thesis.pdf (74 pages, 14178337 bytes).
 PDF statistics:
- 1115 PDF objects out of 1200 (max. 8388607)
- 940 compressed objects within 10 object streams
- 214 named destinations out of 1000 (max. 500000)
+ 1146 PDF objects out of 1200 (max. 8388607)
+ 969 compressed objects within 10 object streams
+ 218 named destinations out of 1000 (max. 500000)
  29383 words of extra memory for PDF output out of 29859 (max. 10000000)
 
