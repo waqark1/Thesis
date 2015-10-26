@@ -94,6 +94,12 @@
   Imaging: Science and Technology\/} (1994), International Society for Optics
   and Photonics, pp.~92--96.
 
+\bibitem{mantiuk2004visible}
+{\sc Mantiuk, R., Myszkowski, K., and Seidel, H.-P.}
+\newblock Visible difference predicator for high dynamic range images.
+\newblock In {\em Systems, Man and Cybernetics, 2004 IEEE International
+  Conference on\/} (2004), vol.~3, IEEE, pp.~2763--2769.
+
 \bibitem{depthcues1}
 {\sc Reichelt, S., H{\"a}ussler, R., F{\"u}tterer, G., and Leister, N.}
 \newblock Depth cues in human visual perception and their realization in 3d
@@ -157,6 +163,12 @@
   algorithm.
 \newblock {\em Journal of Applied Mathematics 2014\/} (2014).
 
+\bibitem{wang2004image}
+{\sc Wang, Z., Bovik, A.~C., Sheikh, H.~R., and Simoncelli, E.~P.}
+\newblock Image quality assessment: from error visibility to structural
+  similarity.
+\newblock {\em Image Processing, IEEE Transactions on 13}, 4 (2004), 600--612.
+
 \bibitem{wiki:depth_perception}
 {\sc Wikipedia}.
 \newblock Depth perception --- wikipedia{,} the free encyclopedia, 2015.
@@ -171,6 +183,12 @@
 {\sc Wikipedia}.
 \newblock Light field --- wikipedia{,} the free encyclopedia, 2015.
 \newblock [Online; accessed 7-October-2015].
+
+\bibitem{wiki:MSE}
+{\sc Wikipedia}.
+\newblock Peak signal-to-noise ratio --- wikipedia{,} the free encyclopedia,
+  2015.
+\newblock [Online; accessed 25-October-2015].
 
 \bibitem{wiki:polarizationwiki}
 {\sc Wikipedia}.
