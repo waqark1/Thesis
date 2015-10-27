@@ -4,7 +4,7 @@
 
 \contentsline {chapter}{Contents}{xi}{chapter*.8}
 \contentsline {chapter}{List of Figures}{xiii}{chapter*.9}
-\contentsline {chapter}{List of Tables}{xv}{chapter*.10}
+\contentsline {chapter}{List of Tables}{xvii}{chapter*.10}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.11}
 \contentsline {section}{\numberline {1.1}Goal and overview}{1}{section.12}
 \contentsline {section}{\numberline {1.2}Contributions}{1}{section.13}
@@ -38,10 +38,11 @@
 \contentsline {subsection}{\numberline {4.6.2}Automultiscopic}{46}{subsection.84}
 \contentsline {chapter}{\numberline {5}Applications}{49}{chapter.86}
 \contentsline {section}{\numberline {5.1}Observed depth prediction}{50}{section.87}
-\contentsline {chapter}{\numberline {6}Conclusion}{53}{chapter.90}
-\contentsline {section}{\numberline {6.1}Summary}{53}{section.91}
-\contentsline {section}{\numberline {6.2}Future Work}{53}{section.92}
-\contentsline {section}{\numberline {6.3}Open Questions}{53}{section.93}
-\contentsline {chapter}{Bibliography}{55}{chapter*.94}
+\contentsline {section}{\numberline {5.2}Crosstalk mitigation}{55}{section.95}
+\contentsline {chapter}{\numberline {6}Conclusion}{57}{chapter.96}
+\contentsline {section}{\numberline {6.1}Summary}{57}{section.97}
+\contentsline {section}{\numberline {6.2}Future Work}{57}{section.98}
+\contentsline {section}{\numberline {6.3}Open Questions}{57}{section.99}
+\contentsline {chapter}{Bibliography}{59}{chapter*.100}
 \vspace {2em}
-\contentsline {chapter}{Index}{58}{chapter*.94}
+\contentsline {chapter}{Index}{62}{chapter*.100}

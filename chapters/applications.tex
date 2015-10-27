@@ -21,7 +21,7 @@ where
 W_L \:=\: W_R \:=\: e^{-\left(\frac{x^2}{2\sigma_x^2} \:+\: \frac{y^2}{2\sigma_y^2}\right)}
 \label{ccr_windows}
 \end{equation}
-are anisotropic Gaussian windows (patches) in the left and the right stereo images. The window $W_L$ is fixed in one image while $W_R$ is displaced horizontally while keeping the vertical position constant. For each displacement, $c(\delta_x)$ is computed that results in a value of +1 if the patches are perfectly correlated or -1 if the patches have no correlation at all or a value in between +1 and -1. The `$\delta_x$' for which the maximum cross-correlation is attained is considered to be matching pixel (or patch) in the right image w.r.t the left image. The process is repeated for all the pixels in the left image. This model was tested on random dot stereogram consisting of saw-toothed corrugation and the resulting computed disparities for each part of the stereogram matched the results obtained via experiments on human observers. The random dot stereograms used however were devoid of any crosstalk.
+are anisotropic Gaussian windows (patches) in the left and the right stereo images. The window $W_L$ is fixed in one image while $W_R$ is displaced horizontally while keeping the vertical position constant. For each displacement$\delta_x$, $c(\delta_x)$ is computed that results in a value of +1 if the patches are perfectly correlated or -1 if the patches have no correlation at all or a value in between +1 and -1. The `$\delta_x$' for which the maximum cross-correlation is attained is considered to be matching pixel (or patch) in the right image w.r.t the left image. The process is repeated for all the pixels in the left image. This model was tested on random dot stereogram consisting of saw-toothed corrugation and the resulting computed disparities for each part of the matched the results obtained via experiments on human observers. The random dot stereograms used however were devoid of any crosstalk.
 
 We tested the same model on our stimuli (Chapter 4) and found that this model always resulted in the correct disparity of the objects between a stereo image pair. I.e the crosstalk had no effect on the estimated disparity. This did not match the results we obtained for the human observers. The reason being that even thought the areas on the images where the ghosts are present will show some positive correlation, the maximum correlation is always obtained at the location where the actual object is located.
 
@@ -31,14 +31,48 @@ Hence it is clear that the HVS does not simply estimate the depth from disparity
 \item{Estimated disparity `d' should shift towards zero disparity gradually as the actual disparity increases some threshold.}
 \item{Estimated disparity should be estimated as 0 if the crosstalk level increases some threshold.}
 \end{itemize}
-Hence we have to weigh the resulting cross-correlation profile for all disparities. We observe that weighing the said cross-correlation profile with a Gaussian centered at the location of object in the left eye image fulfills the above mentioned requirements as seen in fig \textcolor{red}{insert the figure for }.
+Hence we have to weigh the resulting cross-correlation profile for all disparities. We observe that weighing the said cross-correlation profile with a Gaussian centered at the location of object in the left eye image fulfills the above mentioned requirements as seen in fig \ref{fig:windowed_ccr}.
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.9\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/normal_ccr}
+        \caption{}\label{fig:normal_ccr}
+    \end{subfigure}
 
-In our disparity estimator model, we ...
+    \begin{subfigure}[b]{0.9\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/windowed_ccr}
+        \caption{}\label{fig:windowed_ccr}
+    \end{subfigure}
 
+    \caption{.\label{fig:windowed_ccr_f}}
+\end{figure}
 
-% \section{Depth prediction application}
+In our disparity estimator model, we assume that the HVS will be able to isolate the object of interest in one source retinal image (due to luminance profile) and try to find an appropriate match for that object in the other i.e. target image. The target image consist of two possible matches i.e. the ghost and the object itself. For simplicity, we chose to compute the cross-correlation for a single scan-line of the stereo image pair. This would be sufficient to estimate the disparity of fixed width objects. Figure \ref{fig:normal_ccr} (blue) represents the cross-correlation profile for a cylinder that has a width of 9 pixels and is located at the disparity of 9 pixel. The background for simplicity in this case is black. We can see that there is some positive correlation at zero disparity due to the 14\% crosstalk ghost however, the full correlation (+1) is attained where the lag is 9 indicating the actual disparity of the object. The orange graph represents how the resulting correlation profile is weighted by a truncated Gaussian that has a standard deviation of 9 pixels. The Gaussian weighed correlation profile \ref{fig:windowed_ccr} is obtained by simple point-wise multiplication of the two functions in figure \ref{fig:normal_ccr}. It can be seen that after weighing with the Gaussian window for which the standard deviation $\sigma$ is roughly equal to the width of the object, the maximum correlation occurs at a lag of 3 pixels. Which shows that the perceived depth via disparity would be approximately 3 pixels (around 1.18 cm). So in this case the estimated disparity is quite close to the result that we obtained from the experiments.
 
-% \section{Crosstalk mitigation}
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.7\textwidth]{./Template_Figures/s_9_sigma_7_4}
+    \caption{Comparison of experimental observed depth for cylinder of 18.9 arc min width (orange) vs estimated depth via windowed cross-correlation. The best results were obtained with $\sigma$ = 15.4 arc min.\label{fig:s_9_sigma_7_4}}
+\end{figure}
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.7\textwidth]{./Template_Figures/s_18_sigma_14_7}
+    \caption{Comparison of experimental observed depth for cylinder of 37.8 arc min width (orange) vs estimated depth via windowed cross-correlation. The best results were obtained with $\sigma$ = 30.87 arc min.\label{fig:s_18_sigma_14_7}}
+\end{figure}
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.7\textwidth]{./Template_Figures/s_27_sigma_17_4}
+    \caption{Comparison of experimental observed depth for cylinder of 56.7 arc min width (orange) vs estimated depth via windowed cross-correlation. The best results were obtained with $\sigma$ = 36.54 arc min.\label{fig:s_27_sigma_17_4}}
+\end{figure}
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.7\textwidth]{./Template_Figures/s_36_sigma_22}
+    \caption{Comparison of experimental observed depth for cylinder of 75.6 arc min width (orange) vs estimated depth via windowed cross-correlation. The best results were obtained with $\sigma$ = 46.2 arc min.\label{fig:s_36_sigma_22}}
+\end{figure}
+
+Next we simulated our stereo experiments for the cylinders and computed the estimated depth using our Gaussian weighted cross-correlation model. Figure \ref{fig:s_9_sigma_7_4} to Figure \ref{fig:s_36_sigma_22} shows the results that we obtained and there comparison with the data we got from our experiments. We observed that even thought this model had some short comings and did not fit to all of the data properly, it was able to mimic the degradation of estimated depth as the crosstalk level or the disparity increased. The figures above represents the estimated depth using a fixed $\sigma$ for each cylinder that best matched the data. For almost all the cases (specific disparities and crosstalk levels) where the estimated depth was incorrectly estimated, we were able get approximately matching results using some $\sigma$. But we were not able to find one $\sigma$ that matched all cases for a particular type of cylinder. Perhaps the HVS weighs the cross-correlation profile with Gaussians of different standard deviations for different object widths and disparities. Our Gaussian window weighted local cross-correlation model has an advantage that it resolves to a degraded estimates depth in case when certain level of crosstalk is present. However, the short coming is that it also penalizes the estimated depth to some level even if there is no crosstalk present. This does not conform very well to our experimental data but maybe it gives the right direction for the future research in this area.
+
+\section{Crosstalk mitigation}
 % \subsection{Proposed optimizations}
 % \subsection{Unsharp masking in view domain}
 % \subsection{Iterative subtraction}
