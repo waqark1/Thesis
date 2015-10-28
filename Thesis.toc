@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {4.6.2}Automultiscopic}{46}{subsection.84}
 \contentsline {chapter}{\numberline {5}Applications}{49}{chapter.86}
 \contentsline {section}{\numberline {5.1}Observed depth prediction}{50}{section.87}
-\contentsline {section}{\numberline {5.2}Crosstalk mitigation}{55}{section.95}
+\contentsline {section}{\numberline {5.2}Crosstalk mitigation}{56}{section.95}
 \contentsline {chapter}{\numberline {6}Conclusion}{57}{chapter.96}
 \contentsline {section}{\numberline {6.1}Summary}{57}{section.97}
 \contentsline {section}{\numberline {6.2}Future Work}{57}{section.98}
