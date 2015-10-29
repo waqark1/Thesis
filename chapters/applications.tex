@@ -74,6 +74,50 @@ Next we simulated our stereo experiments for the cylinders and computed the esti
 \pagebreak
 
 \section{Crosstalk mitigation}
+
+Corn-sweet illusion \cite{ wiki:cornsweet} is used in contrast boosting image processing techniques such as unsharp masking. The basic idea of unsharp masking is to add to an image a high frequency image of itself. The high frequencies containing image is obtained by subtracting a blurred version of the image from itself. \cite{van2011perceptually} used similar technique to blur the uncorrectable crosstalk in combination with increasing the contrast of the object around the edges. One can generally use unsharp masking to subdue the perception of the uncorrectable ghosts. However applying unsharp masking in spatial domain also boosts the unwanted noise. Since automultiscopic screens displays lightfields, we thought that applying unsharp masking in the view domain (also called as the epipolar domain) would result in a crosstalk compensated lightfield with increased local contrast around the object. Let $\Psi$ be a lightfield in which x, y denote the spacial dimensions on the displayed image and w denotes the epipolar domain (Figure \ref{fig:lightfeild})
+\begin{figure}[htbp]
+\centering
+    \includegraphics[width=0.7\textwidth]{./Template_Figures/lightfield}
+    \caption{Representation of a 3D lightfield.\label{fig:lightfeild}}
+\end{figure}
+Then for an automultiscopic screen where only the light from the immediate neighbors is leaked, we blur the lightfield in epipolar domain with the following kernel. This will result in a epipolar domain blurred lightfield $\Psi_{blr}$
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+$\omega_1$ & $\omega_2$ & $\omega_3$ \\
+\hline
+\end{tabular}
+\label{tab:blurring_kernel}
+\end{table}
+
+Next we subtract $\Psi_{blr}$ from the original Light Field $\Psi$. This will give us  $\Psi_{hf}$, a Light Field that only contains luminance-inverted ghosts in every view. i.e.
+\begin{equation}
+\Psi_{hf}\: =\: \Psi\: -\: \Psi_{blr}
+\end{equation}
+The crosstalk compensated lightfield is obtained as
+\begin{equation}
+\Psi_{opt}\: =\: \Psi\: +\: \Psi_{hf}
+\end{equation}
+Hence for every view image $I \in\: \Psi_{opt}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 % \subsection{Proposed optimizations}
 % \subsection{Unsharp masking in view domain}
 % \subsection{Iterative subtraction}
