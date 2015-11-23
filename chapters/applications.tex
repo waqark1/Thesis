@@ -75,6 +75,9 @@ Next we simulated our stereo experiments for the cylinders and computed the esti
 
 \section{Crosstalk mitigation}
 
+During the course of this thesis, we devised and tested some new ideas that might be able to improve the current crosstalk reduction techniques. In the following section we review those ideas.
+
+\subsection{Unsharp masking in epipolar domain}
 Corn-sweet illusion \cite{ wiki:cornsweet} is used in contrast boosting image processing techniques such as unsharp masking. The basic idea of unsharp masking is to add to an image a high frequency image of itself. The high frequencies containing image is obtained by subtracting a blurred version of the image from itself. \cite{van2011perceptually} used similar technique to blur the uncorrectable crosstalk in combination with increasing the contrast of the object around the edges. One can generally use unsharp masking to subdue the perception of the uncorrectable ghosts. However applying unsharp masking in spatial domain also boosts the unwanted noise. Since automultiscopic screens displays lightfields, we thought that applying unsharp masking in the view domain (also called as the epipolar domain) would result in a crosstalk compensated lightfield with increased local contrast around the object. Let $\Psi$ be a lightfield in which x, y denote the spacial dimensions on the displayed image and w denotes the epipolar domain (Figure \ref{fig:lightfeild})
 \begin{figure}[htbp]
 \centering
@@ -101,21 +104,100 @@ The crosstalk compensated lightfield is obtained as
 \Psi_{opt}\: =\: \Psi\: +\: \Psi_{hf}
 \end{equation}
 Hence for every view image $I \in\: \Psi_{opt}$
+\begin{equation}
+\begin{aligned}
+I_{opt}\: =\:  I + (I - \omega_1I_L - \omega_2I - \omega_3I_R) \\
+I_{opt}\: = \: (2-\omega_2)\ I\: -\: \omega_1I_L\: -\: \omega_3I_R
+\end{aligned}
+\end{equation}
+Where $I$ is the view centered image and $I_L, I_R$ are the immediate left and right neighbors. Since the automultiscopic screen will display the optimized Light Field image as a weighted sum of $I_L, I_R$ and $I$ i.e.
+\begin{equation}
+\begin{aligned}
+I_{observed}\: =\:  \Phi_1.I_{L(opt)}\: + \:\Phi_2.I_{(opt)}\: + \:\Phi_3.I_{R(opt)}       \\
+I_{observed}\: = \: \Phi_1{(2-\omega_2) I_L\: -\: \omega_1I_{LL}\: -\: \omega_3I}\:+  \\
+                    \Phi_2{(2-\omega_2) I\: -\: \omega_1I_{L}\: -\: \omega_3I_R}\:+   \\
+                    \Phi_3{(2-\omega_2) I_R\: -\: \omega_1I\: -\: \omega_3I_{RR}}
+\end{aligned}
+\end{equation}
+Here $I_{LL}$ and $I_{RR}$ are the immediate left and right images to Left and right image of the view position in the lightfeild. We know from \ref{fig:sim_gaussians} that
+\begin{equation}
+\begin{aligned}
+\Phi_1\:=\: \Phi_3\:=\: 0.0351,\:\: \Phi_2\:=\:0.8
+\end{aligned}
+\end{equation}
+In order to cancel the effect of $I_L$ and $I_R$ we choose
+\begin{equation}
+\begin{aligned}
+\omega_1\:=\: \omega_3\:=\: 0.0421,\:\: \omega_2\:=\:1.19
+\end{aligned}
+\end{equation}
+The viewer observed image $I_{observed}$ can then be mathematically written as
+\begin{equation}
+I_{observed}\: =\:  1.42.I\:-\: 0.0014(I_{LL}\:+\:I_{RR})
+\label{eq:final_unsharp_obs}
+\end{equation}
 
+It can be seen from equation \ref{eq:final_unsharp_obs} that even though the The crosstalk effect from the immediate left and right image of a view has been eliminated, some over-subtraction of luminance due to the $I_{LL}$ and $I_{RR}$ propagates in the observed image $I_{observed}$. Also, the average luminance of the view centered image $I$ has been increased to 1.42. Since the maximum luminance value an automultiscopic screen can display is 1, over proposed technique will result in clipping of the all the luminance values above 1 hence resulting in loss of contrast. More importantly, we described in figure \ref{fig:why_no_cornsweet}, it is impossible to obtain corn-sweet profiles by performing unsharp masking in view domain on a lightfeild.
 
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/unsharp_proper}
+        \caption{}\label{fig:cornsweet}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/unsharp_epipolar}
+        \caption{}\label{fig:no_cornsweet}
+    \end{subfigure}
 
+    \caption{(A) 1D representation of luminance profile along an image row. Blue graph represents a luminance step and orange graph represents the luminance profile of the blurred image. Yellow graph represents corn-sweet profile centered at the luminance edge and obtained as the difference between the original and the blurred image.  (B) Same procedure performed in view domain. Blue graph represents the luminance profile of a lightfeild image and orange graph represents the non-energy preserving additive blurring due to neighboring views in an automultiscopic environment. The Yellow graph represents the difference between the view image and its view-domain blurred version that resembles closely to subtractive crosstalk cancellation rather than a corn-sweet profile.\label{fig:why_no_cornsweet}}
+\end{figure}
 
+\subsection{Iterative crosstalk reduction}
 
+To the best of our knowledge, all the current subtractive crosstalk reduction techniques compute the pre-processed crosstalk compensated images by subtracting the amount of leaked light between neighboring. The calculation of subtracted leaked light is always performed while considering the unmodified stereo image pair. We observe that the amount of light leaked into a view image due to the unmodified alternative view image should be different when the alternate view image is already crosstalk compensated. This is the case in reality and hence we think that a view image should be compensated appropriately if it alternative view image is already crosstalk compensated. Inspired by this idea, we propose an iterative subtractive crosstalk reduction technique.
 
+Consider a lightfeild $\Psi$ consisting a set of view images ${f_1, f_2, ..., f_N}$. When the $i^{th}$ view is displayed on an automultiscopic screen, its crosstalk $\phi(f_i)$ from the neighboring views can be written as
+\begin{equation}
+\phi(f_i)\:=\: a_1.f_1\:+\:a_2.f_2\:+\:...\:a_{i-1}.f_{i-1}\:+\:a_{i+1}.f_{i+1}\:+\:...\:a_n.f_n
+\end{equation}
+Where the light intensity leakage values $a_1...a_n$ are chosen according to figure \ref{fig:sim_gaussians}. The crosstalk compensated images $\{\gamma_1...\gamma_n\}$ can then be computed iteratively as
+\begin{equation}
+\begin{aligned}
+\gamma_1^{n+1} \:=\: f_1 \:+\: \phi(\gamma_1^n) \\
+\gamma_2^{n+1} \:=\: f_2 \:+\: \phi(\gamma_2^n) \\
+.\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\ \\
+.\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\ \\
+.\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\ \\
+\gamma_N^{n+1} \:=\: f_N \:+\: \phi(\gamma_N^n) \\
+\end{aligned}
+\end{equation}
+Where `n' is the number of current iteration. After each iteration, clipping of the values exceeding the display's dynamic range is performed. The iterations terminate when an error $\epsilon$ falls below a threshold.
+\begin{equation}
+\begin{aligned}
+\epsilon \:=\: \sqrt{(\gamma_1^{n+1}\:-\:\gamma_1^n)^2 \:+\: ...\:+\:(\gamma_N^{n+1}\:-\:\gamma_N^n)^2}
+\end{aligned}
+\end{equation}
 
+This technique compensates for the crosstalk more appropriately however, the successive subtraction of luminance from the lightfeild view images between iterations might result in lower average luminance in the crosstalk compensated lightfeild (figure \ref{fig:iterative_tech}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/image_w_ct}
+        \caption{}\label{fig:original_lf}
+    \end{subfigure}
 
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/subtractive_comp}
+        \caption{}\label{fig:subtractive_lf}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/iterative_comp}
+        \caption{}\label{fig:iterative_lf}
+    \end{subfigure}
 
-
-
-
-
-
-
+    \caption{(A) \label{fig:iterative_tech}}
+\end{figure}
 
 
 % \subsection{Proposed optimizations}

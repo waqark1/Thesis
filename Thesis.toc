@@ -6,42 +6,44 @@
 \contentsline {chapter}{List of Figures}{xiii}{chapter*.9}
 \contentsline {chapter}{List of Tables}{xvii}{chapter*.10}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.11}
-\contentsline {section}{\numberline {1.1}Contribution}{1}{section.12}
+\contentsline {section}{\numberline {1.1}Contribution}{2}{section.12}
 \contentsline {section}{\numberline {1.2}Structure}{2}{section.13}
-\contentsline {chapter}{\numberline {2}Relevant Background}{3}{chapter.14}
-\contentsline {section}{\numberline {2.1}Binocular vision, stereopsis and its limits}{3}{section.16}
-\contentsline {section}{\numberline {2.2}Crosstalk}{6}{section.18}
-\contentsline {section}{\numberline {2.3}Stereoscopic/Automultiscopic Screens and its cross-talk}{9}{section.24}
-\contentsline {subsection}{\numberline {2.3.1}Time sequential stereo using active shutter glasses with an LCD display}{9}{subsection.26}
-\contentsline {subsection}{\numberline {2.3.2}Polarized Stereo}{11}{subsection.28}
-\contentsline {subsection}{\numberline {2.3.3}Automultiscopic Screens}{14}{subsection.30}
-\contentsline {chapter}{\numberline {3}Related work}{17}{chapter.34}
-\contentsline {section}{\numberline {3.1}Effects of crosstalk on perceived depth}{17}{section.35}
-\contentsline {section}{\numberline {3.2}Depth resolution mechanisms in HVS}{20}{section.37}
-\contentsline {section}{\numberline {3.3}Reduction of crosstalk}{21}{section.40}
-\contentsline {subsection}{\numberline {3.3.1}Stereoscopic screens}{22}{subsection.41}
-\contentsline {subsection}{\numberline {3.3.2}Automultiscopic screens}{24}{subsection.46}
-\contentsline {chapter}{\numberline {4}Crosstalk Experiments}{27}{chapter.51}
-\contentsline {section}{\numberline {4.1}Motivation}{27}{section.52}
-\contentsline {section}{\numberline {4.2}stimuli}{29}{section.53}
-\contentsline {subsection}{\numberline {4.2.1}Stereo and Automultiscopic stimuli}{30}{subsection.56}
-\contentsline {section}{\numberline {4.3}Apparatus and simulation procedure}{31}{section.58}
-\contentsline {section}{\numberline {4.4}Experiment procedure}{33}{section.65}
-\contentsline {subsection}{\numberline {4.4.1}Environment Setup}{33}{subsection.66}
-\contentsline {subsection}{\numberline {4.4.2}Subjects}{34}{subsection.68}
-\contentsline {subsection}{\numberline {4.4.3}Experiment parameters}{34}{subsection.70}
-\contentsline {section}{\numberline {4.5}Results}{35}{section.71}
-\contentsline {subsection}{\numberline {4.5.1}Stereo}{35}{subsection.72}
-\contentsline {subsection}{\numberline {4.5.2}Automultiscopic}{39}{subsection.77}
-\contentsline {section}{\numberline {4.6}Discussion}{41}{section.82}
-\contentsline {subsection}{\numberline {4.6.1}Stereo}{41}{subsection.83}
-\contentsline {subsection}{\numberline {4.6.2}Automultiscopic}{44}{subsection.84}
-\contentsline {chapter}{\numberline {5}Applications}{47}{chapter.86}
-\contentsline {section}{\numberline {5.1}Observed depth prediction}{48}{section.87}
-\contentsline {section}{\numberline {5.2}Crosstalk mitigation}{54}{section.95}
-\contentsline {chapter}{\numberline {6}Conclusion}{57}{chapter.100}
-\contentsline {section}{\numberline {6.1}Summary}{57}{section.101}
-\contentsline {section}{\numberline {6.2}Future Work}{58}{section.102}
-\contentsline {chapter}{Bibliography}{59}{chapter*.103}
+\contentsline {chapter}{\numberline {2}Relevant Background}{5}{chapter.14}
+\contentsline {section}{\numberline {2.1}Binocular vision, stereopsis and its limits}{5}{section.16}
+\contentsline {section}{\numberline {2.2}Crosstalk}{8}{section.18}
+\contentsline {section}{\numberline {2.3}Stereoscopic and automultiscopic screens and its crosstalk}{11}{section.28}
+\contentsline {subsection}{\numberline {2.3.1}Time sequential stereo using active shutter glasses with an LCD display}{11}{subsection.30}
+\contentsline {subsection}{\numberline {2.3.2}Polarized stereo}{14}{subsection.32}
+\contentsline {subsection}{\numberline {2.3.3}Automultiscopic Screens}{16}{subsection.34}
+\contentsline {chapter}{\numberline {3}Related work}{21}{chapter.38}
+\contentsline {section}{\numberline {3.1}Effects of crosstalk on perceived depth}{21}{section.39}
+\contentsline {section}{\numberline {3.2}Depth resolution mechanisms in HVS}{24}{section.41}
+\contentsline {section}{\numberline {3.3}Reduction of crosstalk}{25}{section.44}
+\contentsline {subsection}{\numberline {3.3.1}Stereoscopic displays}{26}{subsection.45}
+\contentsline {subsection}{\numberline {3.3.2}Automultiscopic screens}{28}{subsection.50}
+\contentsline {chapter}{\numberline {4}Crosstalk Experiments}{31}{chapter.55}
+\contentsline {section}{\numberline {4.1}Motivation}{31}{section.56}
+\contentsline {section}{\numberline {4.2}stimuli}{33}{section.57}
+\contentsline {subsection}{\numberline {4.2.1}Stereo and Automultiscopic stimuli}{34}{subsection.60}
+\contentsline {section}{\numberline {4.3}Apparatus and simulation procedure}{35}{section.62}
+\contentsline {section}{\numberline {4.4}Experiment procedure}{37}{section.69}
+\contentsline {subsection}{\numberline {4.4.1}Environment Setup}{37}{subsection.70}
+\contentsline {subsection}{\numberline {4.4.2}Subjects}{38}{subsection.72}
+\contentsline {subsection}{\numberline {4.4.3}Experiment parameters}{38}{subsection.74}
+\contentsline {section}{\numberline {4.5}Results}{39}{section.75}
+\contentsline {subsection}{\numberline {4.5.1}Stereo}{39}{subsection.76}
+\contentsline {subsection}{\numberline {4.5.2}Automultiscopic}{43}{subsection.81}
+\contentsline {section}{\numberline {4.6}Discussion}{45}{section.86}
+\contentsline {subsection}{\numberline {4.6.1}Stereo}{45}{subsection.87}
+\contentsline {subsection}{\numberline {4.6.2}Automultiscopic}{48}{subsection.88}
+\contentsline {chapter}{\numberline {5}Applications}{51}{chapter.90}
+\contentsline {section}{\numberline {5.1}Observed depth prediction}{52}{section.91}
+\contentsline {section}{\numberline {5.2}Crosstalk mitigation}{58}{section.99}
+\contentsline {subsection}{\numberline {5.2.1}Unsharp masking in epipolar domain}{58}{subsection.100}
+\contentsline {subsection}{\numberline {5.2.2}Iterative crosstalk reduction}{60}{subsection.111}
+\contentsline {chapter}{\numberline {6}Conclusion}{63}{chapter.116}
+\contentsline {section}{\numberline {6.1}Summary}{63}{section.117}
+\contentsline {section}{\numberline {6.2}Future Work}{64}{section.118}
+\contentsline {chapter}{Bibliography}{65}{chapter*.119}
 \vspace {2em}
-\contentsline {chapter}{Index}{62}{chapter*.103}
+\contentsline {chapter}{Index}{68}{chapter*.119}
