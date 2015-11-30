@@ -5,45 +5,45 @@ The style file: acm.bst
 Database file #1: bibliography/references.bib
 Warning--empty journal in citation-0
 Warning--empty journal in wiki:stereopsis
-You've used 40 entries,
+You've used 41 entries,
             2253 wiz_defined-function locations,
-            745 strings with 10494 characters,
-and the built_in function-call counts, 14639 in all, are:
-= -- 1445
-> -- 625
+            749 strings with 10601 characters,
+and the built_in function-call counts, 14851 in all, are:
+= -- 1464
+> -- 632
 < -- 0
-+ -- 263
-- -- 218
-* -- 1072
-:= -- 2242
-add.period$ -- 119
-call.type$ -- 40
-change.case$ -- 227
++ -- 266
+- -- 220
+* -- 1080
+:= -- 2276
+add.period$ -- 122
+call.type$ -- 41
+change.case$ -- 231
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 562
-empty$ -- 1216
-format.name$ -- 218
-if$ -- 3136
+cite$ -- 43
+duplicate$ -- 570
+empty$ -- 1239
+format.name$ -- 220
+if$ -- 3182
 int.to.chr$ -- 0
-int.to.str$ -- 40
+int.to.str$ -- 41
 missing$ -- 33
-newline$ -- 202
-num.names$ -- 80
-pop$ -- 282
+newline$ -- 207
+num.names$ -- 82
+pop$ -- 291
 preamble$ -- 1
-purify$ -- 188
+purify$ -- 191
 quote$ -- 0
-skip$ -- 418
+skip$ -- 425
 stack$ -- 0
-substring$ -- 1017
-swap$ -- 196
+substring$ -- 1022
+swap$ -- 198
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 158
+type$ -- 162
 warning$ -- 2
-while$ -- 145
-width$ -- 42
-write$ -- 410
+while$ -- 147
+width$ -- 43
+write$ -- 420
 (There were 2 warnings)
