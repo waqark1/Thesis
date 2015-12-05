@@ -146,7 +146,7 @@
 \newcommand*{\FACULTY}[1]{\def\FACNAME{#1}}
 \newcommand*{\subject}[1]{\def\subjectname{#1}}
 \newcommand*{\keywords}[1]{\def\keywordnames{#1}}
-\supervisor  {}
+\supervisor  {Karol Myszkowski}
 \examiner    {}
 \degree      {}
 \authors     {}
@@ -239,13 +239,13 @@
       \bigskip
       \bigskip
       {\large angefertigt unter der Leitung von / supervised by \par}
-      {\LARGE \par}
+      {\LARGE Karol Myszkowski \par}
  
       \bigskip
       \bigskip
       \bigskip 
       {\large betreut von / advised by \par}
-      {\LARGE  \par}
+      {\LARGE Belen Masia \par}
       
       \bigskip
       \bigskip
