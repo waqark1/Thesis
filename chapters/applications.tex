@@ -79,14 +79,25 @@ We simulated our stereo experiments for the cylinders and computed the estimated
 During the course of this thesis, we devised and tested some new ideas to improve the current crosstalk reduction techniques. In this section we review those ideas.
 
 \subsection{Unsharp masking in epipolar domain}
-Corn-sweet illusion \cite{ wiki:cornsweet} is used in contrast boosting image processing techniques such as unsharp masking. The basic idea of unsharp masking is to add to an image a high frequency image of itself. The high frequencies containing image is obtained by subtracting a blurred version of the image from itself. \cite{van2011perceptually} used similar technique to blur the uncorrectable crosstalk in combination with increasing the contrast of the object around the edges. One can generally use unsharp masking to subdue the perception of the uncorrectable ghosts. However applying unsharp masking in spatial domain also boosts the unwanted noise. Since automultiscopic screens displays lightfields, we thought that applying unsharp masking in the view domain (also called as the epipolar domain) would result in a crosstalk compensated lightfield with increased local contrast around the object. Let $\Psi$ be a lightfield in which x, y denote the spacial dimensions on the displayed image and w denotes the epipolar domain (Figure \ref{fig:lightfeild})
+The Corn-sweet illusion \cite{ wiki:cornsweet} is used in contrast boosting image processing techniques such as unsharp masking. The basic idea of unsharp masking is to add to an image a high frequency image of itself. The high frequencies containing image is obtained by subtracting a blurred version of the image from itself. Baar et al \cite{van2011perceptually} used a similar technique to blur the uncorrectable crosstalk in combination with increasing the contrast of the objects around the edges. One can generally use unsharp masking to increase the contrast of an image suffering from contrast loss due to preprocessing for crosstalk compensation . However applying unsharp masking in spatial domain also boosts the unwanted noise. Since automultiscopic screens displays lightfields, and given the fact that crosstalk in any perticular view in induced by the neighboring views, intuitively, it would make sense to applying unsharp masking in the view domain (also called as the epipolar domain) that would result in a crosstalk compensated lightfield with increased local contrast around the object. Let $\Psi$ be a lightfield in which x, y denote the spacial dimensions on the displayed image and w denotes the epipolar domain (Figure \ref{fig:lightfeild})
 \begin{figure}[htbp]
-\centering
-    \includegraphics[width=0.7\textwidth]{./Template_Figures/lightfield}
-    \caption{Representation of a 3D lightfield.\label{fig:lightfeild}}
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/lightfield}
+        \caption{}\label{fig:lightfield_rep}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Template_Figures/lightfield_epi}
+        \caption{}\label{fig:lightfield_epi}
+    \end{subfigure}
+
+    \caption{Representation of a 3D lightfield \cite{du2014improving}. (A)(\emph{x,y}) denotes the view dimensions while \emph{w} denotes different perspective views for a light field. (B) Epipolar view of the squared region in (a)representing how every pixels shifts with respect to shift in perspective.\label{fig:lightfeild}}
 \end{figure}
-Then for an automultiscopic screen where only the light from the immediate neighbors is leaked, we blur the lightfield in epipolar domain with the following kernel. This will result in a epipolar domain blurred lightfield $\Psi_{blr}$
-\begin{table}[htbp]
+\pagebreak
+
+\noindent 
+Then for an automultiscopic screen where only the light from the immediate neighbors is leaked, we blur the lightfield in epipolar domain with the following 1D kernel:
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
@@ -95,23 +106,23 @@ $\omega_1$ & $\omega_2$ & $\omega_3$ \\
 \end{tabular}
 \label{tab:blurring_kernel}
 \end{table}
-
-Next we subtract $\Psi_{blr}$ from the original Light Field $\Psi$. This will give us  $\Psi_{hf}$, a Light Field that only contains luminance-inverted ghosts in every view. i.e.
+\noindent
+This will result in a epipolar domain blurred light field $\Psi_{blr}$. Next we subtract $\Psi_{blr}$ from the original light field $\Psi$. This will give us  $\Psi_{hf}$, a light field that only contains luminance-inverted ghosts in every view. i.e.
 \begin{equation}
 \Psi_{hf}\: =\: \Psi\: -\: \Psi_{blr}
 \end{equation}
-The crosstalk compensated lightfield is obtained as
+The crosstalk-compensated light field is obtained as
 \begin{equation}
 \Psi_{opt}\: =\: \Psi\: +\: \Psi_{hf}
 \end{equation}
-Hence for every view image $I \in\: \Psi_{opt}$
+Hence, for every view image $I \in\: \Psi_{opt}$
 \begin{equation}
 \begin{aligned}
 I_{opt}\: =\:  I + (I - \omega_1I_L - \omega_2I - \omega_3I_R) \\
 I_{opt}\: = \: (2-\omega_2)\ I\: -\: \omega_1I_L\: -\: \omega_3I_R
 \end{aligned}
 \end{equation}
-Where $I$ is the view centered image and $I_L, I_R$ are the immediate left and right neighbors. Since the automultiscopic screen will display the optimized Light Field image as a weighted sum of $I_L, I_R$ and $I$ i.e.
+Where $I$ is the view centered image and $I_L, I_R$ are the immediate left and right neighbors respectively. Since the automultiscopic screen will display the optimized light field image as a weighted sum of $I_L, I_R$ and $I$ i.e.
 \begin{equation}
 \begin{aligned}
 I_{observed}\: =\:  \Phi_1.I_{L(opt)}\: + \:\Phi_2.I_{(opt)}\: + \:\Phi_3.I_{R(opt)}       \\
@@ -120,25 +131,25 @@ I_{observed}\: = \: \Phi_1{(2-\omega_2) I_L\: -\: \omega_1I_{LL}\: -\: \omega_3I
                     \Phi_3{(2-\omega_2) I_R\: -\: \omega_1I\: -\: \omega_3I_{RR}}
 \end{aligned}
 \end{equation}
-Here $I_{LL}$ and $I_{RR}$ are the immediate left and right images to Left and right image of the view position in the lightfeild. We know from \ref{fig:sim_gaussians} that
+Here $I_{LL}$ and $I_{RR}$ are the immediate left and right images to left and right image of the view position in the light field. We know, from view-luminance intensity profiles for an automultiscopic screen \ref{fig:sim_gaussians}, that:
 \begin{equation}
 \begin{aligned}
 \Phi_1\:=\: \Phi_3\:=\: 0.0351,\:\: \Phi_2\:=\:0.8
 \end{aligned}
 \end{equation}
-In order to cancel the effect of $I_L$ and $I_R$ we choose
+In order to cancel the effect of $I_L$ and $I_R$ for crosstalk compensation, we choose
 \begin{equation}
 \begin{aligned}
 \omega_1\:=\: \omega_3\:=\: 0.0421,\:\: \omega_2\:=\:1.19
 \end{aligned}
 \end{equation}
-The viewer observed image $I_{observed}$ can then be mathematically written as
+Using the aforementioned values of $\omega_1$, $\omega_2$, $\omega_3$, $\Phi_1$, $\Phi_2$ and $\Phi_3$, the viewer observed image $I_{observed}$ can then be mathematically written as
 \begin{equation}
 I_{observed}\: =\:  1.42.I\:-\: 0.0014(I_{LL}\:+\:I_{RR})
 \label{eq:final_unsharp_obs}
 \end{equation}
 
-It can be seen from equation \ref{eq:final_unsharp_obs} that even though the The crosstalk effect from the immediate left and right image of a view has been eliminated, some over-subtraction of luminance due to the $I_{LL}$ and $I_{RR}$ propagates in the observed image $I_{observed}$. Also, the average luminance of the view centered image $I$ has been increased to 1.42. Since the maximum luminance value an automultiscopic screen can display is 1, over proposed technique will result in clipping of the all the luminance values above 1 hence resulting in loss of contrast. More importantly, we described in figure \ref{fig:why_no_cornsweet}, it is impossible to obtain corn-sweet profiles by performing unsharp masking in view domain on a lightfeild.
+It can be seen from Equation \ref{eq:final_unsharp_obs} that even though the crosstalk effect induced by the immediate left and right image of a view has been eliminated. However, some over-subtraction of luminance due to the $I_{LL}$ and $I_{RR}$ propagates in the observed image $I_{observed}$. Even though compensating for crosstalk in this manner is quite efficient, one can see the average luminance of the view centered image $I$ has been increased to 1.42. Since the maximum luminance value an automultiscopic screen can display is 1, our proposed technique will result in clipping of the all the luminance values above 1 hence resulting in loss of contrast. Another drawback, as describbed in Figure \ref{fig:why_no_cornsweet}, unsharp masking in view domain of a light field does not introduce any Cornsweet profiles.
 
 \begin{figure}[htbp]
     \centering

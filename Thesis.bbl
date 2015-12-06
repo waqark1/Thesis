@@ -26,6 +26,12 @@
 \newblock Interocular correlation, luminance contrast and cyclopean processing.
 \newblock {\em Vision Research 31}, 12 (1991), 2195--2207.
 
+\bibitem{du2014improving}
+{\sc Du, S.-P., Didyk, P., Durand, F., Hu, S.-M., and Matusik, W.}
+\newblock Improving visual quality of view transitions in automultiscopic
+  displays.
+\newblock {\em ACM Transactions on Graphics (TOG) 33}, 6 (2014), 192.
+
 \bibitem{filippini2009limits}
 {\sc Filippini, H.~R., and Banks, M.~S.}
 \newblock Limits of stereopsis explained by local cross-correlation.
