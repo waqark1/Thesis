@@ -162,18 +162,18 @@ It can be seen from Equation \ref{eq:final_unsharp_obs} that even though the cro
         \caption{}\label{fig:no_cornsweet}
     \end{subfigure}
 
-    \caption{(A) 1D representation of luminance profile along an image row. Blue graph represents a luminance step and orange graph represents the luminance profile of the blurred image. Yellow graph represents corn-sweet profile centered at the luminance edge and obtained as the difference between the original and the blurred image.  (B) Same procedure performed in view domain. Blue graph represents the luminance profile of a lightfeild image and orange graph represents the non-energy preserving additive blurring due to neighboring views in an automultiscopic environment. The Yellow graph represents the difference between the view image and its view-domain blurred version that resembles closely to subtractive crosstalk cancellation rather than a corn-sweet profile.\label{fig:why_no_cornsweet}}
+    \caption{(A) 1D representation of luminance profile along an image row. Blue graph represents a luminance step and orange graph represents the luminance profile of the blurred image. Yellow graph represents corn-sweet profile centered at the luminance edge and obtained as the difference between the original and the blurred image.  (B) Same procedure performed in view domain. Blue graph represents the luminance profile of a light feild image and orange graph represents the non-energy preserving additive blurring due to neighboring views in an automultiscopic environment. The Yellow graph represents the difference between the view image and its view-domain blurred version that resembles closely to subtractive crosstalk cancellation rather than a corn-sweet profile.\label{fig:why_no_cornsweet}}
 \end{figure}
 
 \subsection{Iterative crosstalk reduction}
 
-To the best of our knowledge, all the current subtractive crosstalk reduction techniques compute the pre-processed crosstalk compensated images by subtracting the amount of leaked light between neighboring. The calculation of subtracted leaked light is always performed while considering the unmodified stereo image pair. We observe that the amount of light leaked into a view image due to the unmodified alternative view image should be different when the alternate view image is already crosstalk compensated. This is the case in reality and hence we think that a view image should be compensated appropriately if it alternative view image is already crosstalk compensated. Inspired by this idea, we propose an iterative subtractive crosstalk reduction technique.
+To the best of our knowledge, all the current subtractive crosstalk reduction techniques compute the pre-processed crosstalk compensated images by subtracting the amount of leaked light between neighboring views. The calculation of subtracted leaked light is always performed while considering the unmodified stereo image pair. We observe that the amount of light leaked into a view image due to the unmodified alternative view image should be different when the alternate view image is already crosstalk compensated. This is the case in reality and hence we think that a view image should be compensated appropriately if it alternative view image is already crosstalk compensated. Inspired by this idea, we propose an iterative subtractive crosstalk reduction technique.
 
-Consider a lightfeild $\Psi$ consisting a set of view images ${f_1, f_2, ..., f_N}$. When the $i^{th}$ view is displayed on an automultiscopic screen, its crosstalk $\phi(f_i)$ from the neighboring views can be written as
+Consider a light field $\Psi$ consisting of a set of view images ${f_1, f_2, ..., f_N}$. When the $i^{th}$ view is displayed on an automultiscopic screen, its crosstalk $\phi(f_i)$ from the neighboring views can be written as
 \begin{equation}
 \phi(f_i)\:=\: a_1.f_1\:+\:a_2.f_2\:+\:...\:a_{i-1}.f_{i-1}\:+\:a_{i+1}.f_{i+1}\:+\:...\:a_n.f_n
 \end{equation}
-Where the light intensity leakage values $a_1...a_n$ are chosen according to figure \ref{fig:sim_gaussians}. The crosstalk compensated images $\{\gamma_1...\gamma_n\}$ can then be computed iteratively as
+Where the light intensity leakage values $a_1...a_n$ are given by the curves in Figure \ref{fig:sim_gaussians}. The crosstalk compensated images $\{\gamma_1...\gamma_n\}$ can then be computed iteratively as:
 \begin{equation}
 \begin{aligned}
 \gamma_1^{n+1} \:=\: f_1 \:+\: \phi(\gamma_1^n) \\
@@ -184,14 +184,14 @@ Where the light intensity leakage values $a_1...a_n$ are chosen according to fig
 \gamma_N^{n+1} \:=\: f_N \:+\: \phi(\gamma_N^n) \\
 \end{aligned}
 \end{equation}
-Where `n' is the number of current iteration. After each iteration, clipping of the values exceeding the display's dynamic range is performed. The iterations terminate when an error $\epsilon$ falls below a threshold.
+Where \emph{n} is the number of current iteration. After each iteration, clipping of the values exceeding the display's dynamic range is performed. The iterations terminate when the error $\epsilon$ falls below a threshold.
 \begin{equation}
 \begin{aligned}
 \epsilon \:=\: \sqrt{(\gamma_1^{n+1}\:-\:\gamma_1^n)^2 \:+\: ...\:+\:(\gamma_N^{n+1}\:-\:\gamma_N^n)^2}
 \end{aligned}
 \end{equation}
 
-This technique compensates for the crosstalk more appropriately however, the successive subtraction of luminance from the lightfeild view images between iterations might result in lower average luminance in the crosstalk compensated lightfeild (figure \ref{fig:iterative_tech}
+This technique compensates for the crosstalk more appropriately. However, the successive subtraction of luminance from the light field view images between iterations might result in lower average luminance in the crosstalk compensated light field (Figure \ref{fig:iterative_tech}).
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
@@ -208,7 +208,7 @@ This technique compensates for the crosstalk more appropriately however, the suc
         \caption{}\label{fig:iterative_lf}
     \end{subfigure}
 
-    \caption{(A) \label{fig:iterative_tech}}
+    \caption{Naive subtractive crosstalk compensation compared to our proposed iterative crosstalk compensation. (A) An automultiscopic display's view image containing crosstalk given by the curves in Figure \ref{fig:sim_gaussians}. (B) Compensated view image using naive crosstalk subtraction. (C) Compensated view image using iterative crosstalk subtraction. \label{fig:iterative_tech}}
 \end{figure}
 
 
