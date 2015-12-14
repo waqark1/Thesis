@@ -72,7 +72,7 @@ In order to generate a set of stereo images with the object of interest at diffe
 In order to compensate for symmetrical ghosts on both sides while the theoretical depth of object of interest remain unchanged, the images for automultiscopic experiments were rendered similarly with difference being that the range of baseline started from 0 until 0.24 meters. The reason for this is explained in the next section.
 
 \section{Apparatus and simulation procedure}
-The experiments were conducted on a commercial 47'' SIMS2 HDR47E LCD display with a spatial resolution of 1920x1080. The left and right half of the screen each with a resolution of 960x1080 were gated to the left and right eyes using a custom built Wheatstone setup \cite{ wiki:wheatstone} that consisted of two mirrors M1 and M2 set at a $45^\circ$ angle with respect to the screen. The optical length from the eyes to the screen via mirrors M1 and M2 was measured at 87.3 cm. The whole setup was enclosed in a black box with an aperture through which the viewer could view the screen via mirrors M1 and M2. The display, even though built for HDR viewing had a \emph{DVI plus} mode for which the luminance measured with luminance meter via the aperture ranged from \textcolor{red}{?? to ??} $cdm^{-2}$. The \emph{DVI plus} mode should (according to the documentation) mimic a traditional LCD display, hence we chose to use this mode.
+The experiments were conducted on a commercial 47'' SIMS2 HDR47E LCD display with a spatial resolution of 1920x1080. The left and right half of the screen each with a resolution of 960x1080 were gated to the left and right eyes using a custom built Wheatstone setup \cite{ wiki:wheatstone} that consisted of two mirrors M1 and M2 set at a $45^\circ$ angle with respect to the screen. The optical length from the eyes to the screen via mirrors M1 and M2 was measured at 87.3 cm. The whole setup was enclosed in a black box with an aperture through which the viewer could view the screen via mirrors M1 and M2. The display, even though built for HDR viewing had a \emph{DVI plus} mode for which the luminance measured with luminance meter via the aperture ranged from 0.47 $cdm^{-2}$ to 1780 $cdm^{-2}$. The \emph{DVI plus} mode should (according to the documentation) mimic a traditional LCD display, hence we chose to use this mode.
 \begin{figure}[htbp]
     % \centering
     \begin{subfigure}[b]{0.5\textwidth}
@@ -200,13 +200,13 @@ Observed depth is severely affected for all the object once the crosstalk reache
 \begin{figure}[H]
 \centering
     \includegraphics[width=0.9\textwidth]{./Template_Figures/s_crosstalk_7}
-    \caption{The median data for all observers is shown. The abscissa shows the observed depth when 7\% crosstalk is present, in comparison with the theoretical depth. Different lines represent differnt stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:s_crosstalk_7}}
+    \caption{The median data for all observers is shown. The abscissa shows the observed depth when 7\% crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:s_crosstalk_7}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
     \includegraphics[width=0.9\textwidth]{./Template_Figures/s_crosstalk_14}
-\caption{The median data for all observers is shown. The abscissa shows the observed depth when 14\% crosstalk is present, in comparison with the theoretical depth. Different lines represent differnt stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:s_crosstalk_14}}
+\caption{The median data for all observers is shown. The abscissa shows the observed depth when 14\% crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:s_crosstalk_14}}
 \end{figure}
 
 
@@ -214,7 +214,7 @@ Observed depth is severely affected for all the object once the crosstalk reache
 \subsection{Automultiscopic}
 
 
-Figure \ref{fig:a_crosstalk_0} shows the patter of the observed depth in the base case (i.e., 0\% crosstalk). It appears that the observed depth for the dragon is slightly overestimated at the actual depth of 2.76 cm. At the same instance, the observed depth of the thick cylinder is underestimated. These exceptional cases may be considered again as human error, firstly because the next greater depth is observed without any error and secondly because this case is exactly the same as the base case of the stereo experiments. However, the fact that there is mostly (both stereo and automultiscopic case) some mis-judgment of the depth may also indicate that the HVS for some reason is being confused by this perticular depth.  
+Figure \ref{fig:a_crosstalk_0} shows the pattern of the observed depth in the base case (i.e., 0\% crosstalk). It appears that the observed depth for the dragon is slightly overestimated at the actual depth of 2.76 cm. At the same instance, the observed depth of the thick cylinder is underestimated. These exceptional cases may be considered again as human error, firstly because the next greater depth is observed without any error and secondly because this case is exactly the same as the base case of the stereo experiments. However, the fact that there is mostly (both stereo and automultiscopic case) some mis-judgment of the depth may also indicate that the HVS for some reason is being confused by this particular depth.
 
 We notice that the crosstalk has no effect on the perceived depth when the crosstalk level is raised to 3\% (Figure \ref{fig:a_crosstalk_3}). This is because for each of the perceived depth, the base case observed depth is in the rage of the standard error. This is different than the stereoscopic scenario where we observed some minute depth reduction for the thin cylinder. Increasing the crosstalk to 7\% (Figure \ref{fig:a_crosstalk_7}) however, shows signs of degraded depth for the medium (37.8 arc min) cylinder depths larger than 2.76 cm. Meanwhile all the other objects show no evidence of degraded depth even though the crosstalk level at 7\% is higher than what we usually get from a conventional automultiscopic display \cite{woods2012crosstalk}.
 \begin{figure}[H]

@@ -193,7 +193,7 @@
     %\vskip 60\p@
     \begin{center}
       \setlength{\parskip}{0pt}
-      
+
 \begin{table}[h]
 \begin{minipage}{0.2\textwidth}
 \centering
@@ -214,7 +214,7 @@
 \includegraphics[scale=0.15]{./Template_Figures/mpi_logo}
 \end{minipage}
 \end{table}
-      
+
       %\includegraphics[scale=0.5]{./logo_uds}{\large\textbf{\univname}}\includegraphics[scale=0.5]{./logo_mpi}\par
       %\vfill
       \bigskip
@@ -227,33 +227,33 @@
       \bigskip
       %{\LARGE by \par}
       %\smallskip
-      
+
       \bigskip
       {\large Masterarbeit im Fach Informatik \par}
       {\large Master's Thesis in Computer Science \par}
       {\large von / by \par}
 
       {\LARGE \authornames \par}
-      
+
       \bigskip
       \bigskip
       \bigskip
       {\large angefertigt unter der Leitung von / supervised by \par}
       {\LARGE Karol Myszkowski \par}
- 
+
       \bigskip
       \bigskip
-      \bigskip 
+      \bigskip
       {\large betreut von / advised by \par}
       {\LARGE Belen Masia \par}
-      
+
       \bigskip
       \bigskip
-      \bigskip 
+      \bigskip
       {\large begutachtet von / reviewers \par}
-      {\LARGE  \par}
-      {\LARGE \par}
-      
+      {\LARGE Karol Myszkowski \par}
+      {\LARGE Belen Masia \par}
+
       %\vfill
       %{\large A thesis submitted in partial fulfillment for the \par}
       %{\large degree of Master of Science \par}
