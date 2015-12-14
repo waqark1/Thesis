@@ -79,7 +79,7 @@ We simulated our stereo experiments for the cylinders and computed the estimated
 During the course of this thesis, we devised and tested some new ideas to improve the current crosstalk reduction techniques. In this section we review those ideas.
 
 \subsection{Unsharp masking in epipolar domain}
-The Corn-sweet illusion \cite{ wiki:cornsweet} is used in contrast boosting image processing techniques such as unsharp masking. The basic idea of unsharp masking is to add to an image a high frequency image of itself. The high frequencies containing image is obtained by subtracting a blurred version of the image from itself. Baar et al \cite{van2011perceptually} used a similar technique to blur the uncorrectable crosstalk in combination with increasing the contrast of the objects around the edges. One can generally use unsharp masking to increase the contrast of an image suffering from contrast loss due to preprocessing for crosstalk compensation . However applying unsharp masking in spatial domain also boosts the unwanted noise. Since automultiscopic screens displays lightfields, and given the fact that crosstalk in any perticular view in induced by the neighboring views, intuitively, it would make sense to applying unsharp masking in the view domain (also called as the epipolar domain) that would result in a crosstalk compensated lightfield with increased local contrast around the object. Let $\Psi$ be a lightfield in which x, y denote the spacial dimensions on the displayed image and w denotes the epipolar domain (Figure \ref{fig:lightfeild})
+The Corn-sweet illusion \cite{ wiki:cornsweet} is used in contrast boosting image processing techniques such as unsharp masking. The basic idea of unsharp masking is to add to an image a high frequency image of itself. The high frequencies containing image is obtained by subtracting a blurred version of the image from itself. Baar et al \cite{van2011perceptually} used a similar technique to blur the uncorrectable crosstalk in combination with increasing the contrast of the objects around the edges. One can generally use unsharp masking to increase the contrast of an image suffering from contrast loss due to preprocessing for crosstalk compensation . However applying unsharp masking in spatial domain also boosts the unwanted noise. Since automultiscopic screens displays light fields, and given the fact that crosstalk in any perticular view in induced by the neighboring views, intuitively, it would make sense to applying unsharp masking in the view domain (also called as the epipolar domain) that would result in a crosstalk compensated light field with increased local contrast around the object. Let $\Psi$ be a light field in which x, y denote the spacial dimensions on the displayed image and w denotes the epipolar domain (Figure \ref{fig:lightfeild})
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
@@ -91,12 +91,12 @@ The Corn-sweet illusion \cite{ wiki:cornsweet} is used in contrast boosting imag
         \caption{}\label{fig:lightfield_epi}
     \end{subfigure}
 
-    \caption{Representation of a 3D lightfield \cite{du2014improving}. (A)(\emph{x,y}) denotes the view dimensions while \emph{w} denotes different perspective views for a light field. (B) Epipolar view of the squared region in (a)representing how every pixels shifts with respect to shift in perspective.\label{fig:lightfeild}}
+    \caption{Representation of a 3D light field \cite{du2014improving}. (A)(\emph{x,y}) denotes the view dimensions while \emph{w} denotes different perspective views for a light field. (B) Epipolar view of the squared region in (a)representing how every pixels shifts with respect to shift in perspective.\label{fig:lightfeild}}
 \end{figure}
 \pagebreak
 
 \noindent 
-Then for an automultiscopic screen where only the light from the immediate neighbors is leaked, we blur the lightfield in epipolar domain with the following 1D kernel:
+Then for an automultiscopic screen where only the light from the immediate neighbors is leaked, we blur the light field in epipolar domain with the following 1D kernel:
 \begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|}
