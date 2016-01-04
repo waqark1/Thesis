@@ -246,6 +246,7 @@
       \bigskip
       {\large betreut von / advised by \par}
       {\LARGE Belen Masia \par}
+      {\LARGE Piotr Didyk \par}
 
       \bigskip
       \bigskip
