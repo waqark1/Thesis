@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.4)  4 JAN 2016 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.4)  4 JAN 2016 19:16
 entering extended mode
 **C:/Users/wkhan/Desktop/Thesis/writeup/Thesis.tex
 (C:/Users/wkhan/Desktop/Thesis/writeup/Thesis.tex
@@ -1551,7 +1551,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 Related work
 ------------------------------------------------------------------------------
-[21] <./Template_Figures/Tsirlin_exp.png, id=764, 310.15875pt x 312.16624pt>
+[21] <./Template_Figures/Tsirlin_exp.png, id=767, 310.15875pt x 312.16624pt>
 File: ./Template_Figures/Tsirlin_exp.png Graphic file (type png)
 
 <use ./Template_Figures/Tsirlin_exp.png>
@@ -1559,7 +1559,7 @@ Package pdftex.def Info: ./Template_Figures/Tsirlin_exp.png used on input line
 15.
 (pdftex.def)             Requested size: 208.73653pt x 210.08865pt.
 
-<./Template_Figures/tsirlin_res.png, id=765, 310.15875pt x 312.16624pt>
+<./Template_Figures/tsirlin_res.png, id=768, 310.15875pt x 312.16624pt>
 File: ./Template_Figures/tsirlin_res.png Graphic file (type png)
 
 <use ./Template_Figures/tsirlin_res.png>
@@ -1571,39 +1571,39 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 14--22
 [][] [] 
  []
 
-[22 <./Template_Figures/Tsirlin_exp.png (PNG copy)> <./Template_Figures/tsirlin
-_res.png (PNG copy)>] [23]
-<./Template_Figures/cormack_cont.png, id=785, 310.15875pt x 312.16624pt>
+[22] [23 <./Template_Figures/Tsirlin_exp.png (PNG copy)> <./Template_Figures/ts
+irlin_res.png (PNG copy)>]
+<./Template_Figures/cormack_cont.png, id=788, 310.15875pt x 312.16624pt>
 File: ./Template_Figures/cormack_cont.png Graphic file (type png)
 
 <use ./Template_Figures/cormack_cont.png>
 Package pdftex.def Info: ./Template_Figures/cormack_cont.png used on input line
- 39.
+ 40.
 (pdftex.def)             Requested size: 208.73653pt x 210.08865pt.
 
-<./Template_Figures/cormack_noise.png, id=786, 310.15875pt x 312.16624pt>
+<./Template_Figures/cormack_noise.png, id=789, 310.15875pt x 312.16624pt>
 File: ./Template_Figures/cormack_noise.png Graphic file (type png)
 
 <use ./Template_Figures/cormack_noise.png>
 Package pdftex.def Info: ./Template_Figures/cormack_noise.png used on input lin
-e 43.
+e 44.
 (pdftex.def)             Requested size: 208.73653pt x 210.08865pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 38--46
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 39--47
 [][] [] 
  []
 
 [24] [25 <./Template_Figures/cormack_cont.png (PNG copy)> <./Template_Figures/c
 ormack_noise.png (PNG copy)>] [26]
-<./Template_Figures/perceptual_ct.png, id=818, 708.6475pt x 469.755pt>
+<./Template_Figures/perceptual_ct.png, id=820, 708.6475pt x 469.755pt>
 File: ./Template_Figures/perceptual_ct.png Graphic file (type png)
 
 <use ./Template_Figures/perceptual_ct.png>
 Package pdftex.def Info: ./Template_Figures/perceptual_ct.png used on input lin
-e 68.
+e 69.
 (pdftex.def)             Requested size: 292.22987pt x 193.71898pt.
- [27 <./Template_Figures/perceptual_ct.png>] [28]) (chapters/experiments.tex [2
-9] [30]
+ [27 <./Template_Figures/perceptual_ct.png>] [28] [29]) (chapters/experiments.t
+ex [30]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Crosstalk Experiments
@@ -1611,7 +1611,7 @@ Chapter 4.
 [31
 
 ] [32]
-<./Template_Figures/blender_scene.png, id=885, 1228.59pt x 919.435pt>
+<./Template_Figures/blender_scene.png, id=890, 1228.59pt x 919.435pt>
 File: ./Template_Figures/blender_scene.png Graphic file (type png)
 
 <use ./Template_Figures/blender_scene.png>
@@ -1619,7 +1619,7 @@ Package pdftex.def Info: ./Template_Figures/blender_scene.png used on input lin
 e 39.
 (pdftex.def)             Requested size: 208.73653pt x 156.20367pt.
 
-<./Template_Figures/blender_scene_side.png, id=886, 1228.59pt x 919.435pt>
+<./Template_Figures/blender_scene_side.png, id=891, 1228.59pt x 919.435pt>
 File: ./Template_Figures/blender_scene_side.png Graphic file (type png)
 
 <use ./Template_Figures/blender_scene_side.png>
@@ -1631,14 +1631,14 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 38--46
 [][] [] 
  []
 
-<./Template_Figures/57L.png, id=888, 770.88pt x 433.62pt>
+<./Template_Figures/57L.png, id=893, 770.88pt x 433.62pt>
 File: ./Template_Figures/57L.png Graphic file (type png)
 
 <use ./Template_Figures/57L.png>
 Package pdftex.def Info: ./Template_Figures/57L.png used on input line 53.
 (pdftex.def)             Requested size: 208.73653pt x 117.40979pt.
 
-<./Template_Figures/57R.png, id=889, 770.88pt x 433.62pt>
+<./Template_Figures/57R.png, id=894, 770.88pt x 433.62pt>
 File: ./Template_Figures/57R.png Graphic file (type png)
 
 <use ./Template_Figures/57R.png>
@@ -1649,14 +1649,14 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 52--60
 [][] [] 
  []
 
-<./Template_Figures/57Ld.png, id=890, 770.88pt x 433.62pt>
+<./Template_Figures/57Ld.png, id=895, 770.88pt x 433.62pt>
 File: ./Template_Figures/57Ld.png Graphic file (type png)
 
 <use ./Template_Figures/57Ld.png>
 Package pdftex.def Info: ./Template_Figures/57Ld.png used on input line 62.
 (pdftex.def)             Requested size: 208.73653pt x 117.40979pt.
 
-<./Template_Figures/57Rd.png, id=891, 770.88pt x 433.62pt>
+<./Template_Figures/57Rd.png, id=896, 770.88pt x 433.62pt>
 File: ./Template_Figures/57Rd.png Graphic file (type png)
 
 <use ./Template_Figures/57Rd.png>
@@ -1667,14 +1667,14 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 61--69
 [][] [] 
  []
 
-[33] <./Template_Figures/setup.png, id=898, 3276.24pt x 2457.18pt>
+[33] <./Template_Figures/setup.png, id=903, 3276.24pt x 2457.18pt>
 File: ./Template_Figures/setup.png Graphic file (type png)
 
 <use ./Template_Figures/setup.png>
 Package pdftex.def Info: ./Template_Figures/setup.png used on input line 79.
 (pdftex.def)             Requested size: 208.73653pt x 156.53535pt.
 
-<./Template_Figures/setup_sch.png, id=899, 255.95625pt x 233.87375pt>
+<./Template_Figures/setup_sch.png, id=904, 255.95625pt x 233.87375pt>
 File: ./Template_Figures/setup_sch.png Graphic file (type png)
 
 <use ./Template_Figures/setup_sch.png>
@@ -1686,7 +1686,7 @@ ide.png (PNG copy)>] [35 <./Template_Figures/57L.png (PNG copy)> <./Template_Fi
 gures/57R.png (PNG copy)> <./Template_Figures/57Ld.png (PNG copy)> <./Template_
 Figures/57Rd.png (PNG copy)>] [36 <./Template_Figures/setup.png> <./Template_Fi
 gures/setup_sch.png>]
-<./Template_Figures/sim_gaussians.png, id=921, 578.16pt x 433.62pt>
+<./Template_Figures/sim_gaussians.png, id=926, 578.16pt x 433.62pt>
 File: ./Template_Figures/sim_gaussians.png Graphic file (type png)
 
 <use ./Template_Figures/sim_gaussians.png>
@@ -1694,7 +1694,7 @@ Package pdftex.def Info: ./Template_Figures/sim_gaussians.png used on input lin
 e 110.
 (pdftex.def)             Requested size: 292.22987pt x 219.17155pt.
 
-<./Template_Figures/stereo_ghost_left.png, id=924, 770.88pt x 433.62pt>
+<./Template_Figures/stereo_ghost_left.png, id=929, 770.88pt x 433.62pt>
 File: ./Template_Figures/stereo_ghost_left.png Graphic file (type png)
 
 <use ./Template_Figures/stereo_ghost_left.png>
@@ -1702,7 +1702,7 @@ Package pdftex.def Info: ./Template_Figures/stereo_ghost_left.png used on input
  line 117.
 (pdftex.def)             Requested size: 208.73653pt x 117.40979pt.
 
-<./Template_Figures/stereo_ghost_right.png, id=925, 770.88pt x 433.62pt>
+<./Template_Figures/stereo_ghost_right.png, id=930, 770.88pt x 433.62pt>
 File: ./Template_Figures/stereo_ghost_right.png Graphic file (type png)
 
 <use ./Template_Figures/stereo_ghost_right.png>
@@ -1714,7 +1714,7 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 116--124
 [][] [] 
  []
 
-<./Template_Figures/auto_ghost_left.png, id=926, 770.88pt x 433.62pt>
+<./Template_Figures/auto_ghost_left.png, id=931, 770.88pt x 433.62pt>
 File: ./Template_Figures/auto_ghost_left.png Graphic file (type png)
 
 <use ./Template_Figures/auto_ghost_left.png>
@@ -1732,7 +1732,7 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 125--133
 [][] [] 
  []
 
-<./Template_Figures/exp_env.png, id=929, 1686.3pt x 1053.9375pt>
+<./Template_Figures/exp_env.png, id=934, 1686.3pt x 1053.9375pt>
 File: ./Template_Figures/exp_env.png Graphic file (type png)
 
 <use ./Template_Figures/exp_env.png>
@@ -1740,7 +1740,7 @@ Package pdftex.def Info: ./Template_Figures/exp_env.png used on input line 142.
 
 (pdftex.def)             Requested size: 333.97972pt x 208.7253pt.
 
-<./Template_Figures/exp_env_depth.png, id=930, 448.67625pt x 406.51875pt>
+<./Template_Figures/exp_env_depth.png, id=935, 448.67625pt x 406.51875pt>
 File: ./Template_Figures/exp_env_depth.png Graphic file (type png)
 
 <use ./Template_Figures/exp_env_depth.png>
@@ -1755,7 +1755,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--177
  []
 
 [39 <./Template_Figures/exp_env.png> <./Template_Figures/exp_env_depth.png>]
-<./Template_Figures/s_crosstalk_0.pdf, id=953, 562.1pt x 421.575pt>
+<./Template_Figures/s_crosstalk_0.pdf, id=958, 562.1pt x 421.575pt>
 File: ./Template_Figures/s_crosstalk_0.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/s_crosstalk_0.pdf>
@@ -1763,7 +1763,7 @@ Package pdftex.def Info: ./Template_Figures/s_crosstalk_0.pdf used on input lin
 e 185.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
  [40]
-<./Template_Figures/s_crosstalk_3.pdf, id=961, 562.1pt x 421.575pt>
+<./Template_Figures/s_crosstalk_3.pdf, id=966, 562.1pt x 421.575pt>
 File: ./Template_Figures/s_crosstalk_3.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/s_crosstalk_3.pdf>
@@ -1772,7 +1772,7 @@ e 192.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
  [41 <./Template_Figures/s_crosstalk_0.pdf>] [42 <./Template_Figures/s_crosstal
 k_3.pdf>]
-<./Template_Figures/s_crosstalk_7.pdf, id=979, 562.1pt x 421.575pt>
+<./Template_Figures/s_crosstalk_7.pdf, id=984, 562.1pt x 421.575pt>
 File: ./Template_Figures/s_crosstalk_7.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/s_crosstalk_7.pdf>
@@ -1780,7 +1780,7 @@ Package pdftex.def Info: ./Template_Figures/s_crosstalk_7.pdf used on input lin
 e 202.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
 
-<./Template_Figures/s_crosstalk_14.pdf, id=980, 562.1pt x 421.575pt>
+<./Template_Figures/s_crosstalk_14.pdf, id=985, 562.1pt x 421.575pt>
 File: ./Template_Figures/s_crosstalk_14.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/s_crosstalk_14.pdf>
@@ -1788,7 +1788,7 @@ Package pdftex.def Info: ./Template_Figures/s_crosstalk_14.pdf used on input li
 ne 208.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
  [43 <./Template_Figures/s_crosstalk_7.pdf>] <./Template_Figures/a_crosstalk_0.
-pdf, id=993, 562.1pt x 421.575pt>
+pdf, id=998, 562.1pt x 421.575pt>
 File: ./Template_Figures/a_crosstalk_0.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/a_crosstalk_0.pdf>
@@ -1796,7 +1796,7 @@ Package pdftex.def Info: ./Template_Figures/a_crosstalk_0.pdf used on input lin
 e 222.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
  [44 <./Template_Figures/s_crosstalk_14.pdf>] <./Template_Figures/a_crosstalk_3
-.pdf, id=1001, 562.1pt x 421.575pt>
+.pdf, id=1006, 562.1pt x 421.575pt>
 File: ./Template_Figures/a_crosstalk_3.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/a_crosstalk_3.pdf>
@@ -1804,7 +1804,7 @@ Package pdftex.def Info: ./Template_Figures/a_crosstalk_3.pdf used on input lin
 e 228.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
  [45 <./Template_Figures/a_crosstalk_0.pdf>] <./Template_Figures/a_crosstalk_7.
-pdf, id=1009, 562.1pt x 421.575pt>
+pdf, id=1014, 562.1pt x 421.575pt>
 File: ./Template_Figures/a_crosstalk_7.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/a_crosstalk_7.pdf>
@@ -1812,7 +1812,7 @@ Package pdftex.def Info: ./Template_Figures/a_crosstalk_7.pdf used on input lin
 e 234.
 (pdftex.def)             Requested size: 375.7232pt x 281.7912pt.
 
-<./Template_Figures/a_crosstalk_14.pdf, id=1010, 562.1pt x 421.575pt>
+<./Template_Figures/a_crosstalk_14.pdf, id=1015, 562.1pt x 421.575pt>
 File: ./Template_Figures/a_crosstalk_14.pdf Graphic file (type pdf)
 
 <use ./Template_Figures/a_crosstalk_14.pdf>
@@ -1829,7 +1829,7 @@ Chapter 5.
  5 Applications
 ------------------------------------------------------------------------------
 [53] [54] [55]
-<./Template_Figures/normal_ccr.png, id=1100, 507.8975pt x 189.70876pt>
+<./Template_Figures/normal_ccr.png, id=1105, 507.8975pt x 189.70876pt>
 File: ./Template_Figures/normal_ccr.png Graphic file (type png)
 
 <use ./Template_Figures/normal_ccr.png>
@@ -1837,7 +1837,7 @@ Package pdftex.def Info: ./Template_Figures/normal_ccr.png used on input line 3
 9.
 (pdftex.def)             Requested size: 375.7232pt x 140.34464pt.
 
-<./Template_Figures/windowed_ccr.png, id=1101, 507.8975pt x 188.705pt>
+<./Template_Figures/windowed_ccr.png, id=1106, 507.8975pt x 188.705pt>
 File: ./Template_Figures/windowed_ccr.png Graphic file (type png)
 
 <use ./Template_Figures/windowed_ccr.png>
@@ -1846,7 +1846,7 @@ Package pdftex.def Info: ./Template_Figures/windowed_ccr.png used on input line
 (pdftex.def)             Requested size: 375.7232pt x 139.60207pt.
  [56 <./Template_Figures/normal_ccr.png> <./Template_Figures/windowed_ccr.png>]
 
-<./Template_Figures/s_9_sigma_7_4.png, id=1112, 902.37125pt x 777.90625pt>
+<./Template_Figures/s_9_sigma_7_4.png, id=1117, 902.37125pt x 777.90625pt>
 File: ./Template_Figures/s_9_sigma_7_4.png Graphic file (type png)
 
 <use ./Template_Figures/s_9_sigma_7_4.png>
@@ -1854,7 +1854,7 @@ Package pdftex.def Info: ./Template_Figures/s_9_sigma_7_4.png used on input lin
 e 55.
 (pdftex.def)             Requested size: 292.22987pt x 251.92628pt.
 
-<./Template_Figures/s_18_sigma_14_7.png, id=1113, 902.37125pt x 777.90625pt>
+<./Template_Figures/s_18_sigma_14_7.png, id=1118, 902.37125pt x 777.90625pt>
 File: ./Template_Figures/s_18_sigma_14_7.png Graphic file (type png)
 
 <use ./Template_Figures/s_18_sigma_14_7.png>
@@ -1862,7 +1862,7 @@ Package pdftex.def Info: ./Template_Figures/s_18_sigma_14_7.png used on input l
 ine 60.
 (pdftex.def)             Requested size: 292.22987pt x 251.92628pt.
 
-<./Template_Figures/s_27_sigma_17_4.png, id=1114, 902.37125pt x 777.90625pt>
+<./Template_Figures/s_27_sigma_17_4.png, id=1119, 902.37125pt x 777.90625pt>
 File: ./Template_Figures/s_27_sigma_17_4.png Graphic file (type png)
 
 <use ./Template_Figures/s_27_sigma_17_4.png>
@@ -1870,7 +1870,7 @@ Package pdftex.def Info: ./Template_Figures/s_27_sigma_17_4.png used on input l
 ine 65.
 (pdftex.def)             Requested size: 292.22987pt x 251.92628pt.
  [57 <./Template_Figures/s_9_sigma_7_4.png (PNG copy)>]
-<./Template_Figures/s_36_sigma_22.png, id=1119, 902.37125pt x 777.90625pt>
+<./Template_Figures/s_36_sigma_22.png, id=1124, 902.37125pt x 777.90625pt>
 File: ./Template_Figures/s_36_sigma_22.png Graphic file (type png)
 
 <use ./Template_Figures/s_36_sigma_22.png>
@@ -1880,7 +1880,7 @@ e 70.
  [58 <./Template_Figures/s_18_sigma_14_7.png (PNG copy)> <./Template_Figures/s_
 27_sigma_17_4.png (PNG copy)>]
 [59 <./Template_Figures/s_36_sigma_22.png (PNG copy)>]
-<./Template_Figures/lightfield.png, id=1133, 499.11469pt x 366.61969pt>
+<./Template_Figures/lightfield.png, id=1138, 499.11469pt x 366.61969pt>
 File: ./Template_Figures/lightfield.png Graphic file (type png)
 
 <use ./Template_Figures/lightfield.png>
@@ -1888,7 +1888,7 @@ Package pdftex.def Info: ./Template_Figures/lightfield.png used on input line 8
 6.
 (pdftex.def)             Requested size: 200.38528pt x 147.1879pt.
 
-<./Template_Figures/lightfield_epi.png, id=1134, 572.1375pt x 199.49532pt>
+<./Template_Figures/lightfield_epi.png, id=1139, 572.1375pt x 199.49532pt>
 File: ./Template_Figures/lightfield_epi.png Graphic file (type png)
 
 <use ./Template_Figures/lightfield_epi.png>
@@ -1897,7 +1897,7 @@ ne 90.
 (pdftex.def)             Requested size: 200.38528pt x 69.87006pt.
  [60 <./Template_Figures/lightfield.png> <./Template_Figures/lightfield_epi.png
 >] [61]
-<./Template_Figures/unsharp_proper.png, id=1157, 562.1pt x 421.575pt>
+<./Template_Figures/unsharp_proper.png, id=1162, 562.1pt x 421.575pt>
 File: ./Template_Figures/unsharp_proper.png Graphic file (type png)
 
 <use ./Template_Figures/unsharp_proper.png>
@@ -1905,7 +1905,7 @@ Package pdftex.def Info: ./Template_Figures/unsharp_proper.png used on input li
 ne 157.
 (pdftex.def)             Requested size: 200.38528pt x 150.28735pt.
 
-<./Template_Figures/unsharp_epipolar.png, id=1158, 562.1pt x 421.575pt>
+<./Template_Figures/unsharp_epipolar.png, id=1163, 562.1pt x 421.575pt>
 File: ./Template_Figures/unsharp_epipolar.png Graphic file (type png)
 
 <use ./Template_Figures/unsharp_epipolar.png>
@@ -1914,7 +1914,7 @@ line 161.
 (pdftex.def)             Requested size: 200.38528pt x 150.28735pt.
  [62 <./Template_Figures/unsharp_proper.png (PNG copy)> <./Template_Figures/uns
 harp_epipolar.png (PNG copy)>]
-<./Template_Figures/image_w_ct.png, id=1166, 766.865pt x 433.62pt>
+<./Template_Figures/image_w_ct.png, id=1171, 766.865pt x 433.62pt>
 File: ./Template_Figures/image_w_ct.png Graphic file (type png)
 
 <use ./Template_Figures/image_w_ct.png>
@@ -1922,7 +1922,7 @@ Package pdftex.def Info: ./Template_Figures/image_w_ct.png used on input line 1
 98.
 (pdftex.def)             Requested size: 200.38528pt x 113.30093pt.
 
-<./Template_Figures/subtractive_comp.png, id=1167, 766.865pt x 433.62pt>
+<./Template_Figures/subtractive_comp.png, id=1172, 766.865pt x 433.62pt>
 File: ./Template_Figures/subtractive_comp.png Graphic file (type png)
 
 <use ./Template_Figures/subtractive_comp.png>
@@ -1930,7 +1930,7 @@ Package pdftex.def Info: ./Template_Figures/subtractive_comp.png used on input
 line 203.
 (pdftex.def)             Requested size: 200.38528pt x 113.30093pt.
 
-<./Template_Figures/iterative_comp.png, id=1168, 766.865pt x 433.62pt>
+<./Template_Figures/iterative_comp.png, id=1173, 766.865pt x 433.62pt>
 File: ./Template_Figures/iterative_comp.png Graphic file (type png)
 
 <use ./Template_Figures/iterative_comp.png>
@@ -1966,15 +1966,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 354880FA6324C1306ADF3331EAC7C823;7808.
+(rerunfilecheck)             Checksum: 5BE5C6FC3A5C34FA4E8D5D34D111610B;7808.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
- 36883 strings out of 493673
- 702340 string characters out of 3141531
+ 36886 strings out of 493673
+ 702365 string characters out of 3141531
  767159 words of memory out of 3000000
  39067 multiletter control sequences out of 15000+200000
- 28756 words of font info for 213 fonts, out of 3000000 for 9000
+ 28807 words of font info for 214 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,12n,78p,10395b,927s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
@@ -1997,9 +1997,9 @@ onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (88 pages, 16541079 bytes).
+Output written on Thesis.pdf (88 pages, 16542578 bytes).
 PDF statistics:
- 1336 PDF objects out of 1440 (max. 8388607)
- 255 named destinations out of 1000 (max. 500000)
+ 1341 PDF objects out of 1440 (max. 8388607)
+ 256 named destinations out of 1000 (max. 500000)
  35986 words of extra memory for PDF output out of 42996 (max. 10000000)
 

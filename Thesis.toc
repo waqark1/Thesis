@@ -20,29 +20,29 @@
 \contentsline {section}{\numberline {3.2}Depth resolution mechanisms in HVS}{24}{section.41}
 \contentsline {section}{\numberline {3.3}Reduction of crosstalk}{25}{section.44}
 \contentsline {subsection}{\numberline {3.3.1}Stereoscopic displays}{26}{subsection.45}
-\contentsline {subsection}{\numberline {3.3.2}Automultiscopic displays}{28}{subsection.51}
-\contentsline {chapter}{\numberline {4}Crosstalk Experiments}{31}{chapter.56}
-\contentsline {section}{\numberline {4.1}Motivation}{31}{section.57}
-\contentsline {section}{\numberline {4.2}Stimuli}{33}{section.58}
-\contentsline {section}{\numberline {4.3}Apparatus and simulation procedure}{35}{section.63}
-\contentsline {section}{\numberline {4.4}Experimental procedure}{37}{section.70}
-\contentsline {subsection}{\numberline {4.4.1}Environment setup}{37}{subsection.71}
-\contentsline {subsection}{\numberline {4.4.2}Subjects}{39}{subsection.73}
-\contentsline {subsection}{\numberline {4.4.3}Experiment parameters}{40}{subsection.75}
-\contentsline {section}{\numberline {4.5}Results}{40}{section.76}
-\contentsline {subsection}{\numberline {4.5.1}Stereo}{41}{subsection.77}
-\contentsline {subsection}{\numberline {4.5.2}Automultiscopic}{44}{subsection.83}
-\contentsline {section}{\numberline {4.6}Discussion}{47}{section.88}
-\contentsline {subsection}{\numberline {4.6.1}Stereo}{47}{subsection.89}
-\contentsline {subsection}{\numberline {4.6.2}Automultiscopic}{50}{subsection.90}
-\contentsline {chapter}{\numberline {5}Applications}{53}{chapter.92}
-\contentsline {section}{\numberline {5.1}Observed depth prediction}{54}{section.93}
-\contentsline {section}{\numberline {5.2}Crosstalk mitigation}{60}{section.102}
-\contentsline {subsection}{\numberline {5.2.1}Unsharp masking in epipolar domain}{60}{subsection.103}
-\contentsline {subsection}{\numberline {5.2.2}Iterative crosstalk reduction}{62}{subsection.114}
-\contentsline {chapter}{\numberline {6}Conclusion}{65}{chapter.119}
-\contentsline {section}{\numberline {6.1}Summary}{65}{section.120}
-\contentsline {section}{\numberline {6.2}Future work}{66}{section.121}
-\contentsline {chapter}{Bibliography}{67}{chapter*.122}
+\contentsline {subsection}{\numberline {3.3.2}Automultiscopic displays}{28}{subsection.52}
+\contentsline {chapter}{\numberline {4}Crosstalk Experiments}{31}{chapter.57}
+\contentsline {section}{\numberline {4.1}Motivation}{31}{section.58}
+\contentsline {section}{\numberline {4.2}Stimuli}{33}{section.59}
+\contentsline {section}{\numberline {4.3}Apparatus and simulation procedure}{35}{section.64}
+\contentsline {section}{\numberline {4.4}Experimental procedure}{37}{section.71}
+\contentsline {subsection}{\numberline {4.4.1}Environment setup}{37}{subsection.72}
+\contentsline {subsection}{\numberline {4.4.2}Subjects}{39}{subsection.74}
+\contentsline {subsection}{\numberline {4.4.3}Experiment parameters}{40}{subsection.76}
+\contentsline {section}{\numberline {4.5}Results}{40}{section.77}
+\contentsline {subsection}{\numberline {4.5.1}Stereo}{41}{subsection.78}
+\contentsline {subsection}{\numberline {4.5.2}Automultiscopic}{44}{subsection.84}
+\contentsline {section}{\numberline {4.6}Discussion}{47}{section.89}
+\contentsline {subsection}{\numberline {4.6.1}Stereo}{47}{subsection.90}
+\contentsline {subsection}{\numberline {4.6.2}Automultiscopic}{50}{subsection.91}
+\contentsline {chapter}{\numberline {5}Applications}{53}{chapter.93}
+\contentsline {section}{\numberline {5.1}Observed depth prediction}{54}{section.94}
+\contentsline {section}{\numberline {5.2}Crosstalk mitigation}{60}{section.103}
+\contentsline {subsection}{\numberline {5.2.1}Unsharp masking in epipolar domain}{60}{subsection.104}
+\contentsline {subsection}{\numberline {5.2.2}Iterative crosstalk reduction}{62}{subsection.115}
+\contentsline {chapter}{\numberline {6}Conclusion}{65}{chapter.120}
+\contentsline {section}{\numberline {6.1}Summary}{65}{section.121}
+\contentsline {section}{\numberline {6.2}Future work}{66}{section.122}
+\contentsline {chapter}{Bibliography}{67}{chapter*.123}
 \vspace {2em}
-\contentsline {chapter}{Index}{70}{chapter*.122}
+\contentsline {chapter}{Index}{70}{chapter*.123}
