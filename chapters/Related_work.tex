@@ -69,7 +69,7 @@ As mentioned in the previous sections, crosstalk severely hinders the perceived 
     \includegraphics[width=0.7\textwidth]{./Template_Figures/perceptual_ct}
     \caption{(a) Input image. (b) Subtractive compensation. (c) CSF weighed compensation. (d-f) Observed images \cite{van2011perceptually}.\label{fig:perc_opt}}
 \end{figure}
- Most recently, Poulakos et at\cite{van2011perceptually} proposed a crosstalk reduction minimization technique that utilize the contrast sensitivity function \footnote{Contrast sensitivity is the measure of human ability to discern between luminance of different levels at different spatial frequencies in a still image \cite{ wiki:CSF}. } (CSF)\index{CSF} to steer the minimization in such a way that only perceptually important areas in a scene are corrected for crosstalk. This is attained by minimizing \ref{eq:perc_opt} the residual \emph{r} \ref{eq:residual_eq}:
+ Most recently, Poulakos et at\cite{van2011perceptually} proposed a crosstalk reduction minimization technique that utilize the contrast sensitivity function\footnote{Contrast sensitivity is the measure of human ability to discern between luminance of different levels at different spatial frequencies in a still image \cite{ wiki:CSF}. } (CSF)\index{CSF} to steer the minimization in such a way that only perceptually important areas in a scene are corrected for crosstalk. This is attained by minimizing \ref{eq:perc_opt} the residual \emph{r} \ref{eq:residual_eq}:
  \begin{equation}
 \underset{x}{\operatorname{argmin}}||\lambda_l \: . \: r||^2, \:\:\: s.t. \:\:\: 0 \leq x \leq 1.
 \label{eq:perc_opt}
