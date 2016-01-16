@@ -286,3 +286,144 @@ It can be seen from Table \ref{tab:ghost_obj_names} that the tuple appearing in 
 
 Given the fact that the amount of crosstalk changes as the viewer moves his/her viewing position, and the fact that crosstalk might change the observed geometry of the objects in the scene while viewing from a non-sweet spot position, it is difficult to recommend a minimum level of crosstalk that ensures a pleasant and comfortable viewing experience. We know that as low as 5\% of crosstalk in a stereoscopic display is enough to result in visual discomfort. We can predict that this threshold would be much lower for an automultiscopic display. However, further research must be carried out in order to provide such objective measurements. In particular, future work should focus on analyzing the crosstalk effects of depth perception on both complex and non complex stimuli for viewers located outside the sweet spot. In this work, what we did establish, for the first time, is the absence of a significant effect of crosstalk on perceived depth magnitude in the case of automultiscopic displays, which is different to what happens in stereoscopic displays.
 
+\begin{table}[ht!]
+  \begin{center}
+    \caption{Insert Caption}
+    \label{tab:posthoc_stereo}
+    \begin{tabular}{cccccccc}
+      \toprule
+      \specialcell{Sample\\crosstalk\\(\%)} & \specialcell{Depth \\(cm)} & \specialcell{p-val \\(thin)} & \specialcell{p-val \\(medium)} & \specialcell{p-val \\(thick)} & \specialcell{p-val \\(thickest)} & \specialcell{p-val \\(dragon)}\\
+      \midrule
+         3 & 0.047     & 0.24121                     & 0.39337                   & 0.54688                   & 0.53125           & 0.8125 \\
+           & 0.734      & 0.48582                     & 0.12127                   & 0.37573                   & 0.083984          & 0.25 \\
+           & 1.185       & 0.60121                     & 0.30024                   & 0.21631                   & 0.37573           & 0.36646 \\
+           & 1.537       & 0.20433                     & 0.22279                   & 0.30127                   & 0.80774           & 0.33936 \\
+           & 1.759        & 0.45527                     & 0.73795                   & 0.6355                    & 0.71484           & 0.7334 \\
+           & 2.767       & 0.013005                    & 0.069337                  & 0.89258                   & 0.032715          & 0.083984 \\
+           & 3.442        & 0.10046                     & 0.76272                   & 0.50159                   & 0.66956           & 0.76953 \\
+         7 & 0.047     & 0.032742                    & 0.17098                   & 0.23047                   & 0.054688          & 0.5625 \\
+           & 0.734      & 0.62739                     & 0.028828                  & 0.13086                   & 0.32031           & 0.27832 \\
+           & 1.185       & 0.72098                     & 0.0081426                 & 0.32581                   & 0.4126            & 0.46973 \\
+           & 1.537       & 0.00090225                  & 0.31731                   & 1                         & 0.26758           & 0.092285 \\
+           & 1.759        & 0.4455                      & 0.073565                  & 0.063965                  & 0.7334            & 0.89258 \\
+           & 2.767       & 0.00090225                  & 0.036104                  & 0.42627                   & 0.078491          & 0.55664 \\
+           & 3.442        & 0.0057843                   & 0.0055762                 & 0.026611                  & 0.26758           & 0.22266 \\
+        14 & 0.047     & 0.54163                     & 0.098889                  & 0.94531                   & 0.13086           & 0.21875 \\
+           & 0.734      & 0.15308                     & 0.0072316                 & 0.68481                   & 0.026855          & 0.0058594 \\
+           & 1.185       & 0.064149           & 0.0063133                 & 0.42627                   & 0.003418          & 1 \\
+           & 1.537       & 0.00010642         & 0.029885                  & 0.1394                    & 0.00097656        & 0.98242 \\
+           & 1.759        & 0.018585           & 2.0983e-05                & 0.080322                  & 0.013184          & 0.79102 \\
+           & 2.767       & 7.9941e-05         & 0.00013216                & 0.005249                  & 0.00085449        & 0.2334 \\
+           & 3.442        & 0.00033392         & 1.6676e-05                & 0.00048828                & 0.00048828        & 0.054688 \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}[ht!]
+  \begin{center}
+    \caption{Insert Caption}
+    \label{tab:posthoc_stereo_null}
+    \begin{tabular}{cccccccc}
+      \toprule
+      \specialcell{Sample\\crosstalk\\(\%)} & \specialcell{Depth \\(cm)} & \specialcell{Hypothesis\\rejection \\(thin)} & \specialcell{Hypothesis\\rejection \\(medium)} & \specialcell{Hypothesis\\rejection \\(thick)} & \specialcell{Hypothesis\\rejection \\(thickest)} & \specialcell{Hypothesis\\rejection \\(dragon)}\\
+      \midrule
+           3&                   0.047&           0        &           0        &           0        &           0        &           0  \\      
+            &                    0.734&           0        &           0        &           0        &           0        &           0     \\   
+            &                    1.185&           0        &           0        &           0        &           0        &           0        \\
+            &                     1.537&           0        &           0        &           0        &           0        &           0        \\
+            &                     1.759&           0        &           0        &           0        &           0        &           0        \\
+            &                   2.767&           1        &           0        &           0        &           1        &           0        \\
+            &               3.442&           0        &           0        &           0        &           0        &           0        \\
+           7&                   0.047&           1        &           0        &           0        &           0        &           0       \\ 
+            &                  0.734&           0        &           1        &           0        &           0        &           0        \\
+            &                1.185&           0        &           1        &           0        &           0        &           0        \\
+            &                    1.537&           1        &           0        &           0        &           0        &           0        \\
+            &                   1.759&           0        &           0        &           0        &           0        &           0        \\
+            &                    2.767&           1        &           1        &           0        &           0        &           0        \\
+            &                    3.442&           1        &           1        &           1        &           0        &           0        \\
+          14&                   0.047&           0        &           0        &           0        &           0        &           0       \\ 
+            &           0.734&           0        &           1        &           0        &           1        &           1        \\
+            &          1.185&           0        &           1        &           0        &           1        &           0        \\
+            &           1.537&           1        &           1        &           0        &           1        &           0        \\
+            &           1.759&           1        &           1        &           0        &           1        &           0        \\
+            &          2.767&           1        &           1        &           1        &           1        &           0        \\
+            &          3.442&           1        &           1        &           1        &           1        &           0        \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+
+
+
+
+
+\begin{table}[ht!]
+  \begin{center}
+    \caption{Posthoc auto}
+    \label{tab:posthoc_auto}
+    \begin{tabular}{cccccccc}
+      \toprule
+      \specialcell{Sample\\crosstalk\\(\%)} & \specialcell{Depth \\(cm)} & \specialcell{p-val \\(thin)} & \specialcell{p-val \\(medium)} & \specialcell{p-val \\(thick)} & \specialcell{p-val \\(thickest)} & \specialcell{p-val \\(dragon)}\\
+      \midrule
+   3&          0.047&          0.8125&          0.5719&          0.03125&          1&          0.5 \\
+    &          0.734&          0.3396&          0.1454&          0.94604&          0.83105&          0.62207 \\
+    &          1.185&          0.10986&          0.90953&          0.375&          0.16016&          0.3396 \\
+    &          1.537&          0.37573&          0.29588&          0.67725&          0.077148&          0.56934 \\
+    &          1.759&          1&          0.34106&          1&          0.19678&          1 \\
+    &          2.767&          1&          0.23044&          0.15137&          0.36646&          0.38037 \\
+    &          3.442&          0.26611&          0.33916&          0.27832&          0.41309&          0.51855 \\
+   7&          0.047&          1&          0.056152&          0.25&          0.34375&          0.625 \\
+    &          0.734&          0.79102&          0.9133&          0.68481&          0.08374&          0.5625 \\
+    &          1.185&          1&          0.48124&          0.41431&          0.77539&          0.89844 \\
+    &          1.537&          0.2334&          0.2891&          0.55664&          0.41309&          0.62207 \\
+    &          1.759&          0.49731&          0.091845&          0.42383&          0.73438&          0.73535 \\
+    &          2.767&          0.38037&          0.83287&          0.1748&          0.8501&          0.45117 \\
+    &          3.442&          0.74951&          0.02497&          0.45483&          0.30127&          0.83105 \\
+  14&          0.047&          0.51563&          0.0031738&          0.09375&          1&          0.25 \\
+    &          0.734&          0.28809&          0.67907&          0.38501&          0.027344&          0.26587 \\
+    &          1.185&          0.080322&          0.68485&          0.95215&          0.96191&          0.86475 \\
+    &          1.537&          0.57715&          0.74125&          0.49731&          0.62207&          0.33936 \\
+    &          1.759&          0.90723&          0.23047&          0.12939&          0.78687&          0.56934 \\
+    &          2.767&          0.36523&          0.40774&          0.12305&          0.96973&          0.12305 \\
+    &          3.442&          0.46484&          0.21724&          0.25&          0.7002&          0.7002 \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}[ht!]
+  \begin{center}
+    \caption{Posthoc auto null}
+    \label{tab:posthoc_auto_null}
+    \begin{tabular}{cccccccc}
+      \toprule
+      \specialcell{Sample\\crosstalk\\(\%)} & \specialcell{Depth \\(cm)} & \specialcell{Hypothesis\\rejection \\(thin)} & \specialcell{Hypothesis\\rejection \\(medium)} & \specialcell{Hypothesis\\rejection \\(thick)} & \specialcell{Hypothesis\\rejection \\(thickest)} & \specialcell{Hypothesis\\rejection \\(dragon)}\\
+      \midrule
+   3      &       0.047      &       0      &       0      &       1      &       0      &       0 \\
+          &       0.734      &       0      &       0      &       0      &       0      &       0 \\
+          &       1.185      &       0      &       0      &       0      &       0      &       0 \\
+          &       1.537      &       0      &       0      &       0      &       0      &       0 \\
+          &       1.759      &       0      &       0      &       0      &       0      &       0 \\
+          &       2.767      &       0      &       0      &       0      &       0      &       0 \\
+          &       3.442      &       0      &       0      &       0      &       0      &       0 \\
+   7      &       0.047      &       0      &       0      &       0      &       0      &       0 \\
+          &       0.734      &       0      &       0      &       0      &       0      &       0 \\
+          &       1.185      &       0      &       0      &       0      &       0      &       0 \\
+          &       1.537      &       0      &       0      &       0      &       0      &       0 \\
+          &       1.759      &       0      &       0      &       0      &       0      &       0 \\
+          &       2.767      &       0      &       0      &       0      &       0      &       0 \\
+          &       3.442      &       0      &       1      &       0      &       0      &       0 \\
+  14      &       0.047      &       0      &       1      &       0      &       0      &       0 \\
+          &       0.734      &       0      &       0      &       0      &       1      &       0 \\
+          &       1.185      &       0      &       0      &       0      &       0      &       0 \\ 
+          &       1.537      &       0      &       0      &       0      &       0      &       0 \\
+          &       1.759      &       0      &       0      &       0      &       0      &       0 \\
+          &       2.767      &       0      &       0      &       0      &       0      &       0 \\
+          &       3.442      &       0      &       0      &       0      &       0      &       0 \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
