@@ -197,6 +197,8 @@ Substantial effects on the observed depth start appearing once the crosstalk lev
 
 Observed depth is severely affected for all the object once the crosstalk reaches 14\% (see Figure \ref{fig:s_crosstalk_14}). The thin cylinder again shows signs of degradation starting at a depth of 1.13 cm where as the observed depths of all the other objects start deteriorating at the theoretical depth of 1.76 cm. The pattern of wider objects showing less depth deterioration compared to thin objects is still observed. However, with such extreme crosstalk level, even the observed depth of the dragon is reported to be substantially affected.
 
+In order to understand the results better, we performed statistical analysis on the experiment data using Wilcoxon signed-rank test. For all the stimuli and their theoretical depths, the viewer observed depths in the absence of the crosstalk were compared to the viewer observed depths in the presence of crosstalk. The alpha ($\alpha$) value for the test was chosen to be 0.05. The p-values smaller than the $\alpha$ shows that the datum being compared differs significantly with respect to each other. The p-value greater than the $\alpha$ on the other hand does not suggest that the datum are not significantly different. I.e., they may or may not be different. The results of our Wilcoxon signed-rank test performed for the stereo case are summarized in Table \ref{tab:posthoc_stereo} and Table \ref{tab:posthoc_stereo_null}. It can be observed from Table \ref{tab:posthoc_stereo_null}, that, the data distributions (viewer observed depths in the absence and presence of crosstalk) starts differing from each other if, the crosstalk level or the disparities are increased, or, if the width of the stimulus becomes thinner. This conforms well to the observations we made from the graphs earlier.
+\pagebreak
 \begin{figure}[H]
 \centering
     \includegraphics[width=0.9\textwidth]{./Template_Figures/s_crosstalk_7}
@@ -209,90 +211,13 @@ Observed depth is severely affected for all the object once the crosstalk reache
 \caption{The median data for all observers is shown. The abscissa shows the observed depth when 14\% crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:s_crosstalk_14}}
 \end{figure}
 
-
-
-\subsection{Automultiscopic case}
-
-
-Figure \ref{fig:a_crosstalk_0} shows the pattern of the observed depth in the base case (i.e., 0\% crosstalk). It appears that the observed depth for the dragon is slightly overestimated at the actual depth of 2.76 cm. At the same instance, the observed depth of the thick cylinder is underestimated. These exceptional cases may be considered again as human error, firstly because the next greater depth is observed without any error and secondly because this case is exactly the same as the base case of the stereo experiments. However, the fact that there is mostly (both stereo and automultiscopic case) some mis-judgment of the depth may also indicate that the HVS for some reason is being confused by this particular depth.
-
-We notice that the crosstalk has no effect on the perceived depth when the crosstalk level is raised to 3\% (Figure \ref{fig:a_crosstalk_3}). This is because for each of the perceived depth, the base case observed depth is in the rage of the standard error. This is different than the stereoscopic scenario where we observed some minute depth reduction for the thin cylinder. Increasing the crosstalk to 7\% (Figure \ref{fig:a_crosstalk_7}) however, shows signs of degraded depth for the medium (37.8 arc min) cylinder depths larger than 2.76 cm. Meanwhile all the other objects show no evidence of degraded depth even though the crosstalk level at 7\% is higher than what we usually get from a conventional automultiscopic display \cite{woods2012crosstalk}.
-\begin{figure}[H]
-\centering
-    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_0}
-    \caption{The median data for all observers is shown. The abscissa shows the observed depth when no crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_0}}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_3}
-    \caption{The median data for all observers is shown. The abscissa shows the observed depth when 3\% crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_3}}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_7}
-    \caption{The median data for all observers is shown. The abscissa shows the observed depth when 7\% crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_7}}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_14}
-    \caption{The median data for all observers is shown. The abscissa shows the observed depth when 14\% crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_14}}
-\end{figure}
-Interestingly, increasing the crosstalk level to 14\% also shows that for most cases, the perceived depth is not different than the depth observed in absence of crosstalk. It is not clear why only the medium cylinder shows depth degradation in this case. However, based on the results it is clear that the effect of crosstalk on the perceived depth is significantly lower (or negligible) in the automultiscopic environment. Possible explanations for all these behaviors can be found in the next section.
-
-\section {Discussion}
-\subsection{Stereoscopic case}
-%Explain what we have observed?
-In these experiments, we found that for the stereoscopic case, crosstalk has a substantial degrading effect on the magnitude of perceived depth. The perceived depth magnitude relative to the 0\% crosstalk base case deceases as the crosstalk level increases. Moreover, for a fixed value of crosstalk, the degradation effect seems to be more pronounced as the disparity increases. This effect is stronger on the thin objects as compared to the wider ones. One of our initial hypothesis suggesting that the perceived depth magnitude might not be degraded once the ghost and the object separate completely (i.e. no overlap between them) was also proven to be wrong as the results clearly show degradation even in the those cases. In order to explain these results, we have to delve into the theories regarding how the HVS extracts depth from disparity.
-
-There is evidence to suggest that the HVS uses the cross-correlation between horizontally displaced patches on the two retinal images to obtain the disparity of objects \cite{filippini2009limits}\cite{kane2014limits}. The disparity, once the cross-correlation is performed, is extracted by locating the peaks in the resultant correlation profiles \cite{cormack1991interocular}. It is easier for the HVS to identify clear sharp peaks compared to broad noisy ones as shown in Figure \ref{fig:cormack}. Since adding crosstalk additively to an image effectively reduces the global contrast and severely reduces the local contrast around the object, it is obvious that the HVS will have more difficulty in resolving the proper disparity, a possible reason for the observed depth degradation. Also it is believed that the patches chosen for interocular cross-correlation are filtered by two dimensional isotropic Gaussians (Gaussian windows) \cite{filippini2009limits}. It is not clear what the size (constant or variable) of those windows is.
-
-If the HVS could somehow match the patch containing the ghost-object pair in one retinal image to the other, then according to windowed cross-correlation theory, because there would be no ambiguity, disparity computed would either be zero or the actual disparity without any degradation. However, we think that the HVS in case of stereo only uses the object-containing patch in one retinal image to obtain the horizontal disparity based on correlation with the other image. One of the reasons for this is that HVS has a certain limitation and it cannot fuse two objects together if the disparity gradient (defined as the ratio of disparity difference between two objects and their cyclopean angular separation) is greater than 1-1.5 \cite{howard1995binocular} \cite{kane2014limits}. In case of stereo pairs, where the objects in both images have a crossed disparity, their ghosts have an equally uncrossed disparity relative to the plane of focus. This, in terms of geometry, is only possible if the ghost is located exactly behind the object (similar to the double nail illusion as illustrated in \cite{tsirlin2012effect} \cite{krol1980double}) making the disparity gradient $\infty$. In such cases, the stimulus with higher luminance (the actual object) is fused leaving the ghost in diplopic state. The other reason is that the HVS also takes into consideration the polarity of the luminance changes between patches in order to find a correct match. This means that an object whose left side is black and right side is white will not be matched to the object in the corresponding retinal image who's left side is white and right side is black \cite{howard1995binocular}. In case of stereoscopy with added crosstalk, the polarity of the ghost-object luminance change in one retinal image is the opposite of the other. Hence it is reasonable to assume that a patch that only contains the object of interest from one retinal image is chosen to compute the horizontal interocular cross-correlation with the other. We tried simulating the disparity estimation via interocular cross-correlation using the model proposed in \cite{filippini2009limits} and found that the crosstalk had no effect on the computed disparity.
-
-For the x, y position of an object in one of the stereo images, the ghost in the other image is present at the exact same location while the actual object is located at some horizontal disparity \emph{d}. Computing the cross-correlation in this case would result in two distinct peaks, one at zero disparity and the other at disparity \emph{d}. Hence the HVS might apply some averaging in order to obtain a disparity. This, however, is only possible when the disparity is large enough to separate the ghost from the object completely. As seen in Figure \ref{fig:normal_ccr}, this is not the case when the ghost is not fully separated from the object. In this case the correlation will result in one peak. Considering the correlation profile, we observe that there is difference between the slope around zero disparity (location of the ghost) and the actual disparity \emph{d}. It is known \cite{howard1995binocular} that the HVS also uses the first derivative of luminance in order to find matching portions of stereo images. In that case, the HVS can still isolate two distinct peaks in the cross-correlation profile where one peak results at zero disparity, representing maximum correlation with the ghost, and the other at disparity \emph{d}, representing the maximum correlation with the object. Since the HVS gives preference to lower disparities \cite{krol1980double}, if the averaging is performed based on the heights and the distances (relative to the zero disparity) of the peaks, then this might explain the loss of perceived depth magnitude that is proportional to the crosstalk level. This would also explain why at some crosstalk level threshold (16\% in our experiments), the ghosts are matched to the original objects and the viewer perceives two copies of the object side by side (double nail illusion \cite{tsirlin2012effect}) located at the plane of focus. However, this will still not explain why wider objects result in lower loss of perceived depth magnitude as compared to thin objects.
-
-In our experiment, we also noticed that the perceived depth magnitude remains unaffected for some small disparities even when the crosstalk level is at 14\%. For 3\% crosstalk, this threshold is the angular disparity of 5.25 arc min (1.75 cm depth) where as, for the crosstalk levels of 7\% and 14\%, these thresholds seem to be 4.2 arc min (1.5 cm) and 3.15 arc min (1.18 cm) respectively. This suggests that the HVS probably does not average the disparities at locations of interocular cross-correlation peaks as that would have resulted in a degraded perceived depth at every disparity. Our proposed modified windowed interocular cross-correlation model explained in chapter 5 might explain these results.
-
-Our results are consistent with the current literature and show a clear degrading effect on the perceived depth that increases with the increase of crosstalk level and the decrease of object's width. Kooi et al \cite{kooi2004visual} showed that as low as 5\% crosstalk can result in reduced visual comfort. Considering that and based on our results, we recommend that the crosstalk levels in stereoscopic 3D displays should not exceed more than 3\%. At this level we found that the perceived depth is not significantly degraded for stimuli of any shape or geometry. \pagebreak
-
-
-\subsection{Automultiscopic case}
-
-At first impression, one might hypothesize that the crosstalk should have a greater effect on the observed depth in automultiscopic scenes for the simple reason that the number of ghosts per image is greater (at least one on each side of the object as opposed to only one ghost in case of stereo). Our results however, indicate that there was no substantial effect of crosstalk on the perceived depth magnitude in automultiscopic environment. We believe that the HVS in case of automultiscopic environment, given the existing symmetry, matches the patches containing the tuple (left-ghost, object and right-ghost) in one retinal image to the similarly appearing patch in the other one. One reason for this as mentioned in the previous section is that the HVS considers the polarity of luminance changes in the object. The tuples in both the retinal images have the same luminance profiles. The other reason is that matching the tuples containing patching in this way will not violate any disparity gradient which was the case with the ghosts in stereoscopic environment.
-
-\begin{table}[ht!]
+\begin{table}[H]
   \begin{center}
-    \caption{Ghosts and objects seen in an automultiscopic environment according to Equation \ref{eq:auto_obs_imgs}}
-    \label{tab:ghost_obj_names}
-    \begin{tabular}{ccc}
-      \toprule
-      Image & Stimulus  & Location(disparity)\\
-      \midrule
-                       & Left ghost & 0  \\
-      Left eye image   & Object & $\frac{d}{2}$\\
-                       & Right ghost & $d$\\
-                       &             & \\
-                       & Left ghost & $-d$  \\
-      Right eye image  & Object & $-\frac{d}{2}$\\
-                       & Right ghost & 0\\
-      \bottomrule
-    \end{tabular}
-  \end{center}
-\end{table}
-
-It can be seen from Table \ref{tab:ghost_obj_names} that the tuple appearing in the left eye is located at a disparity \emph{d} in the right eye image. And since matching tuple containing patches will not cause any confusion (due to disparity gradient violation etc), it is clear why the viewers were able to report the proper depths (in most cases) for the objects despite of raising the crosstalk level to 14\%. Based on our results we can conclude that crosstalk does not have any significant effect on the observed depth in automultiscopic displays. However, since the number of ghosts are twice the amount found in stereoscopic screens, we can predict that crosstalk in automultiscopic screen may affect the viewers visual comfort to a greater extent. Our experiments simulated only for the sweet spot of an automultiscopic screens. It should be noted that even though amount of light leakage from neighboring views will change as the viewer moves away from the sweet spot, the pattern of the luminance changes throughout the objects will remain the same. Hence, the observed depths of the objects will not be affected. The observed geometry of the objects with complex geometry however might change (depending on the scene) due to crosstalk if the viewer is not located at the sweet spots.
-
-Given the fact that the amount of crosstalk changes as the viewer moves his/her viewing position, and the fact that crosstalk might change the observed geometry of the objects in the scene while viewing from a non-sweet spot position, it is difficult to recommend a minimum level of crosstalk that ensures a pleasant and comfortable viewing experience. We know that as low as 5\% of crosstalk in a stereoscopic display is enough to result in visual discomfort. We can predict that this threshold would be much lower for an automultiscopic display. However, further research must be carried out in order to provide such objective measurements. In particular, future work should focus on analyzing the crosstalk effects of depth perception on both complex and non complex stimuli for viewers located outside the sweet spot. In this work, what we did establish, for the first time, is the absence of a significant effect of crosstalk on perceived depth magnitude in the case of automultiscopic displays, which is different to what happens in stereoscopic displays.
-
-\begin{table}[ht!]
-  \begin{center}
-    \caption{Insert Caption}
+    \caption{Statistical analysis of the results (stereo case) using Wilcoxon signed-rank test. The viewer observed depths in the base case (absence of crosstalk) are compared with viewer observed depths in the presence of crosstalk. First column  represents the crosstalk levels that is being compared with the base case. Second column represents theoretical depths, the data for which the comparison (between 0\% crosstalk and crosstalk level from column 1) is made. The rest of the columns represent the p-values obtained from Wilcoxon signed-rank test for all the tested stimuli. These p-values suggest by how much, the mean rank for the datum differ. }
     \label{tab:posthoc_stereo}
     \begin{tabular}{cccccccc}
       \toprule
-      \specialcell{Sample\\crosstalk\\(\%)} & \specialcell{Depth \\(cm)} & \specialcell{p-val \\(thin)} & \specialcell{p-val \\(medium)} & \specialcell{p-val \\(thick)} & \specialcell{p-val \\(thickest)} & \specialcell{p-val \\(dragon)}\\
+      \specialcell{Sample\\crosstalk\\(\%)} & \specialcell{Depth \\ \\(cm)} & \specialcell{Thin \\cylinder \\(p-value)} & \specialcell{Medium \\cylinder \\(p-value)} & \specialcell{Thick \\cylinder \\(p-value)} & \specialcell{Thickest \\cylinder \\(p-value)} & \specialcell{Dragon \\ \\(p-value)}\\
       \midrule
          3 & 0.047     & 0.24121                     & 0.39337                   & 0.54688                   & 0.53125           & 0.8125 \\
            & 0.734      & 0.48582                     & 0.12127                   & 0.37573                   & 0.083984          & 0.25 \\
@@ -320,13 +245,13 @@ Given the fact that the amount of crosstalk changes as the viewer moves his/her 
   \end{center}
 \end{table}
 
-\begin{table}[ht!]
+\begin{table}[H]
   \begin{center}
-    \caption{Insert Caption}
+    \caption{Same as Table \ref{tab:posthoc_stereo}. The p-values are replaced with 0, in case the p-value is below the threshold of $\alpha = 0.05$ suggesting that there is a significant difference between the mean ranks of the data being compared. The p-values are replaced with 1 otherwise, suggesting that it is not certain whether there is a significant difference between the data.}
     \label{tab:posthoc_stereo_null}
     \begin{tabular}{cccccccc}
       \toprule
-      \specialcell{Sample\\crosstalk\\(\%)} & \specialcell{Depth \\(cm)} & \specialcell{Hypothesis\\rejection \\(thin)} & \specialcell{Hypothesis\\rejection \\(medium)} & \specialcell{Hypothesis\\rejection \\(thick)} & \specialcell{Hypothesis\\rejection \\(thickest)} & \specialcell{Hypothesis\\rejection \\(dragon)}\\
+      \specialcell{Sample\\crosstalk\\(\%)} & \specialcell{Depth \\ \\(cm)} & \specialcell{Thin \\cylinder \\(p-value)} & \specialcell{Medium \\cylinder \\(p-value)} & \specialcell{Thick \\cylinder \\(p-value)} & \specialcell{Thickest \\cylinder \\(p-value)} & \specialcell{Dragon \\ \\(p-value)}\\
       \midrule
            3&                   0.047&           0        &           0        &           0        &           0        &           0  \\      
             &                    0.734&           0        &           0        &           0        &           0        &           0     \\   
@@ -355,14 +280,42 @@ Given the fact that the amount of crosstalk changes as the viewer moves his/her 
 \end{table}
 
 
+\pagebreak
+\subsection{Automultiscopic case}
 
 
+Figure \ref{fig:a_crosstalk_0} shows the pattern of the observed depth in the base case (i.e., 0\% crosstalk). It appears that the observed depth for the dragon is slightly overestimated at the actual depth of 2.76 cm. At the same instance, the observed depth of the thick cylinder is underestimated. These exceptional cases may be considered again as human error, firstly because the next greater depth is observed without any error and secondly because this case is exactly the same as the base case of the stereo experiments. However, the fact that there is mostly (both stereo and automultiscopic case) some mis-judgment of the depth may also indicate that the HVS for some reason is being confused by this particular depth.
 
+We notice that the crosstalk has no effect on the perceived depth when the crosstalk level is raised to 3\% (Figure \ref{fig:a_crosstalk_3}). This is because for each of the perceived depth, the base case observed depth is in the rage of the standard error. This is different than the stereoscopic scenario where we observed some minute depth reduction for the thin cylinder. Increasing the crosstalk to 7\% (Figure \ref{fig:a_crosstalk_7}) however, shows signs of degraded depth for the medium (37.8 arc min) cylinder depths larger than 2.76 cm. Meanwhile all the other objects show no evidence of degraded depth even though the crosstalk level at 7\% is higher than what we usually get from a conventional automultiscopic display \cite{woods2012crosstalk}. Interestingly, increasing the crosstalk level to 14\% also shows that for most cases, the perceived depth is not different than the depth observed in absence of crosstalk. It is not clear why only the medium cylinder shows depth degradation in this case. However, based on the results it is clear that the effect of crosstalk on the perceived depth is significantly lower (or negligible) in the automultiscopic environment. Possible explanations for all these behaviors can be found in the next section.
 
+Similar to the stereo case, we performed statistical analysis on the experiment data using Wilcoxon signed-rank test. For all the stimuli and their theoretical depths, the viewer observed depths in the absence of the crosstalk were compared to the viewer observed depths in the presence of crosstalk. The alpha ($\alpha$) value for the test was chosen to be 0.05. The p-values smaller than the $\alpha$ shows that the datum being compared differs significantly with respect to each other. The p-value greater than the $\alpha$ on the other hand does not suggest that the datum are not significantly different. I.e., they may or may not be different. The results of our Wilcoxon signed-rank test performed for the stereo case are summarized in Table \ref{tab:posthoc_auto} and Table \ref{tab:posthoc_auto_null}. It an be observed from Table \ref{tab:posthoc_auto_null} that, in any case, the viewer observed depth data in the absence of crosstalk does not differ from the viewer observed depths in the presence of crosstalk. 
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_0}
+    \caption{The median data for all observers is shown. The abscissa shows the observed depth when no crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_0}}
+\end{figure}
 
-\begin{table}[ht!]
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_3}
+    \caption{The median data for all observers is shown. The abscissa shows the observed depth when 3\% crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_3}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_7}
+    \caption{The median data for all observers is shown. The abscissa shows the observed depth when 7\% crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_7}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.9\textwidth]{./Template_Figures/a_crosstalk_14}
+    \caption{The median data for all observers is shown. The abscissa shows the observed depth when 14\% crosstalk is present, in comparison with the theoretical depth. Different lines represent different stimuli. The error bars indicate $\pm$ 1 standard error.\label{fig:a_crosstalk_14}}
+\end{figure}
+
+\begin{table}[H]
   \begin{center}
-    \caption{Posthoc auto}
+    \caption{Statistical analysis of the results (automultiscopic case) using Wilcoxon signed-rank test. The viewer observed depths in the base case (absence of crosstalk) are compared with viewer observed depths in the presence of crosstalk. First column  represents the crosstalk levels that is being compared with the base case. Second column represents theoretical depths, the data for which the comparison (between 0\% crosstalk and crosstalk level from column 1) is made. The rest of the columns represent the p-values obtained from Wilcoxon signed-rank test for all the tested stimuli. These p-values suggest by how much, the mean rank for the datum differ.}
     \label{tab:posthoc_auto}
     \begin{tabular}{cccccccc}
       \toprule
@@ -394,9 +347,9 @@ Given the fact that the amount of crosstalk changes as the viewer moves his/her 
   \end{center}
 \end{table}
 
-\begin{table}[ht!]
+\begin{table}[H]
   \begin{center}
-    \caption{Posthoc auto null}
+    \caption{Same as Table \ref{tab:posthoc_auto}. The p-values are replaced with 0, in case the p-value is below the threshold of $\alpha = 0.05$ suggesting that there is a significant difference between the mean ranks of the data being compared. The p-values are replaced with 1 otherwise, suggesting that it is not certain whether there is a significant difference between the data.}
     \label{tab:posthoc_auto_null}
     \begin{tabular}{cccccccc}
       \toprule
@@ -427,3 +380,48 @@ Given the fact that the amount of crosstalk changes as the viewer moves his/her 
     \end{tabular}
   \end{center}
 \end{table}
+
+\pagebreak
+\section {Discussion}
+\subsection{Stereoscopic case}
+%Explain what we have observed?
+In these experiments, we found that for the stereoscopic case, crosstalk has a substantial degrading effect on the magnitude of perceived depth. The perceived depth magnitude relative to the 0\% crosstalk base case deceases as the crosstalk level increases. Moreover, for a fixed value of crosstalk, the degradation effect seems to be more pronounced as the disparity increases. This effect is stronger on the thin objects as compared to the wider ones. One of our initial hypothesis suggesting that the perceived depth magnitude might not be degraded once the ghost and the object separate completely (i.e. no overlap between them) was also proven to be wrong as the results clearly show degradation even in the those cases. In order to explain these results, we have to delve into the theories regarding how the HVS extracts depth from disparity.
+
+There is evidence to suggest that the HVS uses the cross-correlation between horizontally displaced patches on the two retinal images to obtain the disparity of objects \cite{filippini2009limits}\cite{kane2014limits}. The disparity, once the cross-correlation is performed, is extracted by locating the peaks in the resultant correlation profiles \cite{cormack1991interocular}. It is easier for the HVS to identify clear sharp peaks compared to broad noisy ones as shown in Figure \ref{fig:cormack}. Since adding crosstalk additively to an image effectively reduces the global contrast and severely reduces the local contrast around the object, it is obvious that the HVS will have more difficulty in resolving the proper disparity, a possible reason for the observed depth degradation. Also it is believed that the patches chosen for interocular cross-correlation are filtered by two dimensional isotropic Gaussians (Gaussian windows) \cite{filippini2009limits}. It is not clear what the size (constant or variable) of those windows is.
+
+If the HVS could somehow match the patch containing the ghost-object pair in one retinal image to the other, then according to windowed cross-correlation theory, because there would be no ambiguity, disparity computed would either be zero or the actual disparity without any degradation. However, we think that the HVS in case of stereo only uses the object-containing patch in one retinal image to obtain the horizontal disparity based on correlation with the other image. One of the reasons for this is that HVS has a certain limitation and it cannot fuse two objects together if the disparity gradient (defined as the ratio of disparity difference between two objects and their cyclopean angular separation) is greater than 1-1.5 \cite{howard1995binocular} \cite{kane2014limits}. In case of stereo pairs, where the objects in both images have a crossed disparity, their ghosts have an equally uncrossed disparity relative to the plane of focus. This, in terms of geometry, is only possible if the ghost is located exactly behind the object (similar to the double nail illusion as illustrated in \cite{tsirlin2012effect} \cite{krol1980double}) making the disparity gradient $\infty$. In such cases, the stimulus with higher luminance (the actual object) is fused leaving the ghost in diplopic state. The other reason is that the HVS also takes into consideration the polarity of the luminance changes between patches in order to find a correct match. This means that an object whose left side is black and right side is white will not be matched to the object in the corresponding retinal image who's left side is white and right side is black \cite{howard1995binocular}. In case of stereoscopy with added crosstalk, the polarity of the ghost-object luminance change in one retinal image is the opposite of the other. Hence it is reasonable to assume that a patch that only contains the object of interest from one retinal image is chosen to compute the horizontal interocular cross-correlation with the other. We tried simulating the disparity estimation via interocular cross-correlation using the model proposed in \cite{filippini2009limits} and found that the crosstalk had no effect on the computed disparity.
+
+For the x, y position of an object in one of the stereo images, the ghost in the other image is present at the exact same location while the actual object is located at some horizontal disparity \emph{d}. Computing the cross-correlation in this case would result in two distinct peaks, one at zero disparity and the other at disparity \emph{d}. Hence the HVS might apply some averaging in order to obtain a disparity. This, however, is only possible when the disparity is large enough to separate the ghost from the object completely. As seen in Figure \ref{fig:normal_ccr}, this is not the case when the ghost is not fully separated from the object. In this case the correlation will result in one peak. Considering the correlation profile, we observe that there is difference between the slope around zero disparity (location of the ghost) and the actual disparity \emph{d}. It is known \cite{howard1995binocular} that the HVS also uses the first derivative of luminance in order to find matching portions of stereo images. In that case, the HVS can still isolate two distinct peaks in the cross-correlation profile where one peak results at zero disparity, representing maximum correlation with the ghost, and the other at disparity \emph{d}, representing the maximum correlation with the object. Since the HVS gives preference to lower disparities \cite{krol1980double}, if the averaging is performed based on the heights and the distances (relative to the zero disparity) of the peaks, then this might explain the loss of perceived depth magnitude that is proportional to the crosstalk level. This would also explain why at some crosstalk level threshold (16\% in our experiments), the ghosts are matched to the original objects and the viewer perceives two copies of the object side by side (double nail illusion \cite{tsirlin2012effect}) located at the plane of focus. However, this will still not explain why wider objects result in lower loss of perceived depth magnitude as compared to thin objects.
+
+In our experiment, we also noticed that the perceived depth magnitude remains unaffected for some small disparities even when the crosstalk level is at 14\%. For 3\% crosstalk, this threshold is the angular disparity of 5.25 arc min (1.75 cm depth) where as, for the crosstalk levels of 7\% and 14\%, these thresholds seem to be 4.2 arc min (1.5 cm) and 3.15 arc min (1.18 cm) respectively. This suggests that the HVS probably does not average the disparities at locations of interocular cross-correlation peaks as that would have resulted in a degraded perceived depth at every disparity. Our proposed modified windowed interocular cross-correlation model explained in chapter 5 might explain these results.
+
+Our results are consistent with the current literature and show a clear degrading effect on the perceived depth that increases with the increase of crosstalk level and the decrease of object's width. Kooi et al \cite{kooi2004visual} showed that as low as 5\% crosstalk can result in reduced visual comfort. Considering that and based on our results, we recommend that the crosstalk levels in stereoscopic 3D displays should not exceed more than 3\%. At this level we found that the perceived depth is not significantly degraded for stimuli of any shape or geometry.
+
+
+\subsection{Automultiscopic case}
+
+At first impression, one might hypothesize that the crosstalk should have a greater effect on the observed depth in automultiscopic scenes for the simple reason that the number of ghosts per image is greater (at least one on each side of the object as opposed to only one ghost in case of stereo). Our results however, indicate that there was no substantial effect of crosstalk on the perceived depth magnitude in automultiscopic environment. We believe that the HVS in case of automultiscopic environment, given the existing symmetry, matches the patches containing the tuple (left-ghost, object and right-ghost) in one retinal image to the similarly appearing patch in the other one. One reason for this as mentioned in the previous section is that the HVS considers the polarity of luminance changes in the object. The tuples in both the retinal images have the same luminance profiles. The other reason is that matching the tuples containing patching in this way will not violate any disparity gradient which was the case with the ghosts in stereoscopic environment.
+
+\begin{table}[ht!]
+  \begin{center}
+    \caption{Ghosts and objects seen in an automultiscopic environment according to Equation \ref{eq:auto_obs_imgs}}
+    \label{tab:ghost_obj_names}
+    \begin{tabular}{ccc}
+      \toprule
+      Image & Stimulus  & Location(disparity)\\
+      \midrule
+                       & Left ghost & 0  \\
+      Left eye image   & Object & $\frac{d}{2}$\\
+                       & Right ghost & $d$\\
+                       &             & \\
+                       & Left ghost & $-d$  \\
+      Right eye image  & Object & $-\frac{d}{2}$\\
+                       & Right ghost & 0\\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
+
+It can be seen from Table \ref{tab:ghost_obj_names} that the tuple appearing in the left eye is located at a disparity \emph{d} in the right eye image. And since matching tuple containing patches will not cause any confusion (due to disparity gradient violation etc), it is clear why the viewers were able to report the proper depths (in most cases) for the objects despite of raising the crosstalk level to 14\%. Based on our results we can conclude that crosstalk does not have any significant effect on the observed depth in automultiscopic displays. However, since the number of ghosts are twice the amount found in stereoscopic screens, we can predict that crosstalk in automultiscopic screen may affect the viewers visual comfort to a greater extent. Our experiments simulated only for the sweet spot of an automultiscopic screens. It should be noted that even though amount of light leakage from neighboring views will change as the viewer moves away from the sweet spot, the pattern of the luminance changes throughout the objects will remain the same. Hence, the observed depths of the objects will not be affected. The observed geometry of the objects with complex geometry however might change (depending on the scene) due to crosstalk if the viewer is not located at the sweet spots.
+
+Given the fact that the amount of crosstalk changes as the viewer moves his/her viewing position, and the fact that crosstalk might change the observed geometry of the objects in the scene while viewing from a non-sweet spot position, it is difficult to recommend a minimum level of crosstalk that ensures a pleasant and comfortable viewing experience. We know that as low as 5\% of crosstalk in a stereoscopic display is enough to result in visual discomfort. We can predict that this threshold would be much lower for an automultiscopic display. However, further research must be carried out in order to provide such objective measurements. In particular, future work should focus on analyzing the crosstalk effects of depth perception on both complex and non complex stimuli for viewers located outside the sweet spot. In this work, what we did establish, for the first time, is the absence of a significant effect of crosstalk on perceived depth magnitude in the case of automultiscopic displays, which is different to what happens in stereoscopic displays.
