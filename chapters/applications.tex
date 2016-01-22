@@ -71,6 +71,29 @@ In our disparity estimation model, we assume that the HVS will be able to isolat
     \caption{Comparison of experimental observed depth for cylinder of 75.6 arc min width (orange) vs the estimated depth via windowed cross-correlation. The best results were obtained with $\sigma$ = 46.2 arc min.\label{fig:s_36_sigma_22}}
 \end{figure}
 
+\begin{table}[H]
+  \begin{center}
+    \caption{Coefficient of determination ($r^2$) test results that \textcolor{red}{Change one of the graphs with the new one}}
+    \label{tab:model_fitting_test}
+    \begin{tabular}{cccccc}
+      \toprule
+       \specialcell{Stimulus\\width\\(arc min)} &  \specialcell{Comparison\\between\\ }  &  \specialcell{Crosstalk\\level\\(0\%)} & \specialcell{Crosstalk\\level\\(3\%)} & \specialcell{Crosstalk\\level\\(7\%)} & \specialcell{Crosstalk\\level\\(14\%)}\\
+      \midrule
+      18.9      & BVO & 0.97718     &       0.89288    &    -5.0609   &      -6.0313 \\
+                & OVO & 0.78709     &       0.88446    &    -0.25691  &      -0.61822  \\
+                & & & & \\
+      37.8      & BVO & 0.94688     &       0.96686    &    0.82087   &    -3.2238\\
+                & OVO & 0.73072     &       0.80604    &   0.86868    &     0.20619\\
+                & & & & \\
+      56.7      & BVO & 0.97965     &       0.98846    &    0.70558   &      -2.3817\\
+                & OVO & 0.91503     &       0.89967    &    0.89631   &      0.53607\\
+                & & & & \\
+      75.6      & BVO & 0.95995     &       0.96492    &    0.86452   &      -1.2262\\
+                & OVO & 0.85206     &       0.84825    &    0.8946    &      0.50502\\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
 We simulated our stereo experiments for the cylinders and computed the estimated depths using our Gaussian weighted cross-correlation model. Figures \ref{fig:s_9_sigma_7_4}, \ref{fig:s_18_sigma_14_7}, \ref{fig:s_27_sigma_17_4} and \ref{fig:s_36_sigma_22} show the results that we obtained and there comparison with the data we got from our experiments. We observed that even though this model had some shortcomings and did not fit to all of the data properly, it was able to mimic the degradation of estimated depth as the crosstalk level or the disparity increased. The figures above represent the estimated depths using a our Gaussian weighed local cross-correlation model with fixed $\sigma$ for each cylinder that best matched the data. For almost all the cases (specific disparities and crosstalk levels) where the estimated depth was incorrectly estimated, we were able get approximately matching results using some $\sigma$. However, we were not able to find one $\sigma$ that matched all cases for a particular cylinder. Perhaps the HVS weighs the cross-correlation profile with Gaussians of different standard deviations for different object widths and disparities. Our Gaussian window-weighted local cross-correlation model has the advantage that it resolves to a degraded estimated depth in the case where certain level of crosstalk is present. However, the shortcoming is that it also, to some extent, penalizes the estimated depth even if there is no crosstalk present. This does not conform fully to our experimental data. However, in depth investigation for an HVS depth from disparity model is left as future work.
 \pagebreak
 
