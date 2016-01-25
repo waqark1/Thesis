@@ -1,6 +1,49 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Thesis.aux
 The style file: acm.bst
 Database file #1: bibliography/references.bib
 Warning--empty journal in citation-0
 Warning--empty journal in wiki:stereopsis
+You've used 45 entries,
+            2253 wiz_defined-function locations,
+            768 strings with 11202 characters,
+and the built_in function-call counts, 16002 in all, are:
+= -- 1565
+> -- 700
+< -- 0
++ -- 294
+- -- 244
+* -- 1167
+:= -- 2473
+add.period$ -- 134
+call.type$ -- 45
+change.case$ -- 255
+chr.to.int$ -- 0
+cite$ -- 47
+duplicate$ -- 604
+empty$ -- 1330
+format.name$ -- 244
+if$ -- 3414
+int.to.chr$ -- 0
+int.to.str$ -- 45
+missing$ -- 35
+newline$ -- 227
+num.names$ -- 90
+pop$ -- 321
+preamble$ -- 1
+purify$ -- 211
+quote$ -- 0
+skip$ -- 449
+stack$ -- 0
+substring$ -- 1057
+swap$ -- 206
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 178
+warning$ -- 2
+while$ -- 157
+width$ -- 47
+write$ -- 460
 (There were 2 warnings)

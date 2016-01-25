@@ -1,4 +1,4 @@
-PWD /Users/WaqarKhan/Desktop/Thesis/writeup
+PWD /Users/waqarkhan/Desktop/Thesis/writeup
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -401,6 +401,9 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT ./Template_Figures/horopter.png
 INPUT ./Template_Figures/horopter.png
 INPUT ./Template_Figures/horopter.png
+INPUT ./Template_Figures/Fieldofview-pigeon-owl.png
+INPUT ./Template_Figures/Fieldofview-pigeon-owl.png
+INPUT ./Template_Figures/Fieldofview-pigeon-owl.png
 INPUT ./Template_Figures/orig.png
 INPUT ./Template_Figures/orig.png
 INPUT ./Template_Figures/orig.png
@@ -614,6 +617,7 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb

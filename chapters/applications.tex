@@ -58,7 +58,7 @@ In our disparity estimation model, we assume that the HVS will be able to isolat
 \begin{figure}[H]
 \centering
     \includegraphics[width=0.7\textwidth]{./Template_Figures/s_18_sigma_14_7}
-    \caption{Comparison of experimental observed depth for cylinder of 37.8 arc min width (orange) vs the estimated depth via windowed cross-correlation. The best results were obtained with $\sigma$ = 30.87 arc min.\label{fig:s_18_sigma_14_7}}
+    \caption{Comparison of experimental observed depth for cylinder of 37.8 arc min width (orange) vs the estimated depth via windowed cross-correlation. The best results were obtained with $\sigma$ = 27.26 arc min.\label{fig:s_18_sigma_14_7}}
 \end{figure}
 \begin{figure}[H]
 \centering
@@ -73,28 +73,32 @@ In our disparity estimation model, we assume that the HVS will be able to isolat
 
 \begin{table}[H]
   \begin{center}
-    \caption{Coefficient of determination ($r^2$) test results that \textcolor{red}{Change one of the graphs with the new one}}
+    \caption{Coefficient of determination ($r^2$) test results that represent how well the models explain the observed data. Columns 3-6 show these results for different observed depth-prediction models and crosstalk levels. More information about the interpretation of these results can be found in the text. Two models being compared are, simple cross-correlation model (SCM) and our proposed model (OPM), represented in column 2. Column 1 represents the width of the stimulus.}
     \label{tab:model_fitting_test}
     \begin{tabular}{cccccc}
       \toprule
        \specialcell{Stimulus\\width\\(arc min)} &  \specialcell{Comparison\\between\\ }  &  \specialcell{Crosstalk\\level\\(0\%)} & \specialcell{Crosstalk\\level\\(3\%)} & \specialcell{Crosstalk\\level\\(7\%)} & \specialcell{Crosstalk\\level\\(14\%)}\\
       \midrule
-      18.9      & BVO & 0.97718     &       0.89288    &    -5.0609   &      -6.0313 \\
-                & OVO & 0.78709     &       0.88446    &    -0.25691  &      -0.61822  \\
+      18.9      & SCM & 0.97718     &       0.89288    &    -5.0609   &      -6.0313 \\
+                & OPM & 0.78709     &       0.88446    &    -0.25691  &      -0.61822  \\
                 & & & & \\
-      37.8      & BVO & 0.94688     &       0.96686    &    0.82087   &    -3.2238\\
-                & OVO & 0.73072     &       0.80604    &   0.86868    &     0.20619\\
+      37.8      & SCM & 0.94688     &       0.96686    &    0.82087   &    -3.2238\\
+                & OPM & 0.73072     &       0.80604    &   0.86868    &     0.20619\\
                 & & & & \\
-      56.7      & BVO & 0.97965     &       0.98846    &    0.70558   &      -2.3817\\
-                & OVO & 0.91503     &       0.89967    &    0.89631   &      0.53607\\
+      56.7      & SCM & 0.97965     &       0.98846    &    0.70558   &      -2.3817\\
+                & OPM & 0.91503     &       0.89967    &    0.89631   &      0.53607\\
                 & & & & \\
-      75.6      & BVO & 0.95995     &       0.96492    &    0.86452   &      -1.2262\\
-                & OVO & 0.85206     &       0.84825    &    0.8946    &      0.50502\\
+      75.6      & SCM & 0.95995     &       0.96492    &    0.86452   &      -1.2262\\
+                & OPM & 0.85206     &       0.84825    &    0.8946    &      0.50502\\
       \bottomrule
     \end{tabular}
   \end{center}
 \end{table}
-We simulated our stereo experiments for the cylinders and computed the estimated depths using our Gaussian weighted cross-correlation model. Figures \ref{fig:s_9_sigma_7_4}, \ref{fig:s_18_sigma_14_7}, \ref{fig:s_27_sigma_17_4} and \ref{fig:s_36_sigma_22} show the results that we obtained and there comparison with the data we got from our experiments. We observed that even though this model had some shortcomings and did not fit to all of the data properly, it was able to mimic the degradation of estimated depth as the crosstalk level or the disparity increased. The figures above represent the estimated depths using a our Gaussian weighed local cross-correlation model with fixed $\sigma$ for each cylinder that best matched the data. For almost all the cases (specific disparities and crosstalk levels) where the estimated depth was incorrectly estimated, we were able get approximately matching results using some $\sigma$. However, we were not able to find one $\sigma$ that matched all cases for a particular cylinder. Perhaps the HVS weighs the cross-correlation profile with Gaussians of different standard deviations for different object widths and disparities. Our Gaussian window-weighted local cross-correlation model has the advantage that it resolves to a degraded estimated depth in the case where certain level of crosstalk is present. However, the shortcoming is that it also, to some extent, penalizes the estimated depth even if there is no crosstalk present. This does not conform fully to our experimental data. However, in depth investigation for an HVS depth from disparity model is left as future work.
+We simulated our stereo experiments for the cylinders and computed the estimated depths using our Gaussian weighted cross-correlation model. Figures \ref{fig:s_9_sigma_7_4}, \ref{fig:s_18_sigma_14_7}, \ref{fig:s_27_sigma_17_4} and \ref{fig:s_36_sigma_22} show the results that we obtained and there comparison with the data we got from our experiments. We observed that even though this model had some shortcomings and did not fit to all of the data properly, it was able to mimic the degradation of estimated depth as the crosstalk level or the disparity increased. The figures above represent the estimated depths using a our Gaussian weighed local cross-correlation model with fixed $\sigma$ for each cylinder that best matched the data. For almost all the cases (specific disparities and crosstalk levels) where the estimated depth was incorrectly estimated, we were able get approximately matching results using some $\sigma$. However, we were not able to find one $\sigma$ that matched all cases for a particular cylinder. Perhaps the HVS weighs the cross-correlation profile with Gaussians of different standard deviations for different object widths and disparities. 
+
+In order to analyze, how well the predicted depths of stimuli using our model matched (compared to the simple cross-correlation model \cite{filippini2009limits}) the actual observed depths data, we performed a coefficient of determination ($r^2$) test. An $r^2$ value of $0$ means that the model satisfies none of the variability of the observed data around its mean. Similarly, a value of $1$ means that the model satisfies all of the variability of the observed data around its mean. A negative value shows that the model results need to be incremented with a constant in order for it to satisfy some or all the observed data \cite{ Model_fitting}. The results are summarized in Table \ref{tab:model_fitting_test}. It can be seen that the simple cross-correlation model fits the observed data slightly better than our model for low amounts (i.e. 0\% and 3\%) of crosstalk. However, for larger amounts of crosstalk (i.e. 7\% and 14\%), our proposed Gaussian weighted cross-correlation model fits to the observed data much better. We observe, that, for the thin stimulus (18.9 arc min width), and large crosstalk levels, both models fails to satisfy any of the variability of the observed data around its mean (represented by negative value of the $r^2$ test). However, it should be noted even in these cases, the depths predicted by our model need to be incremented by a significantly smaller constant as compared to the simple cross-correlation model. This would show that our model still justifies the observed data better. 
+
+Our Gaussian window-weighted local cross-correlation model has the advantage that it resolves to a degraded estimated depth in the case where certain level of crosstalk is present. However, the shortcoming is that it also, to some extent, penalizes the estimated depth even if there is no crosstalk present. This does not conform fully to our experimental data. However, in depth investigation for an HVS depth from disparity model is left as future work.
 \pagebreak
 
 \section{Crosstalk mitigation}
