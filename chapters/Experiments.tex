@@ -19,7 +19,7 @@ Our experiments were based on test subjects judging the observed distance betwee
   \begin{center}
     \caption{Description of the objects used as stimuli.}
     \label{tab:stimili_desc}
-    \begin{tabular}{ccc}
+    \begin{tabular}{lcc}
       \toprule
       Object & Scene Dimensions (xyz) & On-screen Dimensions (arc min)\\
       \midrule
@@ -86,7 +86,7 @@ The experiments were conducted on a commercial 47'' SIMS2 HDR47E LCD display wit
     \caption{(A) External view of our Wheatstone setup. (B) Internal schematics of the Wheatstone setup's enclosure box. Physical view frusta are shaded in light blue where as the virtual view frusta are depicted in dotted gray lines. The cyan lines represent the mirrors \cite{vangorp2014depth}.\label{fig:wheatstone_setup}}
 \end{figure}
 
-Since on an LCD panel, all the RGB channels equally and additively contribute to the crosstalk, we simulated the ghosted images simply by adding a percentage image of unintended view to the intended view image. For stereo, simple addition of a percentage of the right image into the left and vice versa sufficed. However, for the automultiscopic case, we simulated the view-luminance profiles (Figure \ref{fig:gaussians}) by fitting a Gaussian at each view. We found that an upscaled Gaussian such that it attains the value 0.8 at the mean ($\mu$) and with standard deviation ($\sigma$) = 2 matched the required view-luminance profile appropriately. Figure \ref{fig:sim_gaussians} shows 11 such Gaussians, the means ($\mu$) of whom are shifted according to the sweet spots of an 11-view automultiscopic display. Using our simulated profiles, we found that at any sweet spot viewing position, the amount of light leaked from views other then the two adjacent views can be considered as negligible. Hence, in our simulation we only considered light leakage from the two adjacent views. Figure \ref{fig:observed_ct_images} shows the simulated crosstalk on stereo and automultiscopic display. Considering that an automultiscopic screen displays light fields sampled at frequency $1/\delta_x$ ($\delta_x$ being the step size at which the images were captured along the camera baseline), the leaked light from a position `y' to position `x' can be modeled as:
+Since on an LCD panel, all the RGB channels equally and additively contribute to the crosstalk, we simulated the ghosted images simply by adding a percentage image of unintended view to the intended view image. For stereo, simple addition of a percentage of the right image into the left and vice versa sufficed. However, for the automultiscopic case, we simulated the view-luminance profiles (Figure \ref{fig:gaussians}) by fitting a Gaussian at each view. We found that an upscaled Gaussian such that it attains the value 0.8 at the mean ($\mu$) and with standard deviation ($\sigma$) = 2 matched the required view-luminance profile appropriately. Figure \ref{fig:sim_gaussians} shows 11 such Gaussians, the means ($\mu$) of whom are shifted according to the sweet spots of an 11-view automultiscopic display. Using our simulated profiles, we found that at any sweet spot viewing position, the amount of light leaked from views other then the two adjacent views can be considered as negligible. Hence, in our simulation we only considered light leakage from the two adjacent views. Figure \ref{fig:observed_ct_images} shows the simulated crosstalk on stereo and automultiscopic display. Considering that an automultiscopic screen displays light fields sampled at frequency $1/\delta_x$ ($\delta_x$ being the step size at which the images were captured along the camera baseline), the leaked light from a position \emph{y} to position \emph{x} can be modeled as:
 \begin{equation}
 l(y,x) \simeq a_y(x)\:.\:f(y)
 \label{eq:ct_leak_eq}
@@ -157,7 +157,7 @@ Several paid test subjects and the author participated in the experiments. In or
   \begin{center}
     \caption{Number of subjects that participated in each experiment.}
     \label{tab:agg_subj}
-    \begin{tabular}{ccc}
+    \begin{tabular}{lcc}
       \toprule
       Object & Stereo  & Automultiscopic\\
       \midrule
